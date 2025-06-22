@@ -19,6 +19,10 @@ You can find my CV here: [CV (last update: 2025.6)](../assets/Yang_Zhiwen_CV_Mat
 
 [Email](mailto:zhiwenyang2004@gmail.com) / [Github](https://github.com/zwYang2004) / [ORCID](https://orcid.org/0009-0009-1608-7554)
 
+
+Recent News
+======
+
 <div class="recent-news">
 Aug 2025, will be joining <a href="https://guomics.com">Guomics</a> at Westlake University as a <strong>visiting student</strong> to continue my research work offline.<br><br>
 
