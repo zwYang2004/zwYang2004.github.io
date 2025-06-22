@@ -15,7 +15,7 @@ name                     : &name "Zhiwen Yang"
 description              : &description "The personal homepage of Zhiwen Yang, an undergraduate researcher at Yangzhou University and visiting student at Westlake University. My research focuses on computational biology, deep learning, and AI in healthcare. Actively seeking Ph.D. opportunities for Fall 2026." 
 url                      : https://zwyang2004.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "zwYang2004/zwYang2004.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
