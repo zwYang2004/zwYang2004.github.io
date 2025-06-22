@@ -58,15 +58,15 @@ SDG Global Summer School, College of Computer Science and Technology
 Publications
 ======
 
-1. Z. Li, Z. Yang, Y. Chen, T. Guo, “AutoPIM: A Autoencoder for MNAR Imputation in Proteomics Data”, In preparation.
+1. Z. Li, Z. Yang, Y. Chen, [T. Guo](https://en.westlake.edu.cn/faculty/tiannan-guo.html), “AutoPIM: A Autoencoder for MNAR Imputation in Proteomics Data”, In preparation.
 
-2. Z. Yang, L. Zhang, “Microplastic Transport and Ecological Impacts in the Yangtze River Estuary: A Coupled Modeling Approach”, In preparation.
+2. Z. Yang, [L. Zhang](https://teacher.yzu.edu.cn/ZL123456789101112131415161718192021/zh_CN/index.htm), “Microplastic Transport and Ecological Impacts in the Yangtze River Estuary: A Coupled Modeling Approach”, In preparation.
 
-3. Z. Yang, X. Guo, and J. Huang, “Modeling the relationship between maternal health and infant behavioral characteristics based on machine learning”, PLOS ONE, vol.19, no.8, e0307332, 2024. (JCR Q1, IF: 3.7)
+3. Z. Yang, X. Guo, and [J. Huang](https://teacher.yzu.edu.cn/HJF/en/index/379379/list/index.htm), [“Modeling the relationship between maternal health and infant behavioral characteristics based on machine learning”](https://doi.org/10.1371/journal.pone.0307332), PLOS ONE, vol.19, no.8, e0307332, 2024. (JCR Q1, IF: 3.7)
 
-4. Z. Fang, Z. Yang, X. Zhang, and Q. Han, “MedSegKAN: A superior medical image segmentation method based on the improved KAN structure”, in Proceedings of the 16th International Conference on Graphics and Image Processing (ICGIP), 2024. (EI & Scopus Indexed)
+4. Z. Fang, Z. Yang, X. Zhang, and Q. Han, [“MedSegKAN: A superior medical image segmentation method based on the improved KAN structure”](https://doi.org/10.1117/12.3057735), in Proceedings of the 16th International Conference on Graphics and Image Processing (ICGIP), 2024. (EI & Scopus Indexed)
 
-5. Z. Yang and L. Zhang, “Coupled algorithm for investigating microplastics’ impact on fish using unstructured grids”, Chinese Patent CN119558222A, 2025.
+5. Z. Yang and L. Zhang, [“Coupled algorithm for investigating microplastics’ impact on fish using unstructured grids”](https://kns.cnki.net/kcms2/article/abstract?v=TD_mLQSGK6syh3SKPsBZt33dabd_TAri4Fw8jceiI6BzG9YB73avvs7brdZEucULMBMcrlfmGd1iTJT9e5trX2bV85WZO497PMJHKbaOqBHAwx7tyoBlztUE3K_hTCkW2Hyl2CUpuJ-lRtTKpJhCA3r0Iox9HnqsZALl4Sx4T0al8Drk_MOG_g==&uniplatform=NZKPT&language=CHS), Chinese Patent CN119558222A, 2025.
 
 
 Honors and Awards
