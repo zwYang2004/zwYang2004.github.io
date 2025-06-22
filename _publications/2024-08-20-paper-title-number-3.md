@@ -1,7 +1,7 @@
 ---
 title: "Modeling the relationship between maternal health and infant behavioral characteristics based on machine learning"
 collection: publications
-category: journal
+category: manuscripts
 # permalink: /publication/2024-08-15-maternal-health-ml
 excerpt: 'This paper presents a hybrid model combining Random Forest and MLP to predict infant behavior from maternal psychological data, achieving an AUC of 0.97.'
 date: 2024-08-20
