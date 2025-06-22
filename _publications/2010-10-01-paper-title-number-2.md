@@ -1,14 +1,17 @@
 ---
-title: "Paper Title Number 2"
+title: "Microplastic Transport and Ecological Impacts in the Yangtze River Estuary: A Coupled Modeling Approach"
 collection: publications
 category: manuscripts
-permalink: /publication/2010-10-01-paper-title-number-2
-excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
-date: 2010-10-01
-venue: 'Journal 1'
-slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
-paperurl: 'http://academicpages.github.io/files/paper2.pdf'
-citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
+# permalink: /publication/2025-08-01-microplastic-ecology
+excerpt: 'This research develops an advection-diffusion coupling algorithm to simulate the migration of microplastics in marine environments. We also improved the Lotka-Volterra model to accurately depict the impact on fish school populations.'
+# date: 2025-06
+# venue: 'Manuscript in preparation'
+citation: 'Yang, Z., Zhang, L. (2025). Coupled Modeling Reveals Spatiotemporal Microplastic Dynamics and Ecological Stress in the Yangtze River Estuary.; Manuscript in preparation.'
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+Under the supervision of Prof. Lai Zhang, this project combines computational modeling and ecological theory to study pollution dynamics.
+
+Key contributions include:
+* Used Matlab to construct complex unstructured grids, which consisted of **17,656** nodes and **99,948** connection information.
+* Developed an advection-diffusion coupling algorithm to simulate **PDE** equations, demonstrating the dynamic migration patterns of microplastics in the marine environment.
+* Improved the Logistic model and the **Lotka-Volterra** model, accurately depicting the dynamic changes in the population sizes of predator and prey fish schools.
