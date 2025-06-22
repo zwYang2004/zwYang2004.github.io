@@ -42,9 +42,9 @@
     "vendor/magnific-popup/magnific-popup"
 ;
 
-/* 在此处新增 recent-news 样式 */
 .recent-news {
-  max-height: 500px;   /* 设置你想要的高度，比如200px */
-  overflow-y: auto;    /* 超出部分显示滚动条 */
-  padding-right: 15px; /* 保证内容不被滚动条遮挡 */
+  max-height: 700px;    /* 增加高度 */
+  overflow-y: auto;     
+  padding-right: 15px;  
+  margin-bottom: 40px;  /* 与下方内容的距离，可根据需要调整 */
 }
