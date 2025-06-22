@@ -41,6 +41,7 @@ Nov 2024, MedSegKAN is accepted by **ICGIP**.
 
 Sep 2024, began my term as **President** of the Mathematical Modeling Association at Yangzhou University.
 
+
 Education
 ======
 ### **Yangzhou University**
