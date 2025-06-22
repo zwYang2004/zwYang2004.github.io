@@ -12,7 +12,7 @@ I'm a third year undergraduate student from School of Mathematical Sciences, [Ya
 
 
 
-I am currently a visiting student at the [Laboratory for Proteome Complexity Science](https://guomics.com), [Westlake University](https://en.westlake.edu.cn), fortunate to be advised by Prof. [Tiannan Guo](https://en.westlake.edu.cn/faculty/tiannan-guo.html). During my undergraduate studies, I was advised by Prof. [Lai Zhang](https://teacher.yzu.edu.cn/ZL123456789101112131415161718192021/zh_CN/index.htm) on projects related to mathematical modeling and biomathematics at Yangzhou University.
+I am currently a **visiting student** at the [Laboratory for Proteome Complexity Science](https://guomics.com), [Westlake University](https://en.westlake.edu.cn), fortunate to be advised by Prof. [Tiannan Guo](https://en.westlake.edu.cn/faculty/tiannan-guo.html). During my undergraduate studies, I was advised by Prof. [Lai Zhang](https://teacher.yzu.edu.cn/ZL123456789101112131415161718192021/zh_CN/index.htm) on projects related to mathematical modeling and biomathematics at Yangzhou University.
 
 
 🌟 <span style="color: red;">Curerntly, I'm actively seeking a **MPhil or Ph.D. opportunities** for 2026 Fall. If you are interested in me, please contact me! My CV is available here: [CV (last update: 2025.6)](../assets/Yang_Zhiwen_CV_Mathematic_F2026.pdf).</span>
@@ -27,7 +27,7 @@ I am currently a visiting student at the [Laboratory for Proteome Complexity Sci
 🔥 Recent News:
 ======
 
-Aug 2025, will be joining [Guomics](https://guomics.com) at Westlake University as a **visiting student** to continue my research work offline. 🎉 
+Aug 2025, will be joining [Guomics](https://guomics.com) at **Westlake University** as a **visiting student** to continue my research work offline. 🎉 
 
 May 2025, National Undergraduate Training Program for Innovation, served as Project Leader, was successfully concluded and recognized as an **"Excellent Project"**.
 
