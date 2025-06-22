@@ -27,13 +27,13 @@ I am currently a visiting student at the [Laboratory for Proteome Complexity Sci
 🔥 Recent News:
 ======
 
-🎉 Aug 2025, will be joining [Guomics](https://guomics.com) at Westlake University as a **visiting student** to continue my research work offline.
+Aug 2025, will be joining [Guomics](https://guomics.com) at Westlake University as a **visiting student** to continue my research work offline. 🎉 
 
 May 2025, National Undergraduate Training Program for Innovation, served as Project Leader, was successfully concluded and recognized as an **"Excellent Project"**.
 
 May 2025, began as a remote **research intern** with Prof. Tiannan Guo's group at Westlake University, focusing on proteomics and AI.
 
-🙌 Apr 2025, receive a full scholarship to attend the SDG Global **Summer School** at the College of Computer Science and Technology, **Zhejiang University**.
+Apr 2025, receive a full scholarship to attend the SDG Global **Summer School** at the College of Computer Science and Technology, **Zhejiang University**. 🙌 
 
 Jan 2025, **Coupled algorithm** patent was officially published.
 
