@@ -1,7 +1,7 @@
 ---
 title: "Coupled algorithm for investigating microplastics' impact on fish using unstructured grids"
 collection: publications
-category: patent
+category: manuscripts
 # permalink: /publication/2025-01-20-patent-microplastics
 excerpt: 'This patent protects the novel advection-diffusion coupling algorithm designed to simulate microplastic dynamics and their impact on fish populations using unstructured grids.'
 date: 2025-01-10
