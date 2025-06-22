@@ -27,15 +27,15 @@ I am currently a visiting student at the [Laboratory for Proteome Complexity Sci
 🔥 Recent News:
 ======
 
-Aug 2025, will be joining [Guomics](https://guomics.com) at Westlake University as a **visiting student** to continue my research work offline.
+🎉 Aug 2025, will be joining [Guomics](https://guomics.com) at Westlake University as a **visiting student** to continue my research work offline.
 
-May 2025, National Undergraduate Training Program for Innovation, served as Project Leader, was successfully concluded and recognized as an **"Excellent Project"**.
+🎉 May 2025, National Undergraduate Training Program for Innovation, served as Project Leader, was successfully concluded and recognized as an **"Excellent Project"**.
 
-May 2025, began as a remote **research intern** with Prof. Tiannan Guo's group at Westlake University, focusing on proteomics and AI.
+🙌 May 2025, began as a remote **research intern** with Prof. Tiannan Guo's group at Westlake University, focusing on proteomics and AI.
 
-Apr 2025, receive a full scholarship to attend the SDG Global **Summer School** at the College of Computer Science and Technology, **Zhejiang University**.
+🙌 Apr 2025, receive a full scholarship to attend the SDG Global **Summer School** at the College of Computer Science and Technology, **Zhejiang University**.
 
-Jan 2025, **Coupled algorithm** patent was officially published.
+🎉 Jan 2025, **Coupled algorithm** patent was officially published.
 
 Nov 2024, honored to be named a **Science Pioneer"** by Yangzhou University, only 10 students.
 
@@ -60,7 +60,7 @@ Visiting student, Laboratory for Proteome Complexity Science, School of Life Sci
 SDG Global Summer School, College of Computer Science and Technology
 
 
-Publications
+📒 Publications
 ======
 
 1. Z. Li, Z. Yang, Y. Chen, [T. Guo](https://en.westlake.edu.cn/faculty/tiannan-guo.html), “AutoPIM: A Autoencoder for MNAR Imputation in Proteomics Data”, In preparation.
@@ -74,7 +74,7 @@ Publications
 5. Z. Yang and L. Zhang, [“Coupled algorithm for investigating microplastics’ impact on fish using unstructured grids”](https://kns.cnki.net/kcms2/article/abstract?v=TD_mLQSGK6syh3SKPsBZt33dabd_TAri4Fw8jceiI6BzG9YB73avvs7brdZEucULMBMcrlfmGd1iTJT9e5trX2bV85WZO497PMJHKbaOqBHAwx7tyoBlztUE3K_hTCkW2Hyl2CUpuJ-lRtTKpJhCA3r0Iox9HnqsZALl4Sx4T0al8Drk_MOG_g==&uniplatform=NZKPT&language=CHS), Chinese Patent CN119558222A, 2025.
 
 
-Honors and Awards
+🥇 Honors and Awards
 ======
 
 **Science Pioneer** (<0.01%), Yangzhou University
@@ -89,6 +89,6 @@ Honors and Awards
 
 **Outstanding Student** (Top 1%), Department of Mathematics, Shanghai University
 
-For more info
+📮 For more info
 ------
 More info about me please contact me by email. I'm looking for a **MPhil or PhD position**.
