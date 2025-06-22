@@ -1,13 +1,18 @@
 ---
-title: "Paper Title Number 4"
+title: "MedSegKAN: A superior medical image segmentation method based on the improved KAN structure"
 collection: publications
 category: conferences
-permalink: /publication/2024-02-17-paper-title-number-4
-excerpt: 'This paper is about fixing template issue #693.'
-date: 2024-02-17
-venue: 'GitHub Journal of Bugs'
-paperurl: 'http://academicpages.github.io/files/paper3.pdf'
-citation: 'Your Name, You. (2024). &quot;Paper Title Number 3.&quot; <i>GitHub Journal of Bugs</i>. 1(3).'
+# permalink: /publication/2024-11-20-medsegkan
+excerpt: 'This paper proposes MedSegKAN, an enhanced deep learning architecture for medical image segmentation that achieves a Dice score of 92.89%.'
+date: 2024-11-20
+venue: 'Proceedings of the 16th International Conference on Graphics and Image Processing (ICGIP 2024)'
+paperurl: 'https://doi.org/10.1117/12.3057735'
+citation: 'Fang, Z., Yang, Z., Zhang, X., & Han, Q. (2024). MedSegKAN: A superior medical image segmentation method based on the improved KAN structure， In Proceedings of the 16th International Conference on Graphics and Image Processing (ICGIP.'
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+This project addresses the accuracy limitations of traditional KAN architectures in medical imaging.
+
+Key contributions include:
+* Employed Gaussian smoothing preprocessing, boundary loss functions and regularization strategies to reduce segmentation errors. 
+* Incorporated the **ECA Attention Module** to enhance feature focusing capabilities. 
+* Achieved a Dice score of **92.89%** in medical image segmentation tasks, highlighting the high efficiency of the method.
