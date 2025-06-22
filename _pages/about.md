@@ -22,6 +22,7 @@ You can find my CV here: [CV (last update: 2025.6)](../assets/Yang_Zhiwen_CV_Mat
 Recent News:
 ======
 
+<div class="recent-news">
 Aug 2025, will be joining [Guomics](https://guomics.com) at Westlake University as a **visiting student** to continue my research work offline.
 
 May 2025, National Undergraduate Training Program for Innovation, served as Project Leader, was successfully concluded and recognized as an **"Excellent Project"**.
@@ -37,7 +38,7 @@ Nov 2024, honored to be named a **Science Pioneer"** by Yangzhou University, onl
 Nov 2024, MedSegKAN is accepted by **ICGIP**.
 
 Sep 2024, began my term as **President** of the Mathematical Modeling Association at Yangzhou University.
-
+</div>
 
 Education
 ======
