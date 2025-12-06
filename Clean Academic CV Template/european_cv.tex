@@ -1,0 +1,125 @@
+\documentclass[helvetica,a4paper]{europecv}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{csquotes}
+\usepackage{xeCJK}
+\usepackage[margin=2cm]{geometry}
+% 【新增】引入 fontawesome5 包以支持小房子图标
+\usepackage{fontawesome5} 
+\usepackage{xcolor} % 如果已经用了就不要重复
+
+% 小“web”按钮
+\newcommand{\pubweb}[1]{%
+  \href{#1}{\textcolor{blue}{\footnotesize[Web]}}%
+}
+
+
+% Personal information
+\ecvname{Yang, Zhiwen}
+\ecvaddress{Shanghai, China}
+\ecvemail{zhiwenyang2004@gmail.com}
+
+% 【新增】个人主页设置
+% 这里使用了 \href 标准命令，并保留了你想要的图标下沉调整 (\raisebox)
+\ecvhomepage{\href{https://zwyang2004.github.io}{\raisebox{-0.1\height}{\faHome}\ zwyang2004.github.io}}
+
+% \ecvnationality{Chinese}
+
+% Optionally uncomment and fill in the following lines if needed
+% \ecvdateofbirth{2004-01-01}
+% \ecvgender{Male}
+
+\begin{document}
+\begin{europecv}
+
+% ----- Personal information -----
+\ecvpersonalinfo
+
+% ----- Work experience -----
+\ecvsection{Work experience}
+
+\ecvitem{Sep 2025--Present}{\textbf{Research Student}, HKUST(GZ), remote from Guangzhou; benchmarking machine learning models for robustness with strict data-splitting to avoid leakage (Supervisor: Prof.~Jun Xia).}
+
+\ecvitem{Apr 2025--Jul 2025}{\textbf{Research Intern}, Guomics, Westlake University, Hangzhou, China (PI: Prof.~Tiannan Guo); graph neural networks for protein--protein interaction prediction with model evaluation and GO-based validation.}
+
+\ecvitem{Apr 2025--Jul 2025}{\textbf{Remote Research Intern}, Laboratory for Proteome Complexity Science; developed PRISM, a deep learning framework for proteomics data imputation.}
+
+\ecvitem{Sep 2025--Nov 2025}{\textbf{High School Mathematics Teacher (Internship)}, Taicang Senior High School, Taicang, China; teaching mathematics and assisting with lesson planning and assessment.}
+
+% ----- Education and training -----
+\ecvsection{Education and training}
+
+\ecvitem{Sep 2022--Jun 2026}{\textbf{BSc in Mathematics and Applied Mathematics}, School of Mathematical Sciences (Tianyuan Class), Yangzhou University, China. Focus on applied mathematics, statistics and data analysis.}
+
+\ecvitem{Jun 2025--Aug 2025}{\textbf{SDG Global Summer School (non-degree)}, Data Visualisation, College of Computer Science and Technology, Zhejiang University, China (full scholarship).}
+
+% ----- Personal skills -----
+\ecvsection{Personal skills}
+
+\ecvitem{Languages}{\textbf{Chinese}: mother tongue.
+\textbf{English}: IELTS 6.5 (overall).}
+
+\ecvitem{Digital skills}{Python (PyTorch, TensorFlow, scikit-learn) for machine learning; MATLAB; R; Linux; \LaTeX; Git/GitHub.}
+
+% ----- Publications and patents -----
+\ecvsection{Publications and patents}
+
+
+
+\ecvitem{Under review}{Z. Li, \textbf{Z. Yang}, Y. Chen, T. Guo.
+  \enquote{PRISM: A Proteomics Robust Imputation framework for Structure-aware Modeling of missingness},
+  \textit{Nature Communications}, under review (preprint).~\pubweb{https://doi.org/10.21203/rs.3.rs-7480159/v1}}
+
+% 这里帮你保留了之前的专利更新逻辑，并修正了中文显示可能需要注意的地方
+\ecvitem{2025}{%
+  \textbf{Z. Yang（杨志文）}, L. Zhang（张来）. 
+  \enquote{A coupling algorithm based on unstructured grids to study the impact of microplastics on fish}. 
+  China National Invention Patent, CN 119558222, \textbf{Granted}.~\pubweb{https://patents.google.com/patent/CN119558222A/en?oq=CN+119558222}%
+}
+
+\ecvitem{2024}{\textbf{Z. Yang}, X. Guo, J. Huang.
+  \enquote{Modeling the relationship between maternal health and infant behavioral characteristics based on machine learning},
+  \textit{PLOS ONE}, 19(8):e0307332.~\pubweb{https://doi.org/10.1371/journal.pone.0307332}}
+
+\ecvitem{2024}{Z. Fang, \textbf{Z. Yang}, X. Zhang, Q. Han.
+  \enquote{MedSegKAN: A superior medical image segmentation method based on the improved KAN structure},
+  Accepted by \textit{ICGIP 2024}.~\pubweb{https://doi.org/10.1117/12.3057735}}
+
+
+
+% ----- Honours and awards -----
+\ecvsection{Honours and awards}
+
+\ecvitem{Jul 2025}{Red Bird Challenge Camp, The Hong Kong University of Science and Technology (Guangzhou).}
+
+\ecvitem{May 2024--May 2025}{\textit{Excellent Project}, National Undergraduate Training Program for Innovation (project lead).}
+
+\ecvitem{Nov 2024}{\textit{Science Pioneer} (top 0.01\%, outstanding research contributions), Yangzhou University.}
+
+\ecvitem{Jul 2024}{First Prize, 10th National College Students Statistical Modeling Competition.}
+
+\ecvitem{May 2024}{Honourable Mention, 2024 COMAP Mathematical Contest in Modeling (MCM).}
+
+\ecvitem{Sep 2023}{National Second Prize (top 1.5\%), Contemporary Undergraduate Mathematical Contest in Modeling.}
+
+% ----- Academic activities -----
+\ecvsection{Academic activities}
+
+\ecvitem{Sep 2024--Sep 2025}{President, Mathematical Modeling Association, Yangzhou University.
+Led workshops and competitions to promote mathematical modelling skills among more than 100 students.}
+
+% ----- Selected projects -----
+\ecvsection{Selected projects}
+
+\ecvitem{May 2025--Present}{\textbf{PRISM: Proteomics imputation with deep learning}. Deep learning framework with convolutional autoencoders and matrix factorisation for proteomics data imputation (Python/PyTorch).}
+
+\ecvitem{Jan 2023--Present}{\textbf{Advection--diffusion modelling of microplastics and fish populations}. Advection--diffusion modelling on unstructured grids coupled with logistic and Lotka--Volterra models to study ecological impact on predator--prey fish.}
+
+\ecvitem{Jul 2023--Aug 2024}{\textbf{Machine learning for infant behavioural data}. Hybrid Random Forest--MLP model (AUC 0.97) plus fuzzy C-means clustering and regression to analyse links between maternal anxiety and infant sleep and behaviour.}
+
+\end{europecv}
+\end{document}

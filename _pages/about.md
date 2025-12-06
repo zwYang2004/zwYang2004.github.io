@@ -8,14 +8,13 @@ redirect_from:
 ---
 
 
-I'm a third year undergraduate student from School of Mathematical Sciences, [Yangzhou University](http://english.yzu.edu.cn). My research interest includes **Mathematical Modeling, Computational Biology, Deep Learning** and **AI in Healthcare**. 
+I'm a final-year undergraduate student in Mathematics and Applied Mathematics (Tianyuan Class) at the School of Mathematical Sciences, [Yangzhou University](http://english.yzu.edu.cn), and a research student at the Hong Kong University of Science and Technology (Guangzhou). My research interests include **Mathematical Modeling, Machine Learning, Deep Learning, Computational Biology, Dynamical Systems** and **AI in Healthcare**.
 
 
+Previously, I was a **visiting student** at the [Laboratory for Proteome Complexity Science](https://guomics.com), [Westlake University](https://en.westlake.edu.cn), fortunate to be advised by Prof. [Tiannan Guo](https://en.westlake.edu.cn/faculty/tiannan-guo.html). During my undergraduate studies, I have also been advised by Prof. [Lai Zhang](https://teacher.yzu.edu.cn/ZL123456789101112131415161718192021/zh_CN/index.htm) on projects related to mathematical modeling and biomathematics at Yangzhou University.
 
-I am currently a **visiting student** at the [Laboratory for Proteome Complexity Science](https://guomics.com), [Westlake University](https://en.westlake.edu.cn), fortunate to be advised by Prof. [Tiannan Guo](https://en.westlake.edu.cn/faculty/tiannan-guo.html). During my undergraduate studies, I was advised by Prof. [Lai Zhang](https://teacher.yzu.edu.cn/ZL123456789101112131415161718192021/zh_CN/index.htm) on projects related to mathematical modeling and biomathematics at Yangzhou University.
 
-
-🌟 <span style="color: red;">Curerntly, I'm actively seeking a **MPhil or Ph.D. opportunities** for 2026 Fall. If you are interested in me, please contact me! My CV is available here: [CV (last update: 2025.6)](../assets/Yang_Zhiwen_CV_Mathematic_F2026.pdf).</span>
+🌟 <span style="color: red;">Curerntly, I'm actively seeking a **MPhil or Ph.D. opportunities** for 2026 Fall. If you are interested in me, please contact me! My CV is available here: [CV (last update: 2025.6)](../Clean Academic CV Template/main.pdf).</span>
 
 
 
@@ -26,6 +25,14 @@ I am currently a **visiting student** at the [Laboratory for Proteome Complexity
 
 🔥 Recent News:
 ======
+
+Dec 2025, China National Invention Patent **CN 119558222** was **granted**.
+
+Dec 2025, PRISM preprint [“PRISM: A Proteomics Robust Imputation framework for Structure-aware Modeling of missingness”](https://doi.org/10.21203/rs.3.rs-7480159/v1) is under review at *Nature Communications*.
+
+Sep 2025, started as a **Research Student** at the Hong Kong University of Science and Technology (Guangzhou), working on robust machine learning benchmarks (Supervisor: Prof. Jun Xia).
+
+Jul 2025, attended **Red Bird Challenge Camp** at the Hong Kong University of Science and Technology (Guangzhou).
 
 Aug 2025, will be joining [Guomics](https://guomics.com) at **Westlake University** as a **visiting student** to continue my research work offline. 🎉 
 
@@ -63,21 +70,25 @@ SDG Global Summer School, College of Computer Science and Technology
 📒 Publications
 ======
 
-1. Z. Li, Z. Yang, Y. Chen, [T. Guo](https://en.westlake.edu.cn/faculty/tiannan-guo.html), “AutoPIM: A Autoencoder for MNAR Imputation in Proteomics Data”, In preparation.
+1. Z. Li, Z. Yang, Y. Chen, [T. Guo](https://en.westlake.edu.cn/faculty/tiannan-guo.html), [“PRISM: A Proteomics Robust Imputation framework for Structure-aware Modeling of missingness”](https://doi.org/10.21203/rs.3.rs-7480159/v1), *Nature Communications*, under review (preprint).
 
 2. Z. Yang, [L. Zhang](https://teacher.yzu.edu.cn/ZL123456789101112131415161718192021/zh_CN/index.htm), “Microplastic Transport and Ecological Impacts in the Yangtze River Estuary: A Coupled Modeling Approach”, In preparation.
 
-3. Z. Yang, X. Guo, and [J. Huang](https://teacher.yzu.edu.cn/HJF/en/index/379379/list/index.htm), [“Modeling the relationship between maternal health and infant behavioral characteristics based on machine learning”](https://doi.org/10.1371/journal.pone.0307332), PLOS ONE, vol.19, no.8, e0307332, 2024. (JCR Q1, IF: 3.7)
+3. Z. Yang, X. Guo, and [J. Huang](https://teacher.yzu.edu.cn/HJF/en/index/379379/list/index.htm), [“Modeling the relationship between maternal health and infant behavioral characteristics based on machine learning”](https://doi.org/10.1371/journal.pone.0307332), *PLOS ONE*, 19(8):e0307332, 2024. (JCR Q1, IF: 3.7)
 
-4. Z. Fang, Z. Yang, X. Zhang, and Q. Han, [“MedSegKAN: A superior medical image segmentation method based on the improved KAN structure”](https://doi.org/10.1117/12.3057735), in Proceedings of the 16th International Conference on Graphics and Image Processing (ICGIP), 2024. (EI & Scopus Indexed)
+4. Z. Fang, Z. Yang, X. Zhang, and Q. Han, [“MedSegKAN: A superior medical image segmentation method based on the improved KAN structure”](https://doi.org/10.1117/12.3057735), in *Proceedings of the 16th International Conference on Graphics and Image Processing (ICGIP 2024)*. (EI & Scopus Indexed)
 
-5. Z. Yang and L. Zhang, [“Coupled algorithm for investigating microplastics’ impact on fish using unstructured grids”](https://kns.cnki.net/kcms2/article/abstract?v=TD_mLQSGK6syh3SKPsBZt33dabd_TAri4Fw8jceiI6BzG9YB73avvs7brdZEucULMBMcrlfmGd1iTJT9e5trX2bV85WZO497PMJHKbaOqBHAwx7tyoBlztUE3K_hTCkW2Hyl2CUpuJ-lRtTKpJhCA3r0Iox9HnqsZALl4Sx4T0al8Drk_MOG_g==&uniplatform=NZKPT&language=CHS), Chinese Patent CN119558222A, 2025.
+5. Z. Yang and L. Zhang, [“A coupling algorithm based on unstructured grids to study the impact of microplastics on fish”](https://kns.cnki.net/kcms2/article/abstract?v=TD_mLQSGK6syh3SKPsBZt33dabd_TAri4Fw8jceiI6BzG9YB73avvs7brdZEucULMBMcrlfmGd1iTJT9e5trX2bV85WZO497PMJHKbaOqBHAwx7tyoBlztUE3K_hTCkW2Hyl2CUpuJ-lRtTKpJhCA3r0Iox9HnqsZALl4Sx4T0al8Drk_MOG_g==&uniplatform=NZKPT&language=CHS), *China National Invention Patent*, CN 119558222, **Granted Dec. 5, 2025**.
 
 
 🥇 Honors and Awards
 ======
 
 **Science Pioneer** (<0.01%), Yangzhou University
+
+**Red Bird Challenge Camp**, The Hong Kong University of Science and Technology (Guangzhou), Jul 2025
+
+**Excellent Project**, National Undergraduate Training Program for Innovation (Project Lead), May 2024–May 2025
 
 **First Prize**, 10th National College Students Statistical Modeling Competition
 

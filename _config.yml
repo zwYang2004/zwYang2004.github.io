@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "Zhiwen Yang / Personal Homepage"
 title_separator          : "-"
 name                     : &name "Zhiwen Yang"
-description              : &description "The personal homepage of Zhiwen Yang, an undergraduate researcher at Yangzhou University and visiting student at Westlake University. My research focuses on computational biology, deep learning, and AI in healthcare. Actively seeking Ph.D. opportunities for Fall 2026." 
+description              : &description "The personal homepage of Zhiwen Yang, a final-year undergraduate in Mathematics and Applied Mathematics (Tianyuan Class) at Yangzhou University and a research student at the Hong Kong University of Science and Technology (Guangzhou). My research focuses on mathematical modeling, computational biology, machine learning, deep learning, and AI in healthcare. Actively seeking Ph.D. opportunities for Fall 2026." 
 url                      : https://zwyang2004.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "zwYang2004/zwYang2004.github.io"
@@ -22,7 +22,7 @@ repository               : "zwYang2004/zwYang2004.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "个人照片2.png"
   name             : "Zhiwen Yang"
   pronouns         : # example: "she/her"  
   bio              : "I have a wide range of research interests, including machine learning, deep learning and their application to computational biology, with a focus on developing tools to solve real world problems."

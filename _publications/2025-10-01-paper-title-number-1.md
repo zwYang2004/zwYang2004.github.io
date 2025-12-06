@@ -7,6 +7,7 @@ excerpt: 'This work introduces AutoPIM, an innovative imputation model developed
 # date: 2025-06
 # venue: '<i>Manuscript in preparation</i>'
 citation: 'Li, Z., Yang, Z., Chen, Y., & Guo, T. (2025). AutoPIM: A Autoencoder for MNAR Imputation in Proteomics Data; Manuscript in preparation'
+published: false
 ---
 
 This research, conducted under the supervision of Prof. Tiannan Guo at Westlake University, focuses on a significant challenge in computational biology.
