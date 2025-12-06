@@ -26,29 +26,31 @@ Previously, I was a **visiting student** at the [Laboratory for Proteome Complex
 🔥 Recent News:
 ======
 
-Dec 2025, China National Invention Patent **CN 119558222** was **granted**.
+<div class="recent-news-scroll" markdown="1">
 
-Dec 2025, PRISM preprint [“PRISM: A Proteomics Robust Imputation framework for Structure-aware Modeling of missingness”](https://doi.org/10.21203/rs.3.rs-7480159/v1) is under review at *Nature Communications*.
+- Dec 2025, China National Invention Patent **CN 119558222** was **granted**.
 
-Sep 2025, started as a **Research Student** at the Hong Kong University of Science and Technology (Guangzhou), working on robust machine learning benchmarks (Supervisor: Prof. Jun Xia).
+- Sep 2025, started as a **Research Student** at the Hong Kong University of Science and Technology (Guangzhou), working on robust machine learning benchmarks (Supervisor: Prof. Jun Xia).
 
-Jul 2025, attended **Red Bird Challenge Camp** at the Hong Kong University of Science and Technology (Guangzhou).
+- Jul 2025, attended **Red Bird Challenge Camp** at the Hong Kong University of Science and Technology (Guangzhou).
 
-Aug 2025, will be joining [Guomics](https://guomics.com) at **Westlake University** as a **visiting student** to continue my research work offline. 🎉 
+- Aug 2025, will be joining [Guomics](https://guomics.com) at **Westlake University** as a **visiting student** to continue my research work offline. 🎉 
 
-May 2025, National Undergraduate Training Program for Innovation, served as Project Leader, was successfully concluded and recognized as an **"Excellent Project"**.
+- May 2025, National Undergraduate Training Program for Innovation, served as Project Leader, was successfully concluded and recognized as an **"Excellent Project"**.
 
-May 2025, began as a remote **research intern** with Prof. Tiannan Guo's group at Westlake University, focusing on proteomics and AI.
+- May 2025, began as a remote **research intern** with Prof. Tiannan Guo's group at Westlake University, focusing on proteomics and AI.
 
-Apr 2025, receive a full scholarship to attend the SDG Global **Summer School** at the College of Computer Science and Technology, **Zhejiang University**. 🙌 
+- Apr 2025, receive a full scholarship to attend the SDG Global **Summer School** at the College of Computer Science and Technology, **Zhejiang University**. 🙌 
 
-Jan 2025, **Coupled algorithm** patent was officially published.
+- Jan 2025, **Coupled algorithm** patent was officially published.
 
-Nov 2024, honored to be named a **Science Pioneer"** by Yangzhou University, only 10 students.
+- Nov 2024, honored to be named a **Science Pioneer"** by Yangzhou University, only 10 students.
 
-Nov 2024, MedSegKAN is accepted by **ICGIP**.
+- Nov 2024, MedSegKAN is accepted by **ICGIP**.
 
-Sep 2024, began my term as **President** of the Mathematical Modeling Association at Yangzhou University.
+- Sep 2024, began my term as **President** of the Mathematical Modeling Association at Yangzhou University.
+
+</div>
 
 
 📖 Education
