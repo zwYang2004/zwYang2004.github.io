@@ -15,3 +15,21 @@ package-lock.json
 # Ignore the vendor file and bundle for alternative installation
 vendor/
 .bundle/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Local snapshot folders — restore points, not part of the published site
+_backup_*/
+
+# Local tooling / notes (contains private research & application notes)
+.workbuddy/
+
+# Local working copies — kept on disk but not part of the published static site
+paper/
+figures/
+logo/
+blog/
+paper-figure/
+images/个人照片2.jpg

@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html lang="en" class="light-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhiwen Yang | AI for Science & Data Science · Seeking PhD Fall 2028</title>
+    <meta name="description" content="Zhiwen Yang (杨志文) — Master student at PolyU. Research in mathematical modeling, machine learning, and biomedical data science. Seeking Ph.D. opportunities for Fall 2028.">
+    <meta name="keywords" content="Zhiwen Yang, 杨志文, AI for Science, Computational Biology, Gene Regulatory Networks, Proteomics, Westlake University, HKUST, PolyU">
+    <meta name="author" content="Zhiwen Yang">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zwyang2004.github.io/">
+    <meta property="og:title" content="Zhiwen Yang | AI for Science & Data Science · Seeking PhD Fall 2028">
+    <meta property="og:description" content="AI for Science & Data Science. Research interests center on mathematical modeling, machine learning, and biomedical data.">
+    <meta property="og:image" content="https://zwyang2004.github.io/assets/img/profile.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://zwyang2004.github.io/">
+    <meta property="twitter:title" content="Zhiwen Yang | AI for Science & Data Science · Seeking PhD Fall 2028">
+    <meta property="twitter:description" content="AI for Science & Data Science. Research interests center on mathematical modeling, machine learning, and biomedical data.">
+    <meta property="twitter:image" content="https://zwyang2004.github.io/assets/img/profile.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="assets/css/style.css?v=1.1.3">
+    <!-- CDNs: Three.js for 3D Background and GSAP for scroll animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body> <!-- Default to light mode (白天模式) -->
+
+    <!-- Fallback when JS is unavailable: tab routing dies, so unfold every section
+         into one continuous document rather than showing a blank page. -->
+    <noscript>
+        <style>
+            .page-tab:not(#tab-blog-post) { display: block !important; }
+            #hero-canvas { display: none !important; }
+            .animate-on-scroll { opacity: 1 !important; transform: none !important; }
+            .lang-zh { display: none !important; }
+            .noscript-banner {
+                background: #fff8e1;
+                border-bottom: 1px solid #e0c86a;
+                color: #5c4708;
+                padding: 0.7rem 1.5rem;
+                font-size: 0.9rem;
+                text-align: center;
+            }
+        </style>
+        <div class="noscript-banner">
+            JavaScript is disabled, so all sections are shown below as one continuous page.
+        </div>
+    </noscript>
+
+    <!-- 3D WebGL Background Canvas -->
+    <canvas id="hero-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header id="header">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home">ZY</a>
+            </div>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#research" class="nav-link">Research</a>
+                <a href="#publications" class="nav-link">Publications</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Toggle Menu" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Tabbed Content Area -->
+    <main id="main-content">
+
+        <!-- ========================================== -->
+        <!-- TAB 1: HOME (首页) -->
+        <!-- ========================================== -->
+        <div class="page-tab" id="tab-home">
+            <!-- Hero / Landing Banner -->
+            <section id="hero">
+                <div class="container hero-grid">
+                    <div class="hero-text-col">
+                        <h1 class="hero-name">Zhiwen Yang <span class="chinese-name">杨志文</span></h1>
+                        <p class="hero-tagline">AI for Science & Data Science</p>
+                        <p class="hero-seeking"><i class="fa-solid fa-graduation-cap"></i> Seeking Ph.D. opportunities · Fall 2028</p>
+                        <p class="hero-location"><i class="fa-solid fa-map-pin"></i> Hong Kong, China</p>
+                        <p class="hero-cv-slot"><a class="hero-cv-link" href="files/Zhiwen_Yang_CV.pdf" id="hero-cv-link" hidden>CV (PDF)</a></p>
+
+                        <div class="hero-links">
+                            <a href="mailto:zhiwen.yang@connect.polyu.hk" class="btn btn-pill"><i class="fa-solid fa-envelope"></i> Email</a>
+                            <a href="https://scholar.google.com/citations?hl=en&user=lIjJiH0AAAAJ" target="_blank" class="btn btn-pill"><i class="fa-brands fa-google-scholar"></i> Scholar</a>
+                            <a href="https://github.com/zwyang2004" target="_blank" class="btn btn-pill"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a href="https://www.linkedin.com/in/zhiwen-yang-946751332/" target="_blank" class="btn btn-pill"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                            <a href="https://orcid.org/0009-0009-1608-7554" target="_blank" class="btn btn-pill"><i class="fa-brands fa-orcid"></i> ORCID</a>
+                        </div>
+                    </div>
+                    <div class="hero-photo-col">
+                        <div class="hero-photo-wrapper">
+                            <img src="assets/img/profile.jpg" alt="Zhiwen Yang" class="hero-photo">
+                            <div class="luminous-ring"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section / Research Directions Overview -->
+            <section id="about" class="section-padding section-alt">
+                <div class="container">
+                    <div class="about-intro animate-on-scroll">
+                        <div class="bio-header-container">
+                            <h2 class="section-title">Biography</h2>
+                            <div class="bio-toggle">
+                                <button class="bio-btn active" data-lang="en">EN</button>
+                                <button class="bio-btn" data-lang="zh">中</button>
+                            </div>
+                        </div>
+
+                        <!-- English Biography -->
+                        <div class="bio-content bio-active" id="bio-en">
+                            <p class="bio-text">
+                                I am a Master student at <a href="https://www.polyu.edu.hk/" target="_blank" class="bio-inline-link">The Hong Kong Polytechnic University</a> (2026–2028). I am interested in how AI and mathematical modeling can help answer broad biological questions. My current work focuses on <strong>evaluation-first benchmarking of molecular prediction</strong>, <strong>mechanistic modeling of gene regulation and cellular perturbations</strong>, and <strong>mass spectrometry proteomics, from measurement to mechanism</strong>.
+                            </p>
+                            <p class="bio-text" style="margin-top: 1.2rem; margin-bottom: 1.5rem;">
+                                Previously, I obtained a B.Sc. in Mathematics and Applied Mathematics (2026) from Yangzhou University. I collaborate with Prof. <a href="https://scholar.google.com/citations?user=aPKKpSYAAAAJ" target="_blank" class="bio-inline-link">Jun Xia</a> (HKUST) and Chair Prof. <a href="https://scholar.google.com/citations?user=Y-nyLGIAAAAJ" target="_blank" class="bio-inline-link">Stan Z. Li</a> (IEEE Fellow, Westlake), and previously worked with Prof. <a href="https://en.westlake.edu.cn/faculty/tiannan-guo.html" target="_blank" class="bio-inline-link">Tiannan Guo</a> (Westlake). My research path began under Prof. <a href="https://scholar.google.com/citations?user=QkcU09oAAAAJ" target="_blank" class="bio-inline-link">Lai Zhang</a> at Yangzhou University. <strong>I am seeking Ph.D. opportunities starting Fall 2028.</strong>
+                            </p>
+                        </div>
+
+                        <!-- Chinese Biography -->
+                        <div class="bio-content" id="bio-zh" style="display: none;">
+                            <p class="bio-text">
+                                我目前是<a href="https://www.polyu.edu.hk/" target="_blank" class="bio-inline-link">香港理工大学</a>理学硕士研究生（2026–2028）。我关注 AI 与数学建模能如何帮助回答更广泛的生物学问题。当前工作集中在<b>评测优先的分子预测基准</b>、<b>基因调控与细胞扰动的机制建模</b>，以及<b>从测量到机制的质谱蛋白质组学</b>。
+                            </p>
+                            <p class="bio-text" style="margin-top: 1.2rem; margin-bottom: 1.5rem;">
+                                2026 年获<a href="https://english.yzu.edu.cn/" target="_blank" class="bio-inline-link">扬州大学</a>数学与应用数学理学学士。合作导师包括<a href="https://scholar.google.com/citations?user=aPKKpSYAAAAJ" target="_blank" class="bio-inline-link">夏俊</a>教授（港科大）与<a href="https://scholar.google.com/citations?user=Y-nyLGIAAAAJ" target="_blank" class="bio-inline-link">李子青</a>讲席教授（西湖，IEEE Fellow），曾在西湖大学<a href="https://en.westlake.edu.cn/faculty/tiannan-guo.html" target="_blank" class="bio-inline-link">郭天南</a>教授课题组工作；科研起点为扬州大学<a href="https://scholar.google.com/citations?user=QkcU09oAAAAJ" target="_blank" class="bio-inline-link">张来</a>教授课题组。<strong>我正在寻求 2028 年秋季入学的博士机会。</strong>
+                            </p>
+                        </div>
+                    <!-- Selected Publications (Home highlight) -->
+                    <div class="homepage-selected-pubs animate-on-scroll">
+                        <h2 class="section-title" style="margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <span class="lang-en"><i class="fa-solid fa-book" style="color: var(--accent-cyan); margin-right: 0.2rem;"></i> Selected Publications</span>
+                            <span class="lang-zh" style="display:none;"><i class="fa-solid fa-book" style="color: var(--accent-cyan); margin-right: 0.2rem;"></i> 代表性论文</span>
+                        </h2>
+                        <ul class="home-pub-list">
+                            <li class="home-pub-item">
+                                <div class="home-pub-thumb">
+                                    <img src="assets/img/fig-pepspec.png" alt="PepSpecBench" class="home-pub-thumb-img">
+                                </div>
+                                <div class="home-pub-body">
+                                <a class="home-pub-title" href="https://arxiv.org/abs/2605.01945" target="_blank" rel="noopener">PepSpecBench: A Unified Evaluation Benchmark for Peptide Tandem Mass Spectrometry Prediction</a>
+                                <p class="home-pub-authors"><span class="me-highlight">Zhiwen Yang</span><sup>†</sup>, Pan Liu<sup>†</sup>, Yifan Li, Yunhua Zhong, <a href="https://scholar.google.com/citations?user=aPKKpSYAAAAJ" target="_blank" rel="noopener">Jun Xia</a><sup>*</sup></p>
+                                <p class="home-pub-venue">NeurIPS 2026 Datasets &amp; Benchmarks Track</p>
+                                <div class="home-pub-links">
+                                    <a class="pub-res-link" href="https://arxiv.org/abs/2605.01945" target="_blank" rel="noopener">Paper</a>
+                                    <a class="pub-res-link" href="https://github.com/zwYang2004/PepSpecBench" target="_blank" rel="noopener">Code</a>
+                                    <a class="pub-res-link" href="https://huggingface.co/datasets/Chris-young-2004/PepSpecBench" target="_blank" rel="noopener">Dataset</a>
+                                </div>
+                                </div>
+                            </li>
+                            <li class="home-pub-item">
+                                <div class="home-pub-thumb">
+                                    <img src="assets/img/fig-vitagrn.png" alt="VitaGRN" class="home-pub-thumb-img">
+                                </div>
+                                <div class="home-pub-body">
+                                <a class="home-pub-title" href="https://www.biorxiv.org/content/10.64898/2026.06.05.729520v1.abstract" target="_blank" rel="noopener">Multimodal Physical Evidence Uncovers Interpretable Gene Regulatory Networks for Perturbation Prediction</a>
+                                <p class="home-pub-authors"><span class="me-highlight">Zhiwen Yang</span><sup>†</sup>, Sikai Huang<sup>†</sup>, Ge Bai<sup>†</sup>, et al., <a href="https://scholar.google.com/citations?user=Y-nyLGIAAAAJ" target="_blank" rel="noopener">Stan Z. Li</a><sup>*</sup></p>
+                                <p class="home-pub-venue">bioRxiv</p>
+                                <div class="home-pub-links">
+                                    <a class="pub-res-link" href="https://www.biorxiv.org/content/10.64898/2026.06.05.729520v1.abstract" target="_blank" rel="noopener">Paper</a>
+                                </div>
+                                </div>
+                            </li>
+                            <li class="home-pub-item">
+                                <div class="home-pub-thumb">
+                                    <img src="assets/img/fig-ambimod.png" alt="AmbiModBench" class="home-pub-thumb-img">
+                                </div>
+                                <div class="home-pub-body">
+                                <span class="home-pub-title">AmbiModBench: Benchmarking Gene Perturbation Prediction Beyond Shared Responses</span>
+                                <p class="home-pub-authors">Sikai Huang<sup>†</sup>, <span class="me-highlight">Zhiwen Yang</span><sup>†</sup> <span class="home-pub-role">(co-first)</span>, Kai Yu, Jiayuan Chen, <a href="https://scholar.google.com/citations?user=Y-nyLGIAAAAJ" target="_blank" rel="noopener">Stan Z. Li</a><sup>*</sup></p>
+                                <p class="home-pub-venue">arXiv</p>
+                                </div>
+                            </li>
+                            <li class="home-pub-item">
+                                <div class="home-pub-thumb">
+                                    <img src="assets/img/fig-microplastic.jpg" alt="Microplastic Transport" class="home-pub-thumb-img">
+                                </div>
+                                <div class="home-pub-body">
+                                <a class="home-pub-title" href="https://doi.org/10.1016/j.ecolmodel.2026.111686" target="_blank" rel="noopener">Microplastic Transport Reshapes Estuarine Population Dynamics in the Yangtze River Estuary</a>
+                                <p class="home-pub-authors"><span class="me-highlight">Zhiwen Yang</span>, Yuxin Chen<sup>*</sup>, Haoyi Yang, <a href="https://scholar.google.com/citations?user=QkcU09oAAAAJ" target="_blank" rel="noopener">Lai Zhang</a></p>
+                                <p class="home-pub-venue">Ecological Modelling</p>
+                                <div class="home-pub-links">
+                                    <a class="pub-res-link" href="https://doi.org/10.1016/j.ecolmodel.2026.111686" target="_blank" rel="noopener">Journal</a>
+                                </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="home-pubs-more"><a href="#publications">View all publications →</a></p>
+                    </div>
+
+<!-- Research Interests Pillar Grid (Mengji Zhang Style) -->
+                    <div class="homepage-news-section animate-on-scroll" style="border-top: 1px solid var(--border-color); padding-top: 3rem; margin-top: 4rem;">
+                        <h2 class="section-title" style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <span class="lang-en"><i class="fa-solid fa-seedling" style="color: var(--accent-cyan); margin-right: 0.2rem;"></i> Research Interests</span>
+                            <span class="lang-zh" style="display:none;"><i class="fa-solid fa-seedling" style="color: var(--accent-cyan); margin-right: 0.2rem;"></i> 研究兴趣</span>
+                        </h2>
+                        <p class="section-lead">
+                            <span class="lang-en">I work on <strong>evaluation-first machine learning for molecular and cellular biology</strong>: benchmarks that decide whether a score means anything, then models that survive them. Current directions:</span>
+                            <span class="lang-zh" style="display:none;">我从事面向分子与细胞生物学的<strong>「评测优先」机器学习</strong>：先定义能判断分数是否有意义的基准，再构建经得起这些基准检验的模型。当前方向：</span>
+                        </p>
+                        <div class="ri-list">
+                            <div class="ri-item">
+                                <h3 class="ri-heading">
+                                    <span class="ri-num">01</span>
+                                    <span class="ri-title">
+                                        <span class="lang-en">Evaluation-first benchmarking of molecular prediction</span>
+                                        <span class="lang-zh" style="display:none;">评测优先的分子预测基准</span>
+                                    </span>
+                                </h3>
+                                <p class="ri-desc">
+                                    <span class="lang-en">Benchmarks and evaluation protocols that test whether a score reflects real biology, not artefacts of the dataset, the metric, or the baselines.</span>
+                                    <span class="lang-zh" style="display:none;">构建基准与评测协议，检验分数反映的是真实生物学信号，而非数据集、指标或对比方法造成的假象。</span>
+                                </p>
+                            </div>
+                            <div class="ri-item">
+                                <h3 class="ri-heading">
+                                    <span class="ri-num">02</span>
+                                    <span class="ri-title">
+                                        <span class="lang-en">Gene regulatory networks from multimodal physical evidence</span>
+                                        <span class="lang-zh" style="display:none;">基于多模态物理证据的基因调控网络</span>
+                                    </span>
+                                </h3>
+                                <p class="ri-desc">
+                                    <span class="lang-en">Using biological priors &mdash; sequence, interaction, structure &mdash; to constrain AI models trained on large-scale omics data.</span>
+                                    <span class="lang-zh" style="display:none;">以生物先验（序列、互作、结构）约束在大规模组学数据上训练的 AI 模型。</span>
+                                </p>
+                            </div>
+                            <div class="ri-item">
+                                <h3 class="ri-heading">
+                                    <span class="ri-num">03</span>
+                                    <span class="ri-title">
+                                        <span class="lang-en">Cross-omics modeling along the Central Dogma</span>
+                                        <span class="lang-zh" style="display:none;">沿中心法则的跨组学建模</span>
+                                    </span>
+                                </h3>
+                                <p class="ri-desc">
+                                    <span class="lang-en">How RNA-level information becomes protein-level control, learned from multi-omics time courses.</span>
+                                    <span class="lang-zh" style="display:none;">RNA 层面的信息如何转化为蛋白层面的调控：从多组学时间序列中学习。</span>
+                                </p>
+                                <p class="ri-desc">
+                                    <span class="lang-en">De novo discovery of post-translational modifications, read directly from mass spectra.</span>
+                                    <span class="lang-zh" style="display:none;">从质谱谱图中直接发现新的翻译后修饰（de novo PTM discovery）。</span>
+                                </p>
+                            </div>
+                            <div class="ri-item">
+                                <h3 class="ri-heading">
+                                    <span class="ri-num">04</span>
+                                    <span class="ri-title">
+                                        <span class="lang-en">Structure-aware recovery of proteomics measurements</span>
+                                        <span class="lang-zh" style="display:none;">结构感知的蛋白质组测量恢复</span>
+                                    </span>
+                                </h3>
+                                <p class="ri-desc">
+                                    <span class="lang-en">Low-rank and matrix-completion methods that fill gaps in molecular measurements without flattening the biology underneath.</span>
+                                    <span class="lang-zh" style="display:none;">用低秩与矩阵补全方法填补分子测量中的缺失，而不抹平其下的生物学结构。</span>
+                                </p>
+                            </div>
+                        </div></div>
+                    </div>
+
+<!-- News section styled like Mengji Zhang's page -->
+                    <div class="homepage-news-section animate-on-scroll">
+                        <h2 class="section-title" style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <span class="lang-en"><i class="fa-solid fa-bullhorn" style="color: var(--accent-cyan); margin-right: 0.2rem;"></i> News</span>
+                            <span class="lang-zh" style="display:none;"><i class="fa-solid fa-bullhorn" style="color: var(--accent-cyan); margin-right: 0.2rem;"></i> 最新动态</span>
+                        </h2>
+                        <div class="news-list">
+                            <!-- News 0: NeurIPS acceptance -->
+                            <div class="news-item">
+                                <span class="news-date">[2026/09]</span>
+                                <span class="news-text">
+                                     <span class="lang-en">
+                                         📄 A <strong>first-author</strong> paper, <a href="https://arxiv.org/abs/2605.01945" target="_blank" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;">PepSpecBench</a>, is accepted by <strong>NeurIPS 2026 Datasets &amp; Benchmarks Track</strong> as a poster (971 of 3,757 valid submissions, 25.8%).
+                                     </span>
+                                     <span class="lang-zh" style="display:none;">
+                                         📄 以<strong>第一作者</strong>完成的论文 <a href="https://arxiv.org/abs/2605.01945" target="_blank" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;">PepSpecBench</a> 被 <strong>NeurIPS 2026 Datasets &amp; Benchmarks Track</strong> 接收为 Poster（3,757 篇有效投稿录取 971 篇，25.8%）。
+                                     </span>
+                                </span>
+                            </div>
+                            <!-- News 1 -->
+                            <div class="news-item">
+                                <span class="news-date">[2026/08]</span>
+                                <span class="news-text">
+                                     <span class="lang-en">
+                                         🎓 Started M.Sc. in Medical Data Science at The Hong Kong Polytechnic University, working with Dr. Junyi (Jerry) Chen.
+                                     </span>
+                                     <span class="lang-zh" style="display:none;">
+                                         🎓 开始在香港理工大学攻读医疗数据科学理学硕士，师从陈俊逸（Jerry Chen）博士。
+                                     </span>
+                                </span>
+                            </div>
+                            <!-- News 2 -->
+                            <div class="news-item">
+                                <span class="news-date">[2026/04]</span>
+                                <span class="news-text">
+                                     <span class="lang-en">
+                                         📜 A China National Invention Patent led by Zhiwen Yang has been officially authorized by CNIPA (CN 119558222 B), establishing <a href="https://patents.google.com/patent/CN119558222B/en" target="_blank" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;">a coupled advection-diffusion algorithm based on unstructured grids</a> for studying environmental impacts on marine fish ecology.
+                                     </span>
+                                     <span class="lang-zh" style="display:none;">
+                                         📜 由杨志文作为第一发明人的一项国家发明专利已正式获得 CNIPA 授权（CN 119558222 B），构建了<a href="https://patents.google.com/patent/CN119558222B/en" target="_blank" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;">一种基于非结构网格研究微塑料对鱼类影响的耦合动力学算法</a>，实现复杂海域污染输运与生态系统的数值模拟。
+                                     </span>
+                                </span>
+                            </div>
+                            <!-- News 3: Westlake (Stan Z. Li) -->
+                            <div class="news-item">
+                                <span class="news-date">[2026/01]</span>
+                                <span class="news-text">
+                                     <span class="lang-en">
+                                         🔬 Started as Research Assistant at Westlake University, working with Prof. Stan Z. Li, in collaboration with BioMap (百图生科).
+                                     </span>
+                                     <span class="lang-zh" style="display:none;">
+                                         🔬 开始在西湖大学担任科研助理，师从李子青教授，并与百图生科（BioMap）开展合作。
+                                     </span>
+                                </span>
+                            </div>
+                            <!-- News 4: HKUST (Jun Xia) -->
+                            <div class="news-item">
+                                <span class="news-date">[2025/11]</span>
+                                <span class="news-text">
+                                     <span class="lang-en">
+                                         🔬 Started as Research Assistant at The Hong Kong University of Science and Technology (Guangzhou), working with Prof. Jun Xia.
+                                     </span>
+                                     <span class="lang-zh" style="display:none;">
+                                         🔬 开始在香港科技大学（广州）担任科研助理，师从夏俊教授。
+                                     </span>
+                                </span>
+                            </div>
+                            <!-- News 5: Westlake (Tiannan Guo) -->
+                            <div class="news-item">
+                                <span class="news-date">[2025/04]</span>
+                                <span class="news-text">
+                                     <span class="lang-en">
+                                         🔬 Started as Research Assistant at Westlake University, working with Prof. Tiannan Guo.
+                                     </span>
+                                     <span class="lang-zh" style="display:none;">
+                                         🔬 开始在西湖大学担任科研助理，师从郭天南教授。
+                                     </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+
+        </div>
+
+        <!-- ========================================== -->
+        <!-- TAB 2: RESEARCH (研究方向与设计) -->
+        <!-- ========================================== -->
+        <div class="page-tab" id="tab-research" style="display: none;">
+            <section class="section-padding">
+                <div class="container">
+                    <div class="bio-header-container animate-on-scroll">
+                        <h2 class="section-title">Research Directions & Designs</h2>
+                        <div class="bio-toggle">
+                            <button class="bio-btn active" data-lang="en">EN</button>
+                            <button class="bio-btn" data-lang="zh">中</button>
+                        </div>
+                    </div>
+                    
+                    <!-- English Version of Articles -->
+                    <div class="lang-en research-articles-container animate-on-scroll">
+                        <!-- Project 1: VitaGRN -->
+                        <article class="research-article">
+                            <h3 class="research-article-header">Biophysically Constrained Directed Gene Networks for Perturbation Prediction</h3>
+                            <div class="research-article-body">
+                                <div class="research-article-text">
+                                    <p>
+                                        Traditional co-expression and statistical methods for Gene Regulatory Network (GRN) reconstruction often confuse simple co-activation with true biological regulation. This leads to models failing to generalize under zero-shot cellular perturbations (e.g., predicting the cell state after a novel gene knockout).
+                                    </p>
+                                    <p>
+                                        To address this, we developed <strong>VitaGRN</strong>, a deep learning framework that integrates multi-source physical evidence—including genomic sequences, chromatin states, protein-protein interactions (PPI), and 3D protein structures—into a biophysically constrained directed graph. By utilizing protein structural embeddings to guide neural perturbation predictions, VitaGRN transcends simple statistical correlations and achieves superior generalization.
+                                    </p>
+                                    <p>
+                                        Extensive evaluations demonstrate that VitaGRN outperforms 22 state-of-the-art network inference methods, establishing a zero-shot perturbation atlas across unseen cell lines.
+                                    </p>
+                                    <div class="research-article-links">
+                                        <a href="https://www.biorxiv.org/content/10.64898/2026.06.05.729520v1.abstract" target="_blank" class="btn btn-sm btn-outline"><i class="fa-solid fa-link"></i> read bioRxiv</a>
+                                    </div>
+                                </div>
+                                <div class="research-article-visual">
+                                    <img src="assets/img/fig-vitagrn.png" alt="VitaGRN Model Architecture" class="research-article-img">
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Project 2: PepSpecBench -->
+                        <article class="research-article">
+                            <h3 class="research-article-header">Standardizing Proteomics MS/MS Spectrum Prediction & Benchmarking</h3>
+                            <div class="research-article-body reverse">
+                                <div class="research-article-text">
+                                    <p>
+                                        Mass spectrometry (MS/MS) peptide spectrum prediction is a cornerstone of modern proteomics. However, existing machine learning models are often evaluated on disparate pipelines with severe sequence leakage, preventing fair comparisons and masking critical robustness gaps under distribution shifts.
+                                    </p>
+                                    <p>
+                                        We introduced <strong>PepSpecBench</strong>, a unified benchmarking platform that standardizes the evaluation of peptide MS/MS spectra predictors. By unifying six distinct model architectures in a high-dimensional representation space and enforcing sequence-disjoint train-test splits, PepSpecBench exposes key robustness vulnerabilities under physical perturbations (e.g., cross-species transitions and collision-energy shifts).
+                                    </p>
+                                    <p>
+                                        It provides the community with a standardized pipeline to drive the development of robust, generalizable biological machine learning models in proteomics.
+                                    </p>
+                                    <div class="research-article-links">
+                                        <a href="https://arxiv.org/abs/2605.01945" target="_blank" class="btn btn-sm btn-outline"><i class="fa-solid fa-link"></i> read arXiv</a>
+                                        <a href="https://github.com/zwYang2004/PepSpecBench" target="_blank" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> code</a>
+                                        <a href="https://huggingface.co/datasets/Chris-young-2004/PepSpecBench" target="_blank" class="btn btn-sm btn-outline"><i class="fa-solid fa-database"></i> dataset</a>
+                                    </div>
+                                </div>
+                                <div class="research-article-visual">
+                                    <img src="assets/img/fig-pepspec.png" alt="PepSpecBench Benchmark Overview" class="research-article-img">
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Project 3: Microplastics -->
+                        <article class="research-article">
+                            <h3 class="research-article-header">Simulating Estuarine Dynamics and Microplastic Ecological Transport</h3>
+                            <div class="research-article-body">
+                                <div class="research-article-text">
+                                    <p>
+                                        Microplastics pose a growing threat to aquatic ecosystems. Traditional studies typically model toxicological impacts or hydrodynamic transport in isolation, failing to capture the physical-biological coupling in complex estuarine environments.
+                                    </p>
+                                    <p>
+                                        To bridge this gap, we developed a coupled hydrodynamic-ecological simulation framework on unstructured grids. The model integrates physical Lagrangian particle tracking and Eulerian diffusion with a biological trait-based ODE system.
+                                    </p>
+                                    <p>
+                                        Applied to the Yangtze River Estuary, it successfully mapped microplastic risk hotspots and demonstrated that wide, medium-exposure zones contribute to 66.6% of fish population declines. This work was awarded a China National Invention Patent (CN 119558222 B) for its coupled transport mesh algorithm.
+                                    </p>
+                                    <div class="research-article-links">
+                                        <a href="https://doi.org/10.1016/j.ecolmodel.2026.111686" target="_blank" class="btn btn-sm btn-outline"><i class="fa-solid fa-link"></i> read journal</a>
+                                    </div>
+                                </div>
+                                <div class="research-article-visual">
+                                    <img src="assets/img/fig-microplastic.jpg" alt="Estuarine Microplastics Modeling" class="research-article-img">
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- English References -->
+                        <div class="academic-references">
+                            <h3 class="references-title"><i class="fa-solid fa-graduation-cap"></i> References</h3>
+                            <div class="references-list">
+                                <div class="reference-item">
+                                    <span class="reference-number">[1]</span>
+                                    <span class="me-highlight">Zhiwen Yang</span><sup>†</sup>, Sikai Huang<sup>†</sup>, Ge Bai<sup>†</sup>, Jintong Dong, Jue Wang, Yucheng Guo, <a href="https://scholar.google.com/citations?user=Y-nyLGIAAAAJ" target="_blank" rel="noopener">Stan Z. Li</a><sup>*</sup>. Multimodal Physical Evidence Uncovers Interpretable Gene Regulatory Networks for Perturbation Prediction. <em>bioRxiv</em>, 2026.06.05.729520. (Preprint)
+                                    <div class="reference-links" style="display: flex; align-items: center; gap: 1rem; margin-top: 0.4rem; flex-wrap: wrap;">
+                                        <a href="https://www.biorxiv.org/content/10.64898/2026.06.05.729520v1.abstract" target="_blank" class="reference-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> bioRxiv Page</a>
+                                        <div class="ref-badge-group">
+                                            <span class="pub-pill pub-pill-first">First Author</span>
+                                            <span class="pub-pill pub-pill-review">Preprint</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reference-item">
+                                    <span class="reference-number">[2]</span>
+                                    Sikai Huang<sup>†</sup>, <span class="me-highlight">Zhiwen Yang</span><sup>†*</sup>, Kai Yu, Jiayuan Chen, <a href="https://scholar.google.com/citations?user=Y-nyLGIAAAAJ" target="_blank" rel="noopener">Stan Z. Li</a><sup>*</sup>. AmbiModBench: Benchmarking Gene Perturbation Prediction Beyond Shared Responses. <em>arXiv preprint</em>, 2026. (Under review)
+                                    <div class="reference-links" style="display: flex; align-items: center; gap: 1rem; margin-top: 0.4rem; flex-wrap: wrap;">
+                                        <div class="ref-badge-group">
+                                            <span class="pub-pill pub-pill-cofirst">Co-First &amp; Co-Corresponding</span>
+                                            <span class="pub-pill pub-pill-submitted">Under Review</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reference-item">
+                                    <span class="reference-number">[3]</span>
+                                    <span class="me-highlight">Zhiwen Yang</span><sup>†</sup>, Pan Liu<sup>†</sup>, Yifan Li, Yunhua Zhong, <a href="https://scholar.google.com/citations?user=aPKKpSYAAAAJ" target="_blank" rel="noopener">Jun Xia</a><sup>*</sup>. PepSpecBench: A Unified Evaluation Benchmark for Peptide Tandem Mass Spectrometry Prediction. <em>arXiv:2605.01945</em>. (Accepted at <em>NeurIPS 2026 Datasets &amp; Benchmarks Track</em>, poster)
+                                    <div class="reference-links" style="display: flex; align-items: center; gap: 1rem; margin-top: 0.4rem; flex-wrap: wrap;">
+                                        <a href="https://arxiv.org/abs/2605.01945" target="_blank" class="reference-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> arXiv Page</a>
+                                        <div class="ref-badge-group">
+                                            <span class="pub-pill pub-pill-first">First Author</span>
+                                            <span class="pub-pill pub-pill-accepted">NeurIPS 2026 (Accepted)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reference-item">
+                                    <span class="reference-number">[4]</span>
+                                    Yunhua Zhong, Yixuan Tang, Yifan Li, Pan Liu, <span class="me-highlight">Zhiwen Yang</span>, Zanyi Wang, Jie Yang, <a href="https://scholar.google.com/citations?user=aPKKpSYAAAAJ" target="_blank" rel="noopener">Jun Xia</a><sup>*</sup>. FlexMS: A Unified Public Benchmark for Molecule Tandem Mass Spectrum Prediction. <em>arXiv:2602.22822</em>, 2026. (Preprint; under review)
+                                    <div class="reference-links" style="display: flex; align-items: center; gap: 1rem; margin-top: 0.4rem; flex-wrap: wrap;">
+                                        <a href="https://arxiv.org/abs/2602.22822" target="_blank" class="reference-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> arXiv Page</a>
+                                        <div class="ref-badge-group">
+                                            <span class="pub-pill pub-pill-coauthor">Co-Author</span>
+                                            <span class="pub-pill pub-pill-submitted">Preprint · Under Review</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reference-item">
+                                    <span class="reference-number">[5]</span>
+                                    <span class="me-highlight">Zhiwen Yang</span>, Yuxin Chen<sup>*</sup>, Haoyi Yang, <a href="https://scholar.google.com/citations?user=QkcU09oAAAAJ" target="_blank" rel="noopener">Lai Zhang</a>. Microplastic Transport Reshapes Estuarine Population Dynamics in the Yangtze River Estuary: A Coupled Physical-Biological Modeling Study. <em>Ecological Modelling</em>, 520: 111686, 2026.
+                                    <div class="reference-links" style="display: flex; align-items: center; gap: 1rem; margin-top: 0.4rem; flex-wrap: wrap;">
+                                        <a href="https://doi.org/10.1016/j.ecolmodel.2026.111686" target="_blank" class="reference-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Journal Page</a>
+                                        <div class="ref-badge-group">
+                                            <span class="pub-pill pub-pill-first">First Author</span>
+                                            <span class="pub-pill pub-pill-published">Ecological Modelling</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chinese Version of Articles -->
+                    <div class="lang-zh research-articles-container" style="display: none;">
+                        <!-- Project 1: VitaGRN -->
+                        <article class="research-article">
+                            <h3 class="research-article-header">物理与生物机理双重约束的基因调控网络及扰动预测</h3>
+                            <div class="research-article-body">
+                                <div class="research-article-text">
+                                    <p>
+                                        传统的基因调控网络（GRN）重构方法常混淆共激活（同源基因级联）与真实的生物物理调控，导致模型在零样本细胞扰动任务（如预测新基因敲除后的细胞状态）中缺乏泛化能力。
+                                    </p>
+                                    <p>
+                                        为此，我们开发了 <strong>VitaGRN</strong> 深度学习框架。该框架将基因组序列、染色质状态、蛋白质相互作用（PPI）及三维蛋白质结构等多源物理证据有机融入双重约束的有向图中。通过利用蛋白质结构嵌入来指导细胞扰动预测，VitaGRN 摆脱了简单的统计相关性，实现了更强的机理可解释性。
+                                    </p>
+                                    <p>
+                                        在有向网络推理与扰动基准测试中，VitaGRN 击败了 22 种主流算法，并在未见过的细胞系上构建了零样本扰动图谱。
+                                    </p>
+                                    <div class="research-article-links">
+                                        <a href="https://www.biorxiv.org/content/10.64898/2026.06.05.729520v1.abstract" target="_blank" class="btn btn-sm btn-outline"><i class="fa-solid fa-link"></i> 阅读 bioRxiv</a>
+                                    </div>
+                                </div>
+                                <div class="research-article-visual">
+                                    <img src="assets/img/fig-vitagrn.png" alt="VitaGRN 模型架构" class="research-article-img">
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Project 2: PepSpecBench -->
+                        <article class="research-article">
+                            <h3 class="research-article-header">PepSpecBench：肽链质谱图谱预测与模型评估标准化基准</h3>
+                            <div class="research-article-body reverse">
+                                <div class="research-article-text">
+                                    <p>
+                                        质谱图谱（MS/MS）肽链预测是现代蛋白质组学的重要基石。然而，现有的机器学习模型大多在碎片化的测试流程上进行评估，且存在严重的序列泄漏问题，无法进行公平的模型比对，也掩盖了分布偏移下的鲁棒性隐患。
+                                    </p>
+                                    <p>
+                                        我们推出了 <strong>PepSpecBench</strong> 统一评测基准平台，以规范肽链质谱预测模型的评估。该平台在统一的高维空间中重构了 6 种主流模型，实施了序列不交集的划分（Sequence-disjoint splits），并引入了跨物种和碰撞能量偏移等物理扰动测试。
+                                    </p>
+                                    <p>
+                                        它为蛋白质组学机器学习模型的科学进步提供了标准基准，揭示了现有模型在物理扰动下的鲁棒性缺陷。
+                                    </p>
+                                    <div class="research-article-links">
+                                        <a href="https://arxiv.org/abs/2605.01945" target="_blank" class="btn btn-sm btn-outline"><i class="fa-solid fa-link"></i> 阅读 arXiv</a>
+                                        <a href="https://github.com/zwYang2004/PepSpecBench" target="_blank" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> 代码</a>
+                                        <a href="https://huggingface.co/datasets/Chris-young-2004/PepSpecBench" target="_blank" class="btn btn-sm btn-outline"><i class="fa-solid fa-database"></i> 数据集</a>
+                                    </div>
+                                </div>
+                                <div class="research-article-visual">
+                                    <img src="assets/img/fig-pepspec.png" alt="PepSpecBench 基准总览" class="research-article-img">
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Project 3: Microplastics -->
+                        <article class="research-article">
+                            <h3 class="research-article-header">非结构网格下河口动力学仿真与微塑料生态传输模拟</h3>
+                            <div class="research-article-body">
+                                <div class="research-article-text">
+                                    <p>
+                                        微塑料对水生生态系统构成了日益严重的威胁。传统研究通常孤立地模拟毒理学影响或水动力输运，未能捕捉到复杂河口环境中物理与生物的耦合动力学反馈。
+                                    </p>
+                                    <p>
+                                        为了填补这一空白，我们开发了非结构网格下的水动力-生态耦合仿真框架。该模型将拉格朗日粒子追踪（物理输运）和欧拉扩散与基于特性的生物响应微分方程相结合。
+                                    </p>
+                                    <p>
+                                        在长江口的应用表明，该模型成功绘制了微塑料污染的风险热点，并证明中等暴露强度的宽阔水域导致了 66.6% 的鱼类种群衰退。该工作凭借其耦合非结构网格传输算法，荣获了中国国家发明专利授权（CN 119558222 B）。
+                                    </p>
+                                    <div class="research-article-links">
+                                        <a href="https://doi.org/10.1016/j.ecolmodel.2026.111686" target="_blank" class="btn btn-sm btn-outline"><i class="fa-solid fa-link"></i> 阅读期刊文献</a>
+                                    </div>
+                                </div>
+                                <div class="research-article-visual">
+                                    <img src="assets/img/fig-microplastic.jpg" alt="长江口微塑料耦合模拟" class="research-article-img">
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Chinese References -->
+                        <div class="academic-references">
+                            <h3 class="references-title"><i class="fa-solid fa-graduation-cap"></i> 参考文献</h3>
+                            <div class="references-list">
+                                <div class="reference-item">
+                                    <span class="reference-number">[1]</span>
+                                    <span class="me-highlight">Zhiwen Yang</span><sup>†</sup>, Sikai Huang<sup>†</sup>, Ge Bai<sup>†</sup>, Jintong Dong, Jue Wang, Yucheng Guo, <a href="https://scholar.google.com/citations?user=Y-nyLGIAAAAJ" target="_blank" rel="noopener">Stan Z. Li</a><sup>*</sup>. Multimodal Physical Evidence Uncovers Interpretable Gene Regulatory Networks for Perturbation Prediction. <em>bioRxiv</em>, 2026.06.05.729520. （预印本）
+                                    <div class="reference-links" style="display: flex; align-items: center; gap: 1rem; margin-top: 0.4rem; flex-wrap: wrap;">
+                                        <a href="https://www.biorxiv.org/content/10.64898/2026.06.05.729520v1.abstract" target="_blank" class="reference-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> bioRxiv 页面</a>
+                                        <div class="ref-badge-group">
+                                            <span class="pub-pill pub-pill-first">第一作者</span>
+                                            <span class="pub-pill pub-pill-review">预印本</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reference-item">
+                                    <span class="reference-number">[2]</span>
+                                    Sikai Huang<sup>†</sup>, <span class="me-highlight">Zhiwen Yang</span><sup>†*</sup>, Kai Yu, Jiayuan Chen, <a href="https://scholar.google.com/citations?user=Y-nyLGIAAAAJ" target="_blank" rel="noopener">Stan Z. Li</a><sup>*</sup>. AmbiModBench: Benchmarking Gene Perturbation Prediction Beyond Shared Responses. <em>arXiv 预印本</em>, 2026.（在投）
+                                    <div class="reference-links" style="display: flex; align-items: center; gap: 1rem; margin-top: 0.4rem; flex-wrap: wrap;">
+                                        <div class="ref-badge-group">
+                                            <span class="pub-pill pub-pill-cofirst">共同一作 / 共同通讯</span>
+                                            <span class="pub-pill pub-pill-submitted">在投</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reference-item">
+                                    <span class="reference-number">[3]</span>
+                                    <span class="me-highlight">Zhiwen Yang</span><sup>†</sup>, Pan Liu<sup>†</sup>, Yifan Li, Yunhua Zhong, <a href="https://scholar.google.com/citations?user=aPKKpSYAAAAJ" target="_blank" rel="noopener">Jun Xia</a><sup>*</sup>. PepSpecBench: A Unified Evaluation Benchmark for Peptide Tandem Mass Spectrometry Prediction. <em>arXiv:2605.01945</em>. （已被 <em>NeurIPS 2026 Datasets &amp; Benchmarks Track</em> 接收，Poster）
+                                    <div class="reference-links" style="display: flex; align-items: center; gap: 1rem; margin-top: 0.4rem; flex-wrap: wrap;">
+                                        <a href="https://arxiv.org/abs/2605.01945" target="_blank" class="reference-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> arXiv 页面</a>
+                                        <div class="ref-badge-group">
+                                            <span class="pub-pill pub-pill-first">第一作者</span>
+                                            <span class="pub-pill pub-pill-accepted">NeurIPS 2026（已接收）</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reference-item">
+                                    <span class="reference-number">[4]</span>
+                                    Yunhua Zhong, Yixuan Tang, Yifan Li, Pan Liu, <span class="me-highlight">Zhiwen Yang</span>, Zanyi Wang, Jie Yang, <a href="https://scholar.google.com/citations?user=aPKKpSYAAAAJ" target="_blank" rel="noopener">Jun Xia</a><sup>*</sup>. FlexMS: A Unified Public Benchmark for Molecule Tandem Mass Spectrum Prediction. <em>arXiv:2602.22822</em>, 2026.（预印本；在投）
+                                    <div class="reference-links" style="display: flex; align-items: center; gap: 1rem; margin-top: 0.4rem; flex-wrap: wrap;">
+                                        <a href="https://arxiv.org/abs/2602.22822" target="_blank" class="reference-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> arXiv 页面</a>
+                                        <div class="ref-badge-group">
+                                            <span class="pub-pill pub-pill-coauthor">合作作者</span>
+                                            <span class="pub-pill pub-pill-submitted">预印本 · 在投</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reference-item">
+                                    <span class="reference-number">[5]</span>
+                                    <span class="me-highlight">Zhiwen Yang</span>, Yuxin Chen<sup>*</sup>, Haoyi Yang, <a href="https://scholar.google.com/citations?user=QkcU09oAAAAJ" target="_blank" rel="noopener">Lai Zhang</a>. Microplastic Transport Reshapes Estuarine Population Dynamics in the Yangtze River Estuary: A Coupled Physical-Biological Modeling Study. <em>Ecological Modelling</em>, 520: 111686, 2026.
+                                    <div class="reference-links" style="display: flex; align-items: center; gap: 1rem; margin-top: 0.4rem; flex-wrap: wrap;">
+                                        <a href="https://doi.org/10.1016/j.ecolmodel.2026.111686" target="_blank" class="reference-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> 期刊页面</a>
+                                        <div class="ref-badge-group">
+                                            <span class="pub-pill pub-pill-first">第一作者</span>
+                                            <span class="pub-pill pub-pill-published">Ecological Modelling</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+<!-- ========================================== -->
+        <!-- TAB 3: PUBLICATIONS (发表论文) -->
+        <!-- ========================================== -->
+        <div class="page-tab" id="tab-publications" style="display: none;">
+            <section class="section-padding">
+                <div class="container">
+                    <h2 class="section-title text-center animate-on-scroll">Selected Publications</h2>
+                    
+                    <div class="text-center animate-on-scroll" style="margin-top: -1rem; margin-bottom: 3rem;">
+                        <a href="https://scholar.google.com/citations?hl=en&user=lIjJiH0AAAAJ" target="_blank" class="btn btn-pill" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; padding: 0.65rem 1.25rem; font-size: 0.9rem; font-weight: 600; border: 1px solid var(--accent-cyan); color: var(--accent-cyan); background: transparent; transition: all 0.2s;" onmouseover="this.style.background='rgba(45, 90, 123, 0.1)';" onmouseout="this.style.background='transparent';">
+                            <i class="fa-brands fa-google-scholar"></i> Full list on Google Scholar
+                        </a>
+                    </div>
+
+                    <p class="pub-legend text-center" style="text-align: center;">
+                        <span class="lang-en"><sup>†</sup> equal contribution · <sup>*</sup> corresponding author</span>
+                        <span class="lang-zh" style="display:none;"><sup>†</sup> 共同贡献 · <sup>*</sup> 通讯作者</span>
+                    </p>
+
+                    <div class="publications-list animate-on-scroll">
+                        
+                        <div class="pub-year-section">
+                            <h3 class="pub-year-header" style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 700; margin-bottom: 2rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; color: var(--accent-cyan);">Conference &amp; Journal Papers</h3>
+                            
+                            <!-- Pub 3: PepSpecBench -->
+                            <div class="pub-row">
+                                <div class="pub-row-thumb">
+                                    <img src="assets/img/fig-pepspec.png" alt="PepSpecBench Model Display" class="pub-thumb-img">
+                                    <div class="image-overlay-zoom small">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                </div>
+                                <div class="pub-row-details">
+                                    <div class="pub-badge-group">
+                                        <span class="pub-pill pub-pill-first">First Author</span>
+                                        <span class="pub-pill pub-pill-accepted">NeurIPS 2026 (Accepted · Poster)</span>
+                                    </div>
+                                    <h4 class="pub-row-title"><a href="https://arxiv.org/abs/2605.01945" target="_blank" rel="noopener">PepSpecBench: A Unified Evaluation Benchmark for Peptide Tandem Mass Spectrometry Prediction</a></h4>
+                                    <p class="pub-row-authors"><span class="me-highlight">Zhiwen Yang</span><sup>†</sup>, Pan Liu<sup>†</sup>, Yifan Li, Yunhua Zhong, <a href="https://scholar.google.com/citations?user=aPKKpSYAAAAJ" target="_blank" rel="noopener">Jun Xia</a><sup>*</sup></p>
+                                    <p class="pub-row-meta"><em>NeurIPS 2026 Datasets &amp; Benchmarks Track</em> (poster), arXiv:2605.01945. <span style="color: var(--text-secondary);">Accepted among 971 / 3,757 valid submissions (25.8%).</span></p>
+                                    <div class="pub-row-links">
+                                        <a href="https://arxiv.org/abs/2605.01945" target="_blank" class="pub-res-link">Paper</a>
+                                        <a href="https://github.com/zwYang2004/PepSpecBench" target="_blank" class="pub-res-link">Code</a>
+                                        <a href="https://huggingface.co/datasets/Chris-young-2004/PepSpecBench" target="_blank" class="pub-res-link">Dataset</a>
+                                        <button class="pub-res-link btn-bibtex-toggle" data-target="bib-pepspec">BibTeX</button>
+                                    </div>
+                                    <div class="bibtex-panel" id="bib-pepspec" style="display: none;">
+                                        <div class="bibtex-panel-header">
+                                            <span>BibTeX Citation</span>
+                                            <button class="btn-copy-bibtex" data-target="code-pepspec"><i class="fa-regular fa-copy"></i> Copy</button>
+                                        </div>
+                                        <pre id="code-pepspec">@inproceedings{yang2026pepspecbench,
+  title={PepSpecBench: A Unified Evaluation Benchmark for Peptide Tandem Mass Spectrometry Prediction},
+  author={Yang, Zhiwen and Liu, Pan and Li, Yifan and Zhong, Yunhua and Xia, Jun},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS) 2026 Datasets and Benchmarks Track},
+  year={2026}
+}</pre>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Pub 3: Microplastics -->
+                            <div class="pub-row">
+                                <div class="pub-row-thumb">
+                                    <img src="assets/img/fig-microplastic.jpg" alt="Microplastic Transport Model" class="pub-thumb-img">
+                                    <div class="image-overlay-zoom small">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                </div>
+                                <div class="pub-row-details">
+                                    <div class="pub-badge-group">
+                                        <span class="pub-pill pub-pill-first">First Author</span>
+                                        <span class="pub-pill pub-pill-published">Ecological Modelling (Published)</span>
+                                    </div>
+                                    <h4 class="pub-row-title"><a href="https://doi.org/10.1016/j.ecolmodel.2026.111686" target="_blank" rel="noopener">Microplastic Transport Reshapes Estuarine Population Dynamics in the Yangtze River Estuary: A Coupled Physical-Biological Modeling Study</a></h4>
+                                    <p class="pub-row-authors"><span class="me-highlight">Zhiwen Yang</span>, Yuxin Chen<sup>*</sup>, Haoyi Yang, <a href="https://scholar.google.com/citations?user=QkcU09oAAAAJ" target="_blank" rel="noopener">Lai Zhang</a></p>
+                                    <p class="pub-row-meta"><em>Ecological Modelling</em>, 520: 111686, 2026.</p>
+                                    <div class="pub-row-links">
+                                        <a href="https://doi.org/10.1016/j.ecolmodel.2026.111686" target="_blank" class="pub-res-link">Journal</a>
+                                        <button class="pub-res-link btn-bibtex-toggle" data-target="bib-microplastics">BibTeX</button>
+                                    </div>
+                                    <div class="bibtex-panel" id="bib-microplastics" style="display: none;">
+                                        <div class="bibtex-panel-header">
+                                            <span>BibTeX Citation</span>
+                                            <button class="btn-copy-bibtex" data-target="code-microplastics"><i class="fa-regular fa-copy"></i> Copy</button>
+                                        </div>
+                                        <pre id="code-microplastics">@article{yang2026microplastic,
+  title={Microplastic Transport Reshapes Estuarine Population Dynamics in the Yangtze River Estuary: A Coupled Physical-Biological Modeling Study},
+  author={Yang, Zhiwen and Chen, Yuxin and Yang, Haoyi and Zhang, Lai},
+  journal={Ecological Modelling},
+  volume={520},
+  pages={111686},
+  year={2026},
+  publisher={Elsevier}
+}</pre>
+                                    </div>
+                            </div>
+                        </div>
+                        
+                        </div>
+
+                        <div class="pub-year-section" style="margin-top: 3rem;">
+                            <h3 class="pub-year-header" style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 700; margin-bottom: 2rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; color: var(--accent-cyan);">Preprints &amp; Under Review</h3>
+                            
+                            <!-- Pub 2: AmbiModBench -->
+                            <div class="pub-row">
+                                <div class="pub-row-thumb">
+                                    <img src="assets/img/fig-ambimod.png" alt="AmbiModBench Overview" class="pub-thumb-img">
+                                    <div class="image-overlay-zoom small">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                </div>
+                                <div class="pub-row-details">
+                                    <div class="pub-badge-group">
+                                        <span class="pub-pill pub-pill-cofirst">Co-First &amp; Co-Corresponding</span>
+                                        <span class="pub-pill pub-pill-submitted">Preprint · Under Review</span>
+                                    </div>
+                                    <h4 class="pub-row-title">AmbiModBench: Benchmarking Gene Perturbation Prediction Beyond Shared Responses</h4>
+                                    <p class="pub-row-authors">Sikai Huang<sup>†</sup>, <span class="me-highlight">Zhiwen Yang</span><sup>†*</sup>, Kai Yu, Jiayuan Chen, <a href="https://scholar.google.com/citations?user=Y-nyLGIAAAAJ" target="_blank" rel="noopener">Stan Z. Li</a><sup>*</sup></p>
+                                    <p class="pub-row-meta"><em>arXiv preprint</em>, 2026. (Under review)</p>
+                                    <div class="pub-row-links">
+                                        <button class="pub-res-link btn-bibtex-toggle" data-target="bib-ambimod">BibTeX</button>
+                                    </div>
+                                    <div class="bibtex-panel" id="bib-ambimod" style="display: none;">
+                                        <div class="bibtex-panel-header">
+                                            <span>BibTeX Citation</span>
+                                            <button class="btn-copy-bibtex" data-target="code-ambimod"><i class="fa-regular fa-copy"></i> Copy</button>
+                                        </div>
+                                        <pre id="code-ambimod">@article{huang2026ambimodbench,
+  title={AmbiModBench: Benchmarking Gene Perturbation Prediction Beyond Shared Responses},
+  author={Huang, Sikai and Yang, Zhiwen and Yu, Kai and Chen, Jiayuan and Li, Stan Z.},
+  journal={arXiv preprint},
+  year={2026}
+}</pre>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pub 1: VitaGRN -->
+                            <div class="pub-row">
+                                <div class="pub-row-thumb">
+                                    <img src="assets/img/fig-vitagrn.png" alt="VitaGRN Model Display" class="pub-thumb-img">
+                                    <div class="image-overlay-zoom small">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                </div>
+                                <div class="pub-row-details">
+                                    <div class="pub-badge-group">
+                                        <span class="pub-pill pub-pill-first">First Author</span>
+                                        <span class="pub-pill pub-pill-review">Preprint</span>
+                                    </div>
+                                    <h4 class="pub-row-title"><a href="https://www.biorxiv.org/content/10.64898/2026.06.05.729520v1.abstract" target="_blank" rel="noopener">Multimodal Physical Evidence Uncovers Interpretable Gene Regulatory Networks for Perturbation Prediction</a></h4>
+                                    <p class="pub-row-authors"><span class="me-highlight">Zhiwen Yang</span><sup>†</sup>, Sikai Huang<sup>†</sup>, Ge Bai<sup>†</sup>, Jintong Dong, Jue Wang, Yucheng Guo, <a href="https://scholar.google.com/citations?user=Y-nyLGIAAAAJ" target="_blank" rel="noopener">Stan Z. Li</a><sup>*</sup></p>
+                                    <p class="pub-row-meta"><em>bioRxiv</em>, 2026.06.05.729520.</p>
+                                    <div class="pub-row-links">
+                                        <a href="https://www.biorxiv.org/content/10.64898/2026.06.05.729520v1.abstract" target="_blank" class="pub-res-link">bioRxiv</a>
+                                        <button class="pub-res-link btn-bibtex-toggle" data-target="bib-vitagrn">BibTeX</button>
+                                    </div>
+                                    <div class="bibtex-panel" id="bib-vitagrn" style="display: none;">
+                                        <div class="bibtex-panel-header">
+                                            <span>BibTeX Citation</span>
+                                            <button class="btn-copy-bibtex" data-target="code-vitagrn"><i class="fa-regular fa-copy"></i> Copy</button>
+                                        </div>
+                                        <pre id="code-vitagrn">@article{yang2026multimodal,
+  title={Multimodal Physical Evidence Uncovers Interpretable Gene Regulatory Networks for Perturbation Prediction},
+  author={Yang, Zhiwen and Huang, Sikai and Bai, Ge and Dong, Jintong and Wang, Jue and Guo, Yucheng and Li, Stan Z.},
+  journal={bioRxiv},
+  pages={2026.06.05.729520},
+  year={2026}
+}</pre>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Pub 4: FlexMS -->
+                            <div class="pub-row">
+                                <div class="pub-row-thumb">
+                                    <img src="assets/img/fig-flexms.png" alt="FlexMS Model Display" class="pub-thumb-img">
+                                    <div class="image-overlay-zoom small">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                </div>
+                                <div class="pub-row-details">
+                                    <div class="pub-badge-group">
+                                        <span class="pub-pill pub-pill-coauthor">Co-Author</span>
+                                        <span class="pub-pill pub-pill-submitted">Preprint · Under Review</span>
+                                    </div>
+                                    <h4 class="pub-row-title"><a href="https://arxiv.org/abs/2602.22822" target="_blank" rel="noopener">FlexMS: A Unified Public Benchmark for Molecule Tandem Mass Spectrum Prediction</a></h4>
+                                    <p class="pub-row-authors">Yunhua Zhong, Yixuan Tang, Yifan Li, Pan Liu, <span class="me-highlight">Zhiwen Yang</span>, Zanyi Wang, Jie Yang, <a href="https://scholar.google.com/citations?user=aPKKpSYAAAAJ" target="_blank" rel="noopener">Jun Xia</a><sup>*</sup></p>
+                                    <p class="pub-row-meta"><em>arXiv:2602.22822</em>, 2026. (Preprint; under review)</p>
+                                    <div class="pub-row-links">
+                                        <a href="https://arxiv.org/abs/2602.22822" target="_blank" class="pub-res-link">Paper</a>
+                                        <button class="pub-res-link btn-bibtex-toggle" data-target="bib-flexms">BibTeX</button>
+                                    </div>
+                                    <div class="bibtex-panel" id="bib-flexms" style="display: none;">
+                                        <div class="bibtex-panel-header">
+                                            <span>BibTeX Citation</span>
+                                            <button class="btn-copy-bibtex" data-target="code-flexms"><i class="fa-regular fa-copy"></i> Copy</button>
+                                        </div>
+                                        <pre id="code-flexms">@article{zhong2026flexms,
+  title={FlexMS: A Unified Public Benchmark for Molecule Tandem Mass Spectrum Prediction},
+  author={Zhong, Yunhua and Tang, Yixuan and Li, Yifan and Liu, Pan and Yang, Zhiwen and Wang, Zanyi and Yang, Jie and Xia, Jun},
+  journal={arXiv preprint arXiv:2602.22822},
+  year={2026}
+}</pre>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Pub 6: PRISM -->
+                            <div class="pub-row">
+                                <div class="pub-row-thumb">
+                                    <img src="assets/img/fig-prism.png" alt="PRISM framework thumbnail" class="pub-thumb-img">
+                                    <div class="image-overlay-zoom small">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                </div>
+                                <div class="pub-row-details">
+                                    <div class="pub-badge-group">
+                                        <span class="pub-pill pub-pill-review">Preprint</span>
+                                    </div>
+                                    <h4 class="pub-row-title"><a href="https://www.researchsquare.com/article/rs-7480159/v1" target="_blank" rel="noopener">PRISM: A Proteomics Robust Imputation Framework for Structure-aware Modeling of Missingness</a></h4>
+                                    <p class="pub-row-authors">Zhaoxing Li, <span class="me-highlight">Zhiwen Yang</span>, Yi Chen, <a href="https://en.westlake.edu.cn/faculty/tiannan-guo.html" target="_blank" rel="noopener">Tiannan Guo</a></p>
+                                    <p class="pub-row-meta"><em>Research Square</em>, 2025. Preprint.</p>
+                                    <div class="pub-row-links">
+                                        <a href="https://www.researchsquare.com/article/rs-7480159/v1" target="_blank" class="pub-res-link">Preprint</a>
+                                        <button class="pub-res-link btn-bibtex-toggle" data-target="bib-prism">BibTeX</button>
+                                    </div>
+                                    <div class="bibtex-panel" id="bib-prism" style="display: none;">
+                                        <div class="bibtex-panel-header">
+                                            <span>BibTeX Citation</span>
+                                            <button class="btn-copy-bibtex" data-target="code-prism"><i class="fa-regular fa-copy"></i> Copy</button>
+                                        </div>
+                                        <pre id="code-prism">@article{li2025prism,
+  title={PRISM: A Proteomics Robust Imputation Framework for Structure-aware Modeling of Missingness},
+  author={Li, Zhaoxing and Yang, Zhiwen and Chen, Yi and Guo, Tiannan},
+  journal={Research Square preprint},
+  year={2025}
+}</pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pub-year-section" style="margin-top: 3rem;">
+                            <h3 class="pub-year-header" style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 700; margin-bottom: 2rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; color: var(--accent-cyan);">Patents</h3>
+                            
+                            <!-- Pub 5: Patent CN119558222B -->
+                            <div class="pub-row">
+                                <div class="pub-row-thumb">
+                                    <img src="assets/img/gallery/专利证书.jpg" alt="China National Invention Patent Certificate" class="pub-thumb-img">
+                                    <div class="image-overlay-zoom small">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                </div>
+                                <div class="pub-row-details">
+                                    <div class="pub-badge-group">
+                                        <span class="pub-pill pub-pill-inventor">First Inventor</span>
+                                        <span class="pub-pill pub-pill-published">Patent (Granted)</span>
+                                    </div>
+                                    <h4 class="pub-row-title"><a href="https://patents.google.com/patent/CN119558222B/en" target="_blank" rel="noopener">A Coupled Algorithm for Studying the Effects of Microplastics on Fish Based on Unstructured Mesh</a></h4>
+                                    <p class="pub-row-authors"><span class="me-highlight">Zhiwen Yang</span>, <a href="https://scholar.google.com/citations?user=QkcU09oAAAAJ" target="_blank" rel="noopener">Lai Zhang</a></p>
+                                    <p class="pub-row-meta"><em>China National Invention Patent</em>, CN119558222B. Granted: Dec 2025.</p>
+                                    <div class="pub-row-links">
+                                        <a href="https://patents.google.com/patent/CN119558222B/en" target="_blank" class="pub-res-link">Patent</a>
+                                        <button class="pub-res-link btn-bibtex-toggle" data-target="bib-patent-coupled">BibTeX</button>
+                                    </div>
+                                    <div class="bibtex-panel" id="bib-patent-coupled" style="display: none;">
+                                        <div class="bibtex-panel-header">
+                                            <span>BibTeX Citation</span>
+                                            <button class="btn-copy-bibtex" data-target="code-patent-coupled"><i class="fa-regular fa-copy"></i> Copy</button>
+                                        </div>
+                                        <pre id="code-patent-coupled">@patent{yang2025coupled,
+  title={A Coupled Algorithm for Studying the Effects of Microplastics on Fish Based on Unstructured Mesh},
+  author={Yang, Zhiwen and Zhang, Lai},
+  year={2025},
+  month={December},
+  number={CN119558222B},
+  holder={Yangzhou University}
+}</pre>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- TAB 4: EXPERIENCE & EDUCATION (经历与教育) -->
+        <!-- ========================================== -->
+        <div class="page-tab" id="tab-experience" style="display: none;">
+
+            <!-- Section: Work Experience -->
+            <section class="section-padding">
+                <div class="container">
+                    <h2 class="section-title text-center animate-on-scroll">
+                        <span class="lang-en"><i class="fa-solid fa-flask-vial" style="color: var(--accent-cyan); margin-right: 0.2rem;"></i> Work Experience</span>
+                        <span class="lang-zh" style="display:none;"><i class="fa-solid fa-flask-vial" style="color: var(--accent-cyan); margin-right: 0.2rem;"></i> 工作经历</span>
+                    </h2>
+                    
+                    <div class="timeline-modern animate-on-scroll">
+                        <!-- Item 1: Westlake (Stan Z. Li) -->
+                        <div class="timeline-item-modern">
+                            <div class="timeline-dot-modern timeline-dot-active"></div>
+                            <h3 class="timeline-title-modern">
+                                <span class="lang-en">Research Assistant <span style="font-weight: 400; font-size: 0.88em; color: var(--text-secondary);">(Jan 2026 – Present)</span></span>
+                                <span class="lang-zh" style="display:none;">科研助理 <span style="font-weight: 400; font-size: 0.88em; color: var(--text-secondary);">(Jan 2026 – Present)</span></span>
+                            </h3>
+                            <div class="timeline-inst-modern">
+                                <span class="lang-en"><a href="https://en.westlake.edu.cn/" target="_blank">Westlake University</a>, Hangzhou, China<br><strong style="color: var(--text-primary);">Advisor:</strong> <a href="https://en.westlake.edu.cn/faculty/stan-zq-li.html" target="_blank">Chair Prof. Stan Z. Li</a> (IEEE Fellow)<br><strong style="color: var(--text-primary);">Collaboration:</strong> <a href="https://scholar.google.com/scholar?q=Yucheng+Guo+BioMap+郭玉成" target="_blank">Yucheng Guo</a> at <a href="https://www.biomap.com/" target="_blank">BioMap (百图生科)</a>, Beijing</span>
+                                <span class="lang-zh" style="display:none;"><a href="https://en.westlake.edu.cn/" target="_blank">西湖大学</a>，中国杭州<br><strong style="color: var(--text-primary);">导师：</strong><a href="https://en.westlake.edu.cn/faculty/stan-zq-li.html" target="_blank">李子青 讲席教授</a> (IEEE Fellow)<br><strong style="color: var(--text-primary);">合作：</strong><a href="https://www.biomap.com/" target="_blank">百图生科 (BioMap)</a> <a href="https://scholar.google.com/scholar?q=Yucheng+Guo+BioMap+郭玉成" target="_blank">郭玉成</a>，中国北京</span>
+                            </div>
+                        </div>
+
+                        <!-- Item 2: HKUST (Jun Xia) -->
+                        <div class="timeline-item-modern">
+                            <div class="timeline-dot-modern timeline-dot-active"></div>
+                            <h3 class="timeline-title-modern">
+                                <span class="lang-en">Research Assistant <span style="font-weight: 400; font-size: 0.88em; color: var(--text-secondary);">(Nov 2025 – Present)</span></span>
+                                <span class="lang-zh" style="display:none;">科研助理 <span style="font-weight: 400; font-size: 0.88em; color: var(--text-secondary);">(Nov 2025 – Present)</span></span>
+                            </h3>
+                            <div class="timeline-inst-modern">
+                                <span class="lang-en"><a href="https://hkust.edu.hk/" target="_blank">The Hong Kong University of Science and Technology</a>, Guangzhou, China<br><strong style="color: var(--text-primary);">Advisor:</strong> <a href="https://junxia97.github.io/" target="_blank">Prof. Jun Xia</a></span>
+                                <span class="lang-zh" style="display:none;"><a href="https://hkust.edu.hk/" target="_blank">香港科技大学</a>，中国广州<br><strong style="color: var(--text-primary);">导师：</strong><a href="https://junxia97.github.io/" target="_blank">夏俊 教授</a></span>
+                            </div>
+                        </div>
+
+                        <!-- Item 3: Westlake (Tiannan Guo) -->
+                        <div class="timeline-item-modern">
+                            <div class="timeline-dot-modern timeline-dot-past"></div>
+                            <h3 class="timeline-title-modern">
+                                <span class="lang-en">Research Assistant <span style="font-weight: 400; font-size: 0.88em; color: var(--text-secondary);">(Apr 2025 – Aug 2025)</span></span>
+                                <span class="lang-zh" style="display:none;">科研助理 <span style="font-weight: 400; font-size: 0.88em; color: var(--text-secondary);">(Apr 2025 – Aug 2025)</span></span>
+                            </h3>
+                            <div class="timeline-inst-modern">
+                                <span class="lang-en"><a href="https://en.westlake.edu.cn/" target="_blank">Westlake University</a>, Hangzhou, China<br><strong style="color: var(--text-primary);">Advisor:</strong> <a href="https://guomics.com/" target="_blank">Prof. Tiannan Guo</a></span>
+                                <span class="lang-zh" style="display:none;"><a href="https://en.westlake.edu.cn/" target="_blank">西湖大学</a>，中国杭州<br><strong style="color: var(--text-primary);">导师：</strong><a href="https://guomics.com/" target="_blank">郭天南 教授</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Education -->
+            <section class="section-padding section-alt">
+                <div class="container">
+                    <h2 class="section-title text-center animate-on-scroll">
+                        <span class="lang-en"><i class="fa-solid fa-graduation-cap" style="color: var(--accent-purple); margin-right: 0.2rem;"></i> Education</span>
+                        <span class="lang-zh" style="display:none;"><i class="fa-solid fa-graduation-cap" style="color: var(--accent-purple); margin-right: 0.2rem;"></i> 教育背景</span>
+                    </h2>
+
+                    <div class="timeline-modern animate-on-scroll">
+                        <!-- PolyU MSc -->
+                        <div class="timeline-item-modern">
+                            <div class="timeline-dot-modern timeline-dot-active"></div>
+                            <h3 class="timeline-title-modern">
+                                <span class="lang-en">M.Sc. in Medical Data Science <span style="font-weight: 400; font-size: 0.88em; color: var(--text-secondary);">(Sep 2026 – Mar 2028, Expected)</span></span>
+                                <span class="lang-zh" style="display:none;">医疗数据科学理学硕士 <span style="font-weight: 400; font-size: 0.88em; color: var(--text-secondary);">(2026 年 9 月 – 2028 年 3 月，预计)</span></span>
+                            </h3>
+                            <div class="timeline-inst-modern">
+                                <span class="lang-en"><a href="https://www.polyu.edu.hk/" target="_blank">The Hong Kong Polytechnic University</a>, Hong Kong, China<br><strong style="color: var(--text-primary);">Advisor:</strong> <a href="https://www.polyu.edu.hk/hti/people/academic-staff/dr-chen-junyi?sc_lang=en" target="_blank">Dr. Junyi (Jerry) Chen</a>, Research Assistant Professor, Department of Health Technology and Informatics</span>
+                                <span class="lang-zh" style="display:none;"><a href="https://www.polyu.edu.hk/" target="_blank">香港理工大学</a>，中国香港<br><strong style="color: var(--text-primary);">导师：</strong><a href="https://www.polyu.edu.hk/hti/people/academic-staff/dr-chen-junyi?sc_lang=en" target="_blank">陈俊逸（Jerry Chen）博士</a>，医疗科技及资讯学系 研究助理教授</span>
+                            </div>
+                        </div>
+
+                        <!-- YZU BSc -->
+                        <div class="timeline-item-modern">
+                            <div class="timeline-dot-modern timeline-dot-past"></div>
+                            <h3 class="timeline-title-modern">
+                                <span class="lang-en">B.Sc. in Mathematics and Applied Mathematics <span style="font-weight: 400; font-size: 0.88em; color: var(--text-secondary);">(Sep 2022 – Jun 2026)</span></span>
+                                <span class="lang-zh" style="display:none;">理学学士（数学与应用数学）<span style="font-weight: 400; font-size: 0.88em; color: var(--text-secondary);">(Sep 2022 – Jun 2026)</span></span>
+                            </h3>
+                            <div class="timeline-inst-modern">
+                                <span class="lang-en"><a href="https://english.yzu.edu.cn/" target="_blank">Yangzhou University</a>, Yangzhou, China<br><strong style="color: var(--text-primary);">Thesis Advisor:</strong> Prof. <a href="https://scholar.google.com/citations?user=QkcU09oAAAAJ" target="_blank">Lai Zhang</a></span>
+                                <span class="lang-zh" style="display:none;"><a href="https://english.yzu.edu.cn/" target="_blank">扬州大学</a>，中国扬州<br><strong style="color: var(--text-primary);">本科论文导师：</strong><a href="https://scholar.google.com/citations?user=QkcU09oAAAAJ" target="_blank">张来 教授</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Honors & Skills -->
+            <section class="section-padding section-alt">
+                <div class="container">
+                    <div class="grid-2">
+                        <!-- Honors & Awards -->
+                        <div class="skills-honors">
+                            <h3 class="subsection-title">Honors & Awards</h3>
+                            <ul class="honors-list">
+                                <li>
+                                    <div class="honor-icon"><i class="fa-solid fa-award"></i></div>
+                                    <div class="honor-details">
+                                        <h4>National First Prize</h4>
+                                        <p>The 4th "Huashu Cup" National College Students Mathematical Modeling Competition | 2023</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="honor-icon"><i class="fa-solid fa-award"></i></div>
+                                    <div class="honor-details">
+                                        <h4>National Second Prize (Top 1.5%)</h4>
+                                        <p>Contemporary Undergraduate Mathematical Contest in Modeling (CUMCM) | 2023</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="honor-icon"><i class="fa-solid fa-award"></i></div>
+                                    <div class="honor-details">
+                                        <h4>Science Pioneer, Yangzhou University</h4>
+                                        <p>University-level honor for outstanding undergraduate research | 2025</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="honor-icon"><i class="fa-solid fa-award"></i></div>
+                                    <div class="honor-details">
+                                        <h4>First Prize</h4>
+                                        <p>National College Students Statistical Modeling Competition | 2024</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="honor-icon"><i class="fa-solid fa-award"></i></div>
+                                    <div class="honor-details">
+                                        <h4>Full Scholarship</h4>
+                                        <p>SDG Global Summer School, Zhejiang University (ZJU) | 2025</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="honor-icon"><i class="fa-solid fa-award"></i></div>
+                                    <div class="honor-details">
+                                        <h4>Excellent Project & Project Lead</h4>
+                                        <p>National Undergraduate Training Program for Innovation | 2024 - 2025</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="honor-icon"><i class="fa-solid fa-award"></i></div>
+                                    <div class="honor-details">
+                                        <h4>President</h4>
+                                        <p>Mathematical Modeling Association, Yangzhou University | 2024 - 2025</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="honor-icon"><i class="fa-solid fa-award"></i></div>
+                                    <div class="honor-details">
+                                        <h4>Honorable Mention</h4>
+                                        <p>COMAP Mathematical Contest in Modeling (MCM) | 2024</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Technical Skills -->
+                        <div class="skills-tech">
+                            <h3 class="subsection-title">Technical Expertise</h3>
+                            <div class="skill-category">
+                                <h3>Programming Languages</h3>
+                                <div class="tags">
+                                    <span class="tag">Python (Advanced)</span>
+                                    <span class="tag">R</span>
+                                    <span class="tag">SQL</span>
+                                    <span class="tag">MATLAB</span>
+                                    <span class="tag">LaTeX</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h3>AI & Machine Learning</h3>
+                                <div class="tags">
+                                    <span class="tag">PyTorch</span>
+                                    <span class="tag">Transformers</span>
+                                    <span class="tag">Scikit-learn</span>
+                                    <span class="tag">NumPy</span>
+                                    <span class="tag">Pandas</span>
+                                    <span class="tag">Graph Neural Networks (GNNs)</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h3>Tools & Infrastructure</h3>
+                                <div class="tags">
+                                    <span class="tag">Linux/Bash</span>
+                                    <span class="tag">Git/GitHub</span>
+                                    <span class="tag">Docker</span>
+                                    <span class="tag">SSH</span>
+                                    <span class="tag">HPC / GPU Clusters</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- TAB 5: GALLERY (相册) -->
+        <!-- ========================================== -->
+        <div class="page-tab" id="tab-gallery" style="display: none;">
+            <section class="section-padding">
+                <div class="container">
+                    <h2 class="section-title text-center animate-on-scroll">Gallery & Academic Activities</h2>
+                    <p class="section-subtitle text-center animate-on-scroll">Snapshots of research life, academic credentials, and campus exchanges.</p>
+                    
+                    <h3 class="gallery-category-title animate-on-scroll" style="margin-top: 1rem;"><i class="fa-solid fa-award" style="color: var(--accent-cyan);"></i> Academic Credentials &amp; Certificates</h3>
+                    <div class="gallery-grid animate-on-scroll">
+                        <!-- Patent -->
+                        <div class="gallery-item animate-on-scroll">
+                            <div class="gallery-image-box credential-box">
+                                <img src="assets/img/gallery/专利证书.jpg" alt="China National Invention Patent" class="gallery-img">
+                                <div class="gallery-caption">
+                                    <h4>Invention Patent (CN 119558222 B)</h4>
+                                    <p>First Inventor. Coupled hydrodynamic-ecological modeling algorithm on unstructured grids.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CUMCM -->
+                        <div class="gallery-item animate-on-scroll">
+                            <div class="gallery-image-box credential-box">
+                                <img src="assets/img/gallery/2023_CUMCM_National_Second_Prize.jpg" alt="CUMCM National Second Prize Certificate" class="gallery-img">
+                                <div class="gallery-caption">
+                                    <h4>CUMCM National 2nd Prize</h4>
+                                    <p>Contemporary Undergraduate Mathematical Contest in Modeling (Top 1.5% nationally).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- MCM -->
+                        <div class="gallery-item animate-on-scroll">
+                            <div class="gallery-image-box credential-box">
+                                <img src="assets/img/gallery/MCM_Honerable_Mentioned.jpg" alt="COMAP MCM Honorable Mention Certificate" class="gallery-img">
+                                <div class="gallery-caption">
+                                    <h4>MCM Honorable Mention</h4>
+                                    <p>COMAP's Mathematical Contest in Modeling (International).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- National Innovation -->
+                        <div class="gallery-item animate-on-scroll">
+                            <div class="gallery-image-box credential-box">
+                                <img src="assets/img/gallery/National_College_Student_Innovation_and_Entrepreneurship_Training_Excellent_Completion_Certificate.jpg" alt="National Innovation Project Excellent Completion Certificate" class="gallery-img">
+                                <div class="gallery-caption">
+                                    <h4>National Innovation Project — Excellent</h4>
+                                    <p>Awarded "Excellent" final completion grade for the undergraduate research project.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ZJU SDG -->
+                        <div class="gallery-item animate-on-scroll">
+                            <div class="gallery-image-box credential-box">
+                                <img src="assets/img/gallery/Zhejiang_University_Summer_School_Completion_Certificate.jpg" alt="Zhejiang University SDG Summer School Completion Certificate" class="gallery-img">
+                                <div class="gallery-caption">
+                                    <h4>ZJU SDG Global Summer School</h4>
+                                    <p>Awarded Full Scholarship for completion of ZJU SDG Global Summer School.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Westlake Guomics -->
+                        <div class="gallery-item animate-on-scroll">
+                            <div class="gallery-image-box credential-box">
+                                <img src="assets/img/gallery/西湖 Internship_at_Guomics_Westlake_Univesity.jpg" alt="Westlake Guomics Internship Certificate" class="gallery-img">
+                                <div class="gallery-caption">
+                                    <h4>Westlake Guomics Internship</h4>
+                                    <p>Research Assistant internship certificate at Prof. Tiannan Guo's Lab, Westlake University.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Westlake Stan Z Li -->
+                        <div class="gallery-item animate-on-scroll">
+                            <div class="gallery-image-box credential-box">
+                                <img src="assets/img/gallery/西湖大学李子青实习证明.jpg" alt="Westlake Chair Prof. Stan Z. Li Lab Internship Certificate" class="gallery-img">
+                                <div class="gallery-caption">
+                                    <h4>Westlake Stan Z. Li Lab Internship</h4>
+                                    <p>Research Assistant internship certificate at Chair Prof. Stan Z. Li's Lab, Westlake University.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="gallery-category-title animate-on-scroll" style="margin-top: 3.5rem;"><i class="fa-solid fa-camera-retro" style="color: var(--accent-purple);"></i> Moments &amp; Life</h3>
+                    <div class="gallery-grid animate-on-scroll">
+                        <!-- Lai Zhang graduation photo -->
+                        <div class="gallery-item animate-on-scroll">
+                            <div class="gallery-image-box">
+                                <img src="assets/img/gallery/杨志文与张来合照.jpg" alt="Zhiwen Yang with undergraduate advisor Prof. Lai Zhang" class="gallery-img">
+                                <div class="gallery-caption">
+                                    <h4>With Prof. Lai Zhang</h4>
+                                    <p>Graduation day with my undergraduate advisor Prof. Lai Zhang at Yangzhou University, June 2026.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Lai Zhang team group photo -->
+                        <div class="gallery-item animate-on-scroll">
+                            <div class="gallery-image-box">
+                                <img src="assets/img/gallery/张来团队合照.jpg" alt="Zhiwen Yang with Prof. Lai Zhang's research team" class="gallery-img">
+                                <div class="gallery-caption">
+                                    <h4>Biomathematics Research Group</h4>
+                                    <p>Group photo with Prof. Lai Zhang's research team at the School of Mathematics, YZU.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Degree conferral -->
+                        <div class="gallery-item animate-on-scroll">
+                            <div class="gallery-image-box">
+                                <img src="assets/img/gallery/学位授予.jpg" alt="Zhiwen Yang's degree conferral ceremony" class="gallery-img">
+                                <div class="gallery-caption">
+                                    <h4>Degree Conferral Ceremony</h4>
+                                    <p>Official graduation degree conferral ceremony at Yangzhou University, June 2026.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- With YZU President -->
+                        <div class="gallery-item animate-on-scroll">
+                            <div class="gallery-image-box">
+                                <img src="assets/img/gallery/与扬州大学校长集体合影.jpg" alt="Group photo of Zhiwen Yang with YZU President and students" class="gallery-img">
+                                <div class="gallery-caption">
+                                    <h4>With the President of YZU</h4>
+                                    <p>Group photo with the President of Yangzhou University at the 2026 graduation ceremony.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- HKJC international friends -->
+                        <div class="gallery-item animate-on-scroll">
+                            <div class="gallery-image-box">
+                                <img src="assets/img/gallery/香港赛马会和国际友人交流.jpg" alt="Zhiwen Yang with international friends at Hong Kong Jockey Club" class="gallery-img">
+                                <div class="gallery-caption">
+                                    <h4>Life in Hong Kong</h4>
+                                    <p>An evening out with international friends at the Hong Kong Jockey Club racecourse, early 2026.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Westlake Concert -->
+                        <div class="gallery-item animate-on-scroll">
+                            <div class="gallery-image-box">
+                                <img src="assets/img/gallery/西湖大学音乐会 维也纳金音.jpg" alt="Vienna Golden Sound Concert at Westlake University" class="gallery-img">
+                                <div class="gallery-caption">
+                                    <h4>Westlake Concert</h4>
+                                    <p>"Vienna Golden Sound" concert at Westlake University Yungu Campus, attended during my research internship.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- TAB: BLOG & DISCUSSION (个人博客与讨论) -->
+        <!-- ========================================== -->
+        <div class="page-tab" id="tab-blog" style="display: none;">
+            <section class="section-padding">
+                <div class="container blog-container">
+                    <div class="bio-header-container animate-on-scroll">
+                        <h2 class="section-title">Blog</h2>
+                        <div class="bio-toggle">
+                            <button class="bio-btn active" data-lang="en">EN</button>
+                            <button class="bio-btn" data-lang="zh">中</button>
+                        </div>
+                    </div>
+                    
+                    <!-- PNAS Style Issue Header -->
+                    <div class="pnas-issue-header animate-on-scroll">
+                        <span class="pnas-issue-vol"><i class="fa-solid fa-feather-pointed"></i> Academic Insights &amp; News</span>
+                        <span class="pnas-issue-date">July 2026</span>
+                    </div>
+
+                    <div class="pnas-cover-section animate-on-scroll">
+                        <!-- Left Column: Cover Mock -->
+                        <div class="pnas-cover-col">
+                            <div class="journal-cover-mock">
+                                <div class="cover-journal-name">PERSPECTIVES</div>
+                                <div class="cover-art-container">
+                                    <svg viewBox="0 0 100 100" class="cover-svg-graphic">
+                                        <circle cx="50" cy="50" r="35" stroke="rgba(8, 145, 178, 0.4)" stroke-width="1.5" fill="none"/>
+                                        <circle cx="50" cy="50" r="20" stroke="rgba(168, 85, 247, 0.4)" stroke-width="1.5" fill="none"/>
+                                        <line x1="15" y1="50" x2="85" y2="50" stroke="var(--border-color)" stroke-dasharray="2" opacity="0.3"/>
+                                        <line x1="50" y1="15" x2="50" y2="85" stroke="var(--border-color)" stroke-dasharray="2" opacity="0.3"/>
+                                        <circle cx="30" cy="30" r="4.5" fill="var(--accent-cyan)"/>
+                                        <circle cx="70" cy="30" r="4.5" fill="var(--accent-purple)"/>
+                                        <circle cx="70" cy="70" r="4.5" fill="var(--accent-cyan)"/>
+                                        <circle cx="30" cy="70" r="4.5" fill="var(--accent-purple)"/>
+                                        <path d="M 30,30 Q 50,15 70,30" stroke="rgba(255,255,255,0.7)" stroke-width="1" fill="none"/>
+                                        <path d="M 30,70 Q 50,85 70,70" stroke="rgba(255,255,255,0.7)" stroke-width="1" fill="none"/>
+                                        <path d="M 30,30 Q 15,50 30,70" stroke="rgba(255,255,255,0.7)" stroke-width="1" fill="none"/>
+                                        <path d="M 70,30 Q 85,50 70,70" stroke="rgba(255,255,255,0.7)" stroke-width="1" fill="none"/>
+                                    </svg>
+                                </div>
+                                <div class="cover-journal-issue">AI for Science & Computational Biology</div>
+                                <div class="cover-journal-date">zwyang2004.github.io</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Right Column: Commentary List -->
+                        <div class="pnas-cover-articles">
+                            <h3 class="pnas-sec-title">RESEARCH COMMENTARY</h3>
+                            <div id="pnas-commentaries-list" class="pnas-articles-list">
+                                <!-- Rendered dynamically by main.js -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lower Sections: Thoughts & Musings -->
+                    <div class="pnas-lower-grid animate-on-scroll" style="grid-template-columns: 1fr;">
+                        <!-- Thoughts & Musings -->
+                        <div class="pnas-trending-col">
+                            <h3 class="pnas-sec-title">THOUGHTS &amp; MUSINGS <i class="fa-solid fa-mug-hot" style="font-size: 0.72rem; margin-left: 0.3rem; color: var(--accent-purple);"></i></h3>
+                            <div id="pnas-trending-list" class="pnas-articles-list">
+                                <!-- Rendered dynamically by main.js -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- TAB: ACADEMIC ARTICLE READER (Nature/PNAS Style) -->
+        <!-- ========================================== -->
+        <div class="page-tab" id="tab-blog-post" style="display: none;">
+            <section class="section-padding">
+                <div class="container academic-reader-container">
+                    <!-- Back Button & Breadcrumbs -->
+                    <div class="reader-nav">
+                        <a href="#blog" class="btn-back-blog">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <span class="lang-en">Back to Articles</span>
+                            <span class="lang-zh" style="display:none;">返回文章列表</span>
+                        </a>
+                        <span class="reader-breadcrumb">/ Nature-inspired Review</span>
+                    </div>
+
+                    <!-- Article Layout Wrapper -->
+                    <div class="academic-article-layout">
+                        <!-- Floating Toolbar (Left Column on wide screens) -->
+                        <div class="academic-sidebar">
+                            <div class="sidebar-sticky-box">
+                                <div class="sidebar-meta-item">
+                                    <span class="meta-label">JOURNAL SECTOR</span>
+                                    <span class="meta-value" id="paper-sector-field">Commentary</span>
+                                </div>
+                                <div class="sidebar-actions">
+                                    <button class="sidebar-action-btn btn-share-site" title="Share link">
+                                        <i class="fa-solid fa-share-nodes"></i> Share
+                                    </button>
+                                    <a href="#feedback-section" class="sidebar-action-btn scroll-to-feedback" title="Write a comment" style="text-decoration: none;">
+                                        <i class="fa-solid fa-comments"></i> Comment
+                                    </a>
+                                </div>
+                                <!-- PNAS-style Table of Contents -->
+                                <nav class="pnas-toc" id="paper-toc-field">
+                                    <a href="#sec-significance" class="pnas-toc-item">Significance</a>
+                                    <a href="#sec-abstract" class="pnas-toc-item">Abstract</a>
+                                    <a href="#sec-results" class="pnas-toc-item">Results &amp; Detail</a>
+                                    <a href="#sec-references" class="pnas-toc-item">References</a>
+                                    <a href="#feedback-section" class="pnas-toc-item">Commentary</a>
+                                </nav>
+                            </div>
+                        </div>
+
+                        <!-- Main Paper Body (Right Column) -->
+                        <div class="academic-main animate-on-scroll">
+                            <!-- Paper Header -->
+                            <header class="paper-header">
+                                <div class="paper-category">COMMENT &amp; OPINION</div>
+                                <h1 class="paper-title" id="paper-title-field">Article Title</h1>
+
+                                <div class="pnas-paper-metrics-row">
+                                    <div class="paper-metadata">
+                                        <span class="paper-meta-date"><i class="fa-regular fa-calendar"></i> <span id="paper-date-field">July 2026</span></span>
+                                        <span class="paper-meta-read"><i class="fa-regular fa-clock"></i> <span id="paper-read-field">6 min read</span></span>
+                                    </div>
+                                </div>
+                            </header>
+
+                            <!-- Paper Content (Serif font, high line-height, elegant styling) -->
+                            <article class="paper-content" id="paper-content-field">
+                                <!-- Populated dynamically by JS -->
+                            </article>
+
+                            <!-- Comment & Feedback Section at the bottom of the article -->
+                            <section id="feedback-section" class="paper-feedback-section">
+                                <div class="feedback-divider"></div>
+                                <h3 class="feedback-title">
+                                    <span class="lang-en"><i class="fa-solid fa-envelope-open-text"></i> Submit Academic Commentary / Feedback</span>
+                                    <span class="lang-zh" style="display:none;"><i class="fa-solid fa-envelope-open-text"></i> 提交学术探讨/私密反馈意见</span>
+                                </h3>
+                                <p class="feedback-intro">
+                                    <span class="lang-en">Do you have comments, suggestions, or potential collaboration proposals regarding this article? Send a direct message to the author. Your message remains private.</span>
+                                    <span class="lang-zh" style="display:none;">您对本文有什么学术看法、疑问或潜在合作构想？欢迎通过表单向作者发送私密留言，留言信息直接送达邮箱。</span>
+                                </p>
+                                
+                                <form id="paper-feedback-form">
+                                    <div class="form-row-2">
+                                        <div class="form-group">
+                                            <label for="paper-feedback-name" class="form-label">
+                                                <span class="lang-en">Your Name</span>
+                                                <span class="lang-zh" style="display:none;">您的姓名 / 署名</span>
+                                            </label>
+                                            <input type="text" id="paper-feedback-name" class="form-input" placeholder="e.g., Dr. Smith" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="paper-feedback-email" class="form-label">
+                                                <span class="lang-en">Your Email</span>
+                                                <span class="lang-zh" style="display:none;">您的电子邮箱 (方便回复)</span>
+                                            </label>
+                                            <input type="email" id="paper-feedback-email" class="form-input" placeholder="e.g., smith@univ.edu" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="paper-feedback-role" class="form-label">
+                                            <span class="lang-en">Affiliation / Institution</span>
+                                            <span class="lang-zh" style="display:none;">工作单位 / 学术身份 (可选)</span>
+                                        </label>
+                                        <input type="text" id="paper-feedback-role" class="form-input" placeholder="e.g., HKUST / PostDoc (Optional)">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="paper-feedback-content" class="form-label">
+                                            <span class="lang-en">Commentary Content</span>
+                                            <span class="lang-zh" style="display:none;">讨论观点与反馈内容</span>
+                                        </label>
+                                        <textarea id="paper-feedback-content" class="form-textarea" placeholder="Type your academic thoughts or feedback here..." required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-pill" style="border: none; background: var(--accent-purple); color: #ffffff; width: 100%; justify-content: center; margin-top: 1.2rem; cursor: pointer; box-shadow: 0 4px 12px var(--accent-purple-glow);">
+                                        <i class="fa-solid fa-paper-plane"></i> 
+                                        <span class="lang-en">Submit Commentary</span>
+                                        <span class="lang-zh" style="display:none;">提交学术评论</span>
+                                    </button>
+                                </form>
+                                <div id="paper-feedback-message" style="margin-top: 1rem; display: none; padding: 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 500;"></div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- TAB: CONTACT -->
+        <!-- ========================================== -->
+        <div class="page-tab" id="tab-contact" style="display: none;">
+            <section class="section-padding">
+                <div class="container blog-container">
+                    <div class="bio-header-container animate-on-scroll">
+                        <h2 class="section-title">Contact</h2>
+                        <div class="bio-toggle">
+                            <button class="bio-btn active" data-lang="en">EN</button>
+                            <button class="bio-btn" data-lang="zh">中</button>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-only-wrap animate-on-scroll">
+                        <h3 class="subsection-title"><i class="fa-solid fa-address-card" style="color: var(--accent-cyan); margin-right: 0.5rem;"></i> Contact Information</h3>
+                        <div class="contact-card-panel">
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="contact-info-content">
+                                    <h4 class="contact-info-label">Email</h4>
+                                    <p class="contact-info-value"><a href="mailto:zhiwen.yang@connect.polyu.hk">zhiwen.yang@connect.polyu.hk</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon"><i class="fa-solid fa-map-pin"></i></div>
+                                <div class="contact-info-content">
+                                    <h4 class="contact-info-label">Mailing Address</h4>
+                                    <p class="contact-info-value">
+                                        <span class="lang-en">The Hong Kong Polytechnic University, Hung Hom, Kowloon, Hong Kong, China</span>
+                                        <span class="lang-zh" style="display:none;">中国香港九龙红磡香港理工大学</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item" style="border-bottom: none; padding-bottom: 0;">
+                                <div class="contact-info-icon"><i class="fa-solid fa-share-nodes"></i></div>
+                                <div class="contact-info-content">
+                                    <h4 class="contact-info-label">Social &amp; Academic Profiles</h4>
+                                    <div class="contact-social-links" style="display: flex; gap: 0.8rem; margin-top: 0.6rem; flex-wrap: wrap;">
+                                        <a href="https://scholar.google.com/citations?hl=en&user=lIjJiH0AAAAJ" target="_blank" class="sidebar-action-btn" style="width: auto; padding: 0.55rem 1rem; text-decoration: none;"><i class="fa-brands fa-google-scholar"></i> Scholar</a>
+                                        <a href="https://github.com/zwyang2004" target="_blank" class="sidebar-action-btn" style="width: auto; padding: 0.55rem 1rem; text-decoration: none;"><i class="fa-brands fa-github"></i> GitHub</a>
+                                        <a href="https://orcid.org/0009-0009-1608-7554" target="_blank" class="sidebar-action-btn" style="width: auto; padding: 0.55rem 1rem; text-decoration: none;"><i class="fa-brands fa-orcid"></i> ORCID</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Zhiwen Yang</h3>
+                    <p>Machine learning for gene regulation, virtual perturbation, and computational proteomics.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Direct Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#research">Research</a>
+                    <a href="#publications">Publications</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fa-solid fa-envelope"></i> zhiwen.yang@connect.polyu.hk</p>
+                    <p><i class="fa-solid fa-map-pin"></i> PolyU Campus, Hong Kong, China</p>
+                </div>
+            </div>
+            <div class="footer-actions text-center" style="margin-bottom: 2rem; margin-top: 1rem; border-top: 1px solid var(--border-color); padding-top: 2rem;">
+                <div class="footer-action-group">
+                    <button id="btn-print-cv" class="btn btn-pill js-print-cv" style="border: none; background: var(--accent-cyan); color: var(--bg-main); font-size: 0.88rem; padding: 0.55rem 1.3rem; border-radius: 50px; cursor: pointer; font-weight: 600; transition: var(--transition-fast);"><i class="fa-solid fa-file-pdf"></i> Export CV (Print to PDF)</button>
+                    <span class="action-divider">or</span>
+                    <div class="share-buttons">
+                        <span class="share-label">Share:</span>
+                        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fzwyang2004.github.io%2F" target="_blank" class="share-btn linkedin" aria-label="Share on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fzwyang2004.github.io%2F&text=Check%20out%20Zhiwen%20Yang's%20personal%20academic%20homepage!" target="_blank" class="share-btn twitter" aria-label="Share on Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="mailto:?subject=Zhiwen%20Yang's%20Academic%20Homepage&body=Check%20out%20Zhiwen%20Yang's%20personal%20academic%20homepage%3A%20https%3A%2F%2Fzwyang2004.github.io%2F" class="share-btn email" aria-label="Share via Email"><i class="fa-solid fa-envelope"></i></a>
+                        <button id="btn-copy-url" class="share-btn copy-url" aria-label="Copy Link"><i class="fa-solid fa-link"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p>&copy; 2026 Zhiwen Yang. All rights reserved.</p>
+                <p class="last-updated">Last Updated: July 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Modal for Lightbox Viewer -->
+    <div id="image-modal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="modal-caption"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/blog-posts.js?v=1.0.7"></script>
+    <script src="assets/js/discussion.js?v=1.0.5"></script>
+    <script src="assets/js/main.js?v=1.0.5"></script>
+    <script src="assets/js/timeline.js?v=1.0.5"></script>
+</body>
+</html>
