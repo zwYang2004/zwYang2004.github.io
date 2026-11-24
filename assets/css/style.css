@@ -5237,3 +5237,9 @@ b, strong, h1, h2, h3, h4, h5 { font-weight: 600 !important; }
 .contact-social-links .sidebar-action-btn:hover i {
     color: var(--accent, #c04b41) !important;
 }
+
+/* v1.9.0: Ensure floated .profile-card sits above adjacent block flow so all links are clickable */
+.profile-card {
+    position: relative !important;
+    z-index: 10 !important;
+}
