@@ -4689,13 +4689,13 @@ button:focus:not(:focus-visible),
 #tab-publications .pub-year-section { margin-top: 2rem !important; }
 #tab-publications .pub-year-header { margin-bottom: 1rem !important; }
 #tab-publications .pub-row { padding: 1.35rem 0 !important; }
-/* Highlight paper titles in crisp academic blue */
+/* Highlight paper titles in restrained Prussian academic blue */
 .home-pub-title,
 #tab-publications .pub-row-title a {
-    color: #1e40af !important;
+    color: #1e3a5f !important;
     font-weight: 600 !important;
 }
 a.home-pub-title:hover,
 #tab-publications .pub-row-title a:hover {
-    color: #1e3a8a !important;
+    color: #0f2942 !important;
 }
