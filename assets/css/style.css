@@ -70,7 +70,7 @@
     
     /* High-legibility text colors (WCAG AA/AAA verified) */
     --text-primary: #111827;              /* Deep ink charcoal */
-    --text-secondary: #4b5563;            /* Warm/neutral slate */
+    --text-secondary: #374151;            /* Readable dark slate */
     --text-subtle: #6b7280;               /* Muted meta grey */
     
     /* Single accent hue: classic academic crimson (Stanford / Nature style) */
@@ -4754,3 +4754,7 @@ a.home-pub-title:hover,
     font-weight: 400 !important;
     color: var(--text-secondary) !important;
 }
+
+/* ===== v1.5.6: balance body text & bold contrast ===== */
+.bio-text { color: #27272a !important; }
+.bio-text strong { color: #111827 !important; font-weight: 600 !important; }
