@@ -4643,7 +4643,8 @@ button:focus:not(:focus-visible),
 .timeline-inst-modern a:hover { border-bottom-color: var(--accent-cyan) !important; color: var(--accent-cyan) !important; }
 .timeline-inst-modern strong { color: var(--text-subtle) !important; font-weight: 400 !important; }
 .timeline-item-modern { margin-bottom: 2.25rem; }
-#tab-experience .section-padding + .section-padding, #tab-experience section + section { padding-top: 4.5rem; }
+#tab-experience .section-padding { padding-bottom: 1.5rem !important; }
+#tab-experience .section-padding + .section-padding, #tab-experience section + section { padding-top: 1.5rem !important; }
 
 /* v1.4.1 hotfix: keep icon fonts intact, keep social icons on the button row */
 .hero-links .btn-pill i, .hero-links .btn-pill i::before { font-family: inherit; }
