@@ -5666,3 +5666,37 @@ html.dark-mode #back-to-top {
     border-color: #3a4150 !important;
     color: #f3f4f6 !important;
 }
+
+html.dark-mode .home-callout {
+    background: rgba(192, 75, 65, 0.14) !important;
+    border-color: rgba(192, 75, 65, 0.4) !important;
+    color: #e5e7eb !important;
+}
+
+html.dark-mode .home-callout-title {
+    color: #fca5a5 !important;
+}
+
+html.dark-mode .pub-row-title,
+html.dark-mode .pub-row-title a {
+    color: #f3f4f6 !important;
+}
+
+html.dark-mode .pub-row-title a:hover {
+    color: #fca5a5 !important;
+}
+
+html.dark-mode .ri-card,
+html.dark-mode .research-interest-card {
+    background: #222630 !important;
+    border-color: #2f3542 !important;
+}
+
+html.dark-mode .ri-title {
+    color: #f3f4f6 !important;
+}
+
+html.dark-mode .ri-card p,
+html.dark-mode .ri-desc {
+    color: #d1d5db !important;
+}
