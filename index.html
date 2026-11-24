@@ -214,30 +214,64 @@
                         <p class="home-pubs-more"><a href="#publications">View all publications →</a></p>
                     </div>
 
-                    <!-- Open-Science Initiative & Research Hub -->
-                    <div class="homepage-selected-pubs animate-on-scroll" style="margin-top: 2rem;">
-                        <h2 class="section-title" style="margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.5rem;">
-                            <span class="lang-en"><i class="fa-solid fa-dna" style="color: var(--accent-cyan); margin-right: 0.2rem;"></i> Open-Science Initiative</span>
-                            <span class="lang-zh" style="display:none;"><i class="fa-solid fa-dna" style="color: var(--accent-cyan); margin-right: 0.2rem;"></i> 开源学术倡议与知识图谱</span>
+                    <!-- Open-Science Initiative & Research Hub Card (Zelin Zang Style) -->
+                    <div class="homepage-selected-pubs animate-on-scroll" style="margin-top: 2.8rem;">
+                        <h2 class="section-title" style="margin-bottom: 1.2rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <span class="lang-en"><i class="fa-solid fa-dna" style="color: var(--accent-cyan); margin-right: 0.2rem;"></i> Open-Science Initiative &amp; Knowledge Hub</span>
+                            <span class="lang-zh" style="display:none;"><i class="fa-solid fa-dna" style="color: var(--accent-cyan); margin-right: 0.2rem;"></i> 开源学术倡议与前沿知识图谱</span>
                         </h2>
-                        <ul class="home-pub-list">
-                            <li class="home-pub-item">
-                                <div class="home-pub-body" style="padding-left: 0.5rem;">
-                                <a class="home-pub-title" href="https://github.com/zwYang2004/Awesome-Virtual-Cell-2026" target="_blank" rel="noopener">Awesome-Virtual-Cell-2026: A Curated Research Hub for Virtual Cells, Single-Cell Perturbation Biology, and Foundation Models</a>
-                                <p class="home-pub-authors"><span class="me-highlight">Zhiwen Yang</span> (Lead Curator &amp; Maintainer)</p>
-                                <p class="home-pub-venue">CERN Zenodo Permanent DOI: <a href="https://doi.org/10.5281/zenodo.24489534" target="_blank" rel="noopener">10.5281/zenodo.24489534</a> · CC-BY 4.0 Open Science</p>
-                                <p class="ri-desc" style="margin-top: 0.4rem; font-size: 0.92rem; color: var(--text-secondary);">
-                                    <span class="lang-en">An open-science knowledge base indexing 80+ frontier works (Nature, Cell, ICLR 2026), 100M+ cell perturbation atlases (Tahoe-100M, Replogle GWPS), continuous flow matching mechanics, and an automated weekly preprint radar.</span>
-                                    <span class="lang-zh" style="display:none;">一个开源的单细胞前沿知识库与基准评测中心，系统收录 80+ 篇顶尖论文（Nature, Cell, ICLR 2026）、亿级细胞扰动图谱、流匹配连续动力学模型与自动化预印本巡检雷达。</span>
-                                </p>
-                                <div class="home-pub-links" style="margin-top: 0.6rem;">
-                                    <a class="pub-res-link" href="https://zwyang2004.github.io/Awesome-Virtual-Cell-2026/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i> Interactive Web Portal</a>
-                                    <a class="pub-res-link" href="https://github.com/zwYang2004/Awesome-Virtual-Cell-2026" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub Repository</a>
-                                    <a class="pub-res-link" href="https://doi.org/10.5281/zenodo.24489534" target="_blank" rel="noopener"><i class="fa-solid fa-certificate"></i> Zenodo DOI</a>
+                        
+                        <div class="initiative-card" style="
+                            background: var(--bg-card, #ffffff);
+                            border: 1.5px solid #38bdf8;
+                            border-radius: 12px;
+                            padding: 1.4rem 1.6rem;
+                            box-shadow: 0 4px 20px rgba(56, 189, 248, 0.08);
+                            position: relative;
+                            transition: transform 0.2s ease, box-shadow 0.2s ease;
+                        ">
+                            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem;">
+                                <a href="https://github.com/zwYang2004/Awesome-Virtual-Cell-2026" target="_blank" rel="noopener" style="
+                                    font-size: 1.12rem;
+                                    font-weight: 700;
+                                    color: var(--text-primary, #0f172a);
+                                    text-decoration: none;
+                                    line-height: 1.4;
+                                ">
+                                    Awesome-Virtual-Cell-2026: A Curated Research Hub for Virtual Cells &amp; Single-Cell Perturbation
+                                </a>
+                            </div>
+                            
+                            <p style="margin: 0.45rem 0 0.75rem 0; font-size: 0.90rem; color: var(--text-secondary, #475569);">
+                                <span class="me-highlight">Zhiwen Yang</span> (Lead Curator &amp; Maintainer) &nbsp;·&nbsp; 
+                                <span>CERN Zenodo Permanent DOI: <a href="https://doi.org/10.5281/zenodo.24489534" target="_blank" rel="noopener" style="color: #0284c7; text-decoration: underline; text-underline-offset: 2px;">10.5281/zenodo.24489534</a></span>
+                            </p>
+                            
+                            <p style="margin-bottom: 1.1rem; font-size: 0.88rem; line-height: 1.6; color: var(--text-muted, #64748b);">
+                                <span class="lang-en">An open-science taxonomy and benchmark registry indexing 80+ frontier publications (Nature, Cell, ICLR 2026), 100M+ cell perturbation atlases, continuous flow matching mechanics, and an automated preprint radar.</span>
+                                <span class="lang-zh" style="display:none;">一个开源的单细胞前沿知识库与基准评测中心，系统收录 80+ 篇顶尖论文（Nature, Cell, ICLR 2026）、亿级细胞扰动图谱、流匹配连续动力学模型与自动化预印本巡检雷达。</span>
+                            </p>
+                            
+                            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center;">
+                                <span style="background: rgba(56, 189, 248, 0.12); color: #0284c7; padding: 4px 10px; border-radius: 6px; font-size: 0.76rem; font-weight: 600;">Open Science</span>
+                                <span style="background: rgba(148, 163, 184, 0.15); color: var(--text-secondary, #475569); padding: 4px 10px; border-radius: 6px; font-size: 0.76rem; font-weight: 600;">CC-BY 4.0</span>
+                                <span style="background: rgba(148, 163, 184, 0.15); color: var(--text-secondary, #475569); padding: 4px 10px; border-radius: 6px; font-size: 0.76rem; font-weight: 600;">CERN Zenodo</span>
+                                <span style="background: rgba(168, 85, 247, 0.12); color: #9333ea; padding: 4px 10px; border-radius: 6px; font-size: 0.76rem; font-weight: 600;">Automated Radar</span>
+                                
+                                <div style="margin-left: auto; display: flex; gap: 0.6rem;">
+                                    <a href="https://zwyang2004.github.io/Awesome-Virtual-Cell-2026/" target="_blank" rel="noopener" style="
+                                        display: inline-flex; align-items: center; gap: 0.35rem; padding: 4px 12px; background: #0284c7; color: #ffffff; border-radius: 6px; font-size: 0.80rem; font-weight: 600; text-decoration: none;
+                                    ">
+                                        <i class="fa-solid fa-globe"></i> Interactive Portal
+                                    </a>
+                                    <a href="https://github.com/zwYang2004/Awesome-Virtual-Cell-2026" target="_blank" rel="noopener" style="
+                                        display: inline-flex; align-items: center; gap: 0.35rem; padding: 4px 12px; background: var(--bg-hover, #f1f5f9); color: var(--text-primary, #0f172a); border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; font-size: 0.80rem; font-weight: 600; text-decoration: none;
+                                    ">
+                                        <i class="fa-brands fa-github"></i> GitHub
+                                    </a>
                                 </div>
-                                </div>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
                     </div>
 
 <!-- Research Interests Pillar Grid (Mengji Zhang Style) -->
