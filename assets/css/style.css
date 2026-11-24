@@ -5159,3 +5159,10 @@ b, strong, h1, h2, h3, h4, h5 { font-weight: 600 !important; }
 .pub-group-title {
     border-bottom: none !important;
 }
+
+/* v1.8.6: Slightly widen profile card on desktop */
+@media (min-width: 820px) {
+    .profile-card {
+        width: 315px !important;
+    }
+}
