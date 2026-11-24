@@ -71,15 +71,15 @@
     /* High-legibility text colors (WCAG AA/AAA verified) */
     --text-primary: #1f2933;              /* 14.76:1 on #ffffff */
     --text-secondary: #52606d;            /* 6.46:1 on #ffffff */
-    --text-subtle: #5a6572;               /* 5.97:1 on #ffffff, 5.69:1 on #f8fafc */
+    --text-subtle: #5a6572;               /* 5.93:1 on #ffffff, 5.67:1 on #f8fafc */
     
     /* Single accent hue (deep teal), tuned for contrast on white.
        --accent-purple retained as a darker secondary of the same hue so the
        ~44 existing call sites need no edits. */
     --accent-cyan: #0f6b73;               /* Deep teal — 6.23:1 on #ffffff */
-    --accent-cyan-hover: #0b5258;         /* Hover teal — 8.62:1 on #ffffff */
+    --accent-cyan-hover: #0b5258;         /* Hover teal — 8.89:1 on #ffffff */
     --accent-cyan-glow: rgba(15, 107, 115, 0.08);
-    --accent-purple: #12545c;             /* Darker teal — 8.35:1 on #ffffff */
+    --accent-purple: #12545c;             /* Darker teal — 8.58:1 on #ffffff */
     --accent-purple-glow: rgba(18, 84, 92, 0.07);
     --accent-gold: #0f6b73;
     
@@ -381,10 +381,23 @@ body {
     font-size: var(--text-sm);
     white-space: nowrap;
     transition: var(--transition-fast);
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .nav-link:hover, .nav-link.active {
     color: var(--accent-cyan);
+}
+
+.nav-link:focus, .nav-link:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.nav-link:focus-visible {
+    outline: 2px solid var(--accent-cyan) !important;
+    outline-offset: 3px !important;
+    border-radius: 4px;
 }
 
 #theme-toggle {
@@ -926,6 +939,13 @@ body {
     max-width: var(--w-wide);
 }
 
+.pub-year-section {
+    margin-bottom: 3.5rem;
+}
+.pub-year-section:last-child {
+    margin-bottom: 0;
+}
+
 .pub-row {
     display: grid;
     grid-template-columns: 140px minmax(0, 1fr);
@@ -935,7 +955,12 @@ body {
     border-radius: 12px;
     padding: 1.5rem 1.75rem;
     align-items: center;
+    margin-bottom: 1.5rem;
     transition: var(--transition-fast);
+}
+
+.pub-row:last-child {
+    margin-bottom: 0;
 }
 
 .pub-row:hover {
@@ -1561,8 +1586,9 @@ body {
 
 .skill-category h3 {
     font-family: var(--font-body);
-    font-size: var(--text-body);
+    font-size: var(--text-h3);
     font-weight: 600;
+    line-height: 1.4;
     color: var(--text-primary);
     margin-bottom: 0.6rem;
 }
@@ -1574,10 +1600,10 @@ body {
 }
 
 .tag {
-    padding: 0.3rem 0.72rem;
+    padding: 0.25rem 0.62rem;
     background: var(--bg-card);
     border: 1px solid var(--border-color);
-    border-radius: 6px;
+    border-radius: 5px;
     font-size: var(--text-xs);
     line-height: 1.45;
     color: var(--text-primary);
@@ -1644,8 +1670,9 @@ body {
 }
 
 .gallery-caption h4 {
-    font-size: 0.95rem;
+    font-size: var(--text-body);
     font-weight: 700;
+    line-height: 1.35;
     margin-bottom: 0.2rem;
 }
 
@@ -2083,6 +2110,13 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    padding-bottom: 3.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.research-article:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
 }
 
 .research-article-header {
@@ -2164,6 +2198,7 @@ body {
 
 .research-article-links {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     margin-top: 1.5rem;
 }
@@ -2998,8 +3033,9 @@ select.form-input {
 
 .feedback-title {
     font-family: var(--font-heading);
-    font-size: 1.35rem;
-    font-weight: 800;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.35;
     color: var(--text-primary);
     margin-bottom: 0.8rem;
 }
@@ -3062,17 +3098,18 @@ select.form-input {
 
 .contact-info-label {
     font-family: var(--font-heading);
-    font-size: 0.78rem;
-    font-weight: 800;
+    font-size: var(--text-body);
+    font-weight: 700;
+    line-height: 1.35;
     color: var(--text-subtle);
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
 }
 
 .contact-info-value {
-    font-size: 1.05rem;
+    font-size: var(--text-body);
     color: var(--text-primary);
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.5;
     overflow-wrap: anywhere;
     word-break: break-word;
@@ -3539,8 +3576,9 @@ select.form-input {
 
 .paper-references h2 {
     font-family: var(--font-heading) !important;
-    font-size: 1.1rem !important;
-    font-weight: 800 !important;
+    font-size: 1.45rem !important;
+    font-weight: 700 !important;
+    line-height: 1.35 !important;
     color: var(--text-primary);
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -3553,7 +3591,6 @@ select.form-input {
 .paper-references ol {
     padding-left: 1.2rem;
     font-family: var(--font-body);
-    line-height: 1.75;
     font-size: 0.88rem;
     line-height: 1.65;
     color: var(--text-secondary);
@@ -3573,6 +3610,11 @@ select.form-input {
    ========================================== */
 @media print {
     /* 1. Global Reset for Printing */
+    *, *::before, *::after {
+        transition: none !important;
+        animation: none !important;
+    }
+
     :root, .dark-mode, .light-mode {
         --bg-main: #ffffff;
         --bg-card: #ffffff;
@@ -3876,7 +3918,7 @@ select.form-input {
     margin-top: 0.4rem;
 }
 .ri-item {
-    margin-bottom: 1.35rem;
+    margin-bottom: 1.75rem;
 }
 .ri-item:last-child {
     margin-bottom: 0;
@@ -3931,7 +3973,7 @@ select.form-input {
     display: flex;
     gap: 1.5rem;
     align-items: baseline;
-    padding: 0.8rem 0;
+    padding: 0.95rem 0;
     border-bottom: 1px solid var(--border-color);
 }
 .news-item:last-child {
@@ -4293,11 +4335,10 @@ select.form-input {
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 2.75rem;
 }
 
-/* No card. Each entry is separated by whitespace alone, which frees the typography:
-   title / authors / venue / links all share one size and lean on weight + colour. */
+/* No card. Each entry is separated by whitespace and a clean hairline divider */
 .home-pub-item {
     padding: 0;
     border: none;
@@ -4305,8 +4346,15 @@ select.form-input {
     background: none;
     display: grid;
     grid-template-columns: 2fr 3fr;
-    gap: 1.5rem;
+    gap: 1.75rem;
     align-items: center;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.home-pub-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
 }
 
 .home-pub-thumb {
@@ -4349,12 +4397,10 @@ select.form-input {
 @media (max-width: 640px) {
     .home-pub-item {
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
     .home-pub-thumb {
         aspect-ratio: 16 / 9;
-    }
-    .home-pub-item {
-        gap: 1rem;
     }
 }
 
@@ -4463,15 +4509,26 @@ a.home-pub-title:hover {
 }
 
 /* Remove default blue focus ring on mouse click, keep crisp accessible ring for keyboard nav */
-.nav-link:focus:not(:focus-visible), a:focus:not(:focus-visible), button:focus:not(:focus-visible) { outline: none; }
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+.nav-link:focus:not(:focus-visible) {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+:focus:not(:focus-visible) {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 .nav-link:focus-visible, a:focus-visible, button:focus-visible {
     outline: 2px solid var(--accent-cyan);
     outline-offset: 2px;
 }
 
-/* Spacing & Breathing Room Fixes (Publications & Research) */
-.section-padding { padding-top: 4.5rem !important; }
-#tab-publications .section-title { margin-bottom: 1.25rem !important; }
-#tab-publications .scholar-btn, #tab-publications .btn-outline { margin-top: 0.5rem; margin-bottom: 1.5rem; }
-.research-article-block { margin-bottom: 4rem !important; }
-.research-article-links, .article-links { margin-top: 1.2rem; margin-bottom: 2.5rem; }
+/* Spacing & Breathing Room Fixes (Publications & Research, screen-only so @media print padding stays 1.5rem) */
+@media screen {
+    .section-padding { padding-top: 4.5rem !important; }
+    #tab-publications .section-title { margin-bottom: 1.25rem !important; }
+    .research-article-links { margin-top: 1.2rem; margin-bottom: 2.5rem; }
+}
