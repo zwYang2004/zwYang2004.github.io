@@ -29,7 +29,7 @@
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Main Style -->
-    <link rel="stylesheet" href="assets/css/style.css?v=1.6.1">
+    <link rel="stylesheet" href="assets/css/style.css?v=1.6.2">
     <!-- CDNs: Three.js for 3D Background and GSAP for scroll animations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -659,6 +659,12 @@
                         </a>
                     </div>
 
+                    <div class="pub-filter-bar" id="pub-filter-bar">
+                        <button class="pub-filter-pill active" data-filter="all">All <span>(9)</span></button>
+                        <button class="pub-filter-pill" data-filter="first">First / Co-First <span>(6)</span></button>
+                        <button class="pub-filter-pill" data-filter="ai4bio">AI4Bio <span>(6)</span></button>
+                        <button class="pub-filter-pill" data-filter="math">Mathematical Modeling <span>(3)</span></button>
+                    </div>
                     <p class="pub-legend text-center" style="text-align: center; margin-bottom: 2rem;">
                         <span class="lang-en"><sup>†</sup> equal contribution · <sup>*</sup> corresponding author</span>
                         <span class="lang-zh" style="display:none;"><sup>†</sup> 共同贡献 · <sup>*</sup> 通讯作者</span>
@@ -670,7 +676,7 @@
                             <h3 class="pub-year-header" style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 600; margin-bottom: 1.8rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.6rem; color: var(--text-primary); letter-spacing: -0.015em;">Conference &amp; Journal Papers</h3>
                             
                             <!-- Pub 3: PepSpecBench -->
-                            <div class="pub-row" style="grid-template-columns: 1fr;">
+                            <div class="pub-row" data-tags="all first ai4bio" style="grid-template-columns: 1fr;">
                                 <div class="pub-row-details">
                                     <div class="pub-badge-group">
                                         <span class="pub-pill pub-pill-first">First Author</span>
@@ -702,7 +708,7 @@
                             </div>
                             
                             <!-- Pub 3: Microplastics -->
-                            <div class="pub-row" style="grid-template-columns: 1fr;">
+                            <div class="pub-row" data-tags="all first math" style="grid-template-columns: 1fr;">
                                 <div class="pub-row-details">
                                     <div class="pub-badge-group">
                                         <span class="pub-pill pub-pill-first">First Author</span>
@@ -734,7 +740,7 @@
                         </div>
 
                             <!-- Pub: PLOS ONE 2024 -->
-                            <div class="pub-row" style="grid-template-columns: 1fr;">
+                            <div class="pub-row" data-tags="all first math" style="grid-template-columns: 1fr;">
                                 <div class="pub-row-details" style="grid-column: 1 / -1;">
                                     <div class="pub-badge-group">
                                         <span class="pub-pill pub-pill-first">First Author</span>
@@ -755,7 +761,7 @@
                             <h3 class="pub-year-header" style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 600; margin-bottom: 1.8rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.6rem; color: var(--text-primary); letter-spacing: -0.015em;">Preprints &amp; Under Review</h3>
                             
                             <!-- Pub 2: AmbiModBench -->
-                            <div class="pub-row" style="grid-template-columns: 1fr;">
+                            <div class="pub-row" data-tags="all first ai4bio" style="grid-template-columns: 1fr;">
                                 <div class="pub-row-details">
                                     <div class="pub-badge-group">
                                         <span class="pub-pill pub-pill-cofirst">Co-First &amp; Co-Corresponding</span>
@@ -784,7 +790,7 @@
                             </div>
 
                             <!-- Pub 1: VitaGRN -->
-                            <div class="pub-row" style="grid-template-columns: 1fr;">
+                            <div class="pub-row" data-tags="all first ai4bio" style="grid-template-columns: 1fr;">
                                 <div class="pub-row-details">
                                     <div class="pub-badge-group">
                                         <span class="pub-pill pub-pill-first">First Author</span>
@@ -814,7 +820,7 @@
                             </div>
                             
                             <!-- Pub 4: FlexMS -->
-                            <div class="pub-row" style="grid-template-columns: 1fr;">
+                            <div class="pub-row" data-tags="all ai4bio" style="grid-template-columns: 1fr;">
                                 <div class="pub-row-details">
                                     <div class="pub-badge-group">
                                         <span class="pub-pill pub-pill-coauthor">Co-Author</span>
@@ -843,7 +849,7 @@
                             </div>
                             
                             <!-- Pub 6: PRISM -->
-                            <div class="pub-row" style="grid-template-columns: 1fr;">
+                            <div class="pub-row" data-tags="all ai4bio" style="grid-template-columns: 1fr;">
                                 <div class="pub-row-details">
                                     <div class="pub-badge-group">
                                         <span class="pub-pill pub-pill-review">Preprint</span>
@@ -871,7 +877,7 @@
                             </div>
 
                             <!-- Pub: arXiv:2609.35649 -->
-                            <div class="pub-row" style="grid-template-columns: 1fr;">
+                            <div class="pub-row" data-tags="all ai4bio" style="grid-template-columns: 1fr;">
                                 <div class="pub-row-details" style="grid-column: 1 / -1;">
                                     <div class="pub-badge-group">
                                         <span class="pub-pill pub-pill-submitted">Preprint · Under Review</span>
@@ -890,7 +896,7 @@
                             <h3 class="pub-year-header" style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 700; margin-bottom: 2rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; color: var(--accent-cyan);">Patents</h3>
                             
                             <!-- Pub 5: Patent CN119558222B -->
-                            <div class="pub-row" style="grid-template-columns: 1fr;">
+                            <div class="pub-row" data-tags="all first math" style="grid-template-columns: 1fr;">
                                 <div class="pub-row-details">
                                     <div class="pub-badge-group">
                                         <span class="pub-pill pub-pill-inventor">First Inventor</span>
@@ -1577,5 +1583,26 @@
     <script src="assets/js/discussion.js?v=1.0.5"></script>
     <script src="assets/js/main.js?v=1.0.5"></script>
     <script src="assets/js/timeline.js?v=1.0.5"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var bar = document.getElementById('pub-filter-bar');
+        if (!bar) return;
+        bar.addEventListener('click', function(e) {
+            var btn = e.target.closest('.pub-filter-pill');
+            if (!btn) return;
+            var filter = btn.getAttribute('data-filter');
+            bar.querySelectorAll('.pub-filter-pill').forEach(function(b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+            document.querySelectorAll('#tab-publications .pub-row').forEach(function(row) {
+                var tags = (row.getAttribute('data-tags') || '').split(/\s+/);
+                row.style.display = (filter === 'all' || tags.indexOf(filter) !== -1) ? '' : 'none';
+            });
+            document.querySelectorAll('#tab-publications .pub-year-section').forEach(function(sec) {
+                var visible = sec.querySelectorAll('.pub-row:not([style*="display: none"])').length;
+                sec.style.display = visible > 0 ? '' : 'none';
+            });
+        });
+    });
+    </script>
 </body>
 </html>
