@@ -4944,3 +4944,8 @@ a.home-pub-title:hover,
 #tab-publications .pub-year-section + .pub-year-section {
     margin-top: 1.25rem !important;
 }
+
+/* ===== v1.6.5: root cause of big gaps = .pub-year-section margin-bottom 3.5rem + .publications-list flex gap 1.5rem ===== */
+.publications-list { gap: 0 !important; }
+#tab-publications .pub-year-section { margin-bottom: 0 !important; }
+#tab-publications .pub-year-section + .pub-year-section { margin-top: 1.75rem !important; }
