@@ -151,9 +151,9 @@ body {
 /* Layout Utilities */
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 940px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 2.5rem;
 }
 
 .container.blog-container {
