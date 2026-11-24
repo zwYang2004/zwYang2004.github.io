@@ -97,11 +97,13 @@ body {
 h1, h2, h3, h4, .section-title, .hero-name, .pub-year-header {
     font-family: var(--font-heading);
     line-height: var(--lh-heading);
+    letter-spacing: -0.015em;
 }
 .hero-name {
     font-size: var(--text-hero);
     font-weight: 700;
     line-height: 1.25;
+    letter-spacing: -0.02em;
 }
 .section-title {
     font-size: var(--text-h2);
@@ -312,6 +314,19 @@ body {
     box-shadow: 0 4px 12px var(--glass-shadow);
 }
 
+.btn-primary-pill {
+    background: var(--text-primary) !important;
+    color: var(--bg-main) !important;
+    border-color: var(--text-primary) !important;
+    font-weight: 600 !important;
+}
+
+.btn-primary-pill:hover {
+    background: var(--accent-cyan) !important;
+    border-color: var(--accent-cyan) !important;
+    color: #ffffff !important;
+}
+
 .btn-outline {
     background: transparent;
     border: 1.5px solid var(--accent-cyan);
@@ -357,15 +372,21 @@ body {
 .logo {
     margin-right: auto;
     font-family: var(--font-heading);
-    font-size: 1.85rem;
-    font-weight: 700;
+    font-size: 1.35rem;
+    font-weight: 600;
+    letter-spacing: -0.015em;
 }
 
 .logo a {
     color: var(--text-primary);
     text-decoration: none;
-    border-bottom: 3px solid var(--accent-cyan);
-    padding-bottom: 2px;
+    border-bottom: none;
+    padding-bottom: 0;
+    transition: var(--transition-fast);
+}
+
+.logo a:hover {
+    color: var(--accent-cyan);
 }
 
 .nav-menu {
@@ -559,11 +580,12 @@ body {
 }
 
 .chinese-name {
-    font-size: 0.78em;
-    font-weight: 500;
+    font-size: 0.82em;
+    font-weight: 600;
     color: var(--text-secondary);
-    margin-left: 0.45rem;
-    font-family: var(--font-heading);
+    margin-left: 0.5rem;
+    vertical-align: -0.04em;
+    font-family: 'Noto Serif SC', var(--font-heading);
 }
 
 .hero-affiliation {
@@ -2135,10 +2157,10 @@ body {
     position: absolute;
     bottom: -1px;
     left: 0;
-    width: 80px;
-    height: 3px;
-    background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
-    border-radius: 2px;
+    width: 48px;
+    height: 2px;
+    background: var(--accent-cyan);
+    border-radius: 1px;
 }
 
 .research-article-body {
@@ -4345,8 +4367,8 @@ select.form-input {
     border-radius: 0;
     background: none;
     display: grid;
-    grid-template-columns: 2fr 3fr;
-    gap: 1.75rem;
+    grid-template-columns: 240px 1fr;
+    gap: 2rem;
     align-items: center;
     padding-bottom: 2.5rem;
     border-bottom: 1px solid var(--border-color);
@@ -4394,13 +4416,14 @@ select.form-input {
     min-width: 0;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
     .home-pub-item {
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 1.25rem;
     }
     .home-pub-thumb {
         aspect-ratio: 16 / 9;
+        max-width: 320px;
     }
 }
 
@@ -4526,9 +4549,22 @@ button:focus:not(:focus-visible),
     outline-offset: 2px;
 }
 
-/* Spacing & Breathing Room Fixes (Publications & Research, screen-only so @media print padding stays 1.5rem) */
+/* Spacing & Breathing Room Fixes (Screen-only so @media print padding stays 1.5rem) */
 @media screen {
-    .section-padding { padding-top: 4.5rem !important; }
+    .section-padding { padding-top: 4.5rem; }
+    
+    /* Safe clearance under the fixed header (~75px) for the first section of all non-home tabs */
+    .page-tab:not(#tab-home) > section:first-of-type,
+    .page-tab:not(#tab-home) > .section-padding:first-of-type,
+    #tab-publications .section-padding:first-of-type,
+    #tab-experience .section-padding:first-of-type,
+    #tab-research .section-padding:first-of-type,
+    #tab-blog .section-padding:first-of-type,
+    #tab-blog-post .section-padding:first-of-type,
+    #tab-contact .section-padding:first-of-type {
+        padding-top: 7.5rem !important;
+    }
+
     #tab-publications .section-title { margin-bottom: 1.25rem !important; }
     .research-article-links { margin-top: 1.2rem; margin-bottom: 2.5rem; }
 }
