@@ -5314,7 +5314,8 @@ b, strong, h1, h2, h3, h4, h5 { font-weight: 600 !important; }
 .open-science-grid > li {
     list-style: none !important;
     background: #ffffff;
-    border: 1px solid var(--border-subtle, #e5e7eb);
+    border: 1px solid #d1d5db !important;
+    border-bottom: 1px solid #d1d5db !important;
     border-radius: 10px;
     padding: 1.1rem 1.25rem;
     display: flex;
