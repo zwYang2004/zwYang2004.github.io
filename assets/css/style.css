@@ -5078,3 +5078,8 @@ b, strong, h1, h2, h3, h4, h5 { font-weight: 600 !important; }
 .pub-row-authors a, .home-pub-authors a { color: inherit !important; }
 .pub-row-authors a:hover, .home-pub-authors a:hover { color: #c04b41 !important; text-decoration: underline !important; }
 .hero-cv-link[hidden] { display: none !important; }
+
+/* v1.8.1: Hide all EN/中 language toggle pills */
+.bio-toggle {
+    display: none !important;
+}
