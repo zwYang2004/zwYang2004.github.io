@@ -4949,3 +4949,28 @@ a.home-pub-title:hover,
 .publications-list { gap: 0 !important; }
 #tab-publications .pub-year-section { margin-bottom: 0 !important; }
 #tab-publications .pub-year-section + .pub-year-section { margin-top: 1.75rem !important; }
+
+/* ===== v1.6.6: unified red group headers, no badge row, gold resource tags ===== */
+#tab-publications .pub-year-header {
+    font-family: var(--font-heading) !important;
+    font-size: 1.35rem !important;
+    font-weight: 600 !important;
+    color: var(--accent-cyan) !important;
+    letter-spacing: -0.015em !important;
+    border-bottom: 1px solid var(--border-color) !important;
+    padding-bottom: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+}
+#tab-publications .pub-badge-group { display: none !important; }
+#tab-publications .pub-res-link,
+.home-pub-links .pub-res-link {
+    background: #f5efe6 !important;
+    border: 1px solid #d6c5ae !important;
+    color: #5c4938 !important;
+}
+#tab-publications .pub-res-link:hover,
+.home-pub-links .pub-res-link:hover {
+    background: #ede2d1 !important;
+    border-color: #b89f7e !important;
+    color: #3f3226 !important;
+}
