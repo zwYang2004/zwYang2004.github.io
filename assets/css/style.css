@@ -5243,3 +5243,9 @@ b, strong, h1, h2, h3, h4, h5 { font-weight: 600 !important; }
     position: relative !important;
     z-index: 10 !important;
 }
+
+/* v1.9.1: Remove #hero bottom border line */
+#hero {
+    border-bottom: none !important;
+    padding-bottom: 0.5rem !important;
+}
