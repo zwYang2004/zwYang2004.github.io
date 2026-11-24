@@ -5301,3 +5301,39 @@ b, strong, h1, h2, h3, h4, h5 { font-weight: 600 !important; }
         margin-top: -3.8rem !important;
     }
 }
+
+/* v2.0.2: 2-column card grid for Open-Science Software & Hubs */
+.open-science-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 1.1rem !important;
+    padding-left: 0 !important;
+    margin: 0 !important;
+}
+
+.open-science-grid > li {
+    list-style: none !important;
+    background: #ffffff;
+    border: 1px solid var(--border-subtle, #e5e7eb);
+    border-radius: 10px;
+    padding: 1.1rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.open-science-grid > li:hover {
+    border-color: #d1d5db;
+    box-shadow: 0 4px 12px rgba(17, 24, 39, 0.05);
+}
+
+.open-science-grid .home-pub-links {
+    margin-top: 0.35rem;
+}
+
+@media (max-width: 720px) {
+    .open-science-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
