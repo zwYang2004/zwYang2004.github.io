@@ -5135,3 +5135,16 @@ b, strong, h1, h2, h3, h4, h5 { font-weight: 600 !important; }
     border-bottom: none !important;
     padding-bottom: 0.75rem !important;
 }
+
+/* v1.8.4: Remove bio-header-container bottom border and pull profile card up */
+.bio-header-container {
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 1rem !important;
+}
+
+@media (min-width: 820px) {
+    .profile-card {
+        margin-top: -3.5rem !important;
+    }
+}
