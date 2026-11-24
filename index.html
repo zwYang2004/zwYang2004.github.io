@@ -25,15 +25,16 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Main Style -->
     <link rel="stylesheet" href="assets/css/style.css?v=2.2.7">
     <!-- CDNs: Three.js for 3D Background and GSAP for scroll animations -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
 </head>
 <body> <!-- Default to light mode (白天模式) -->
 
@@ -107,7 +108,7 @@
                         </div>
 
                         <aside class="profile-card">
-                            <img src="assets/img/profile.jpg" alt="Zhiwen Yang" class="profile-card-photo">
+                            <img loading="lazy" decoding="async" src="assets/img/profile.jpg" alt="Zhiwen Yang" class="profile-card-photo">
                             <div class="profile-card-name">Zhiwen Yang</div>
                             <ul class="profile-card-list">
                                 <li><i class="fa-solid fa-graduation-cap"></i><span class="pc-dark">Master Student</span></li>
@@ -155,7 +156,7 @@
                         <ul class="home-pub-list">
                             <li class="home-pub-item">
                                 <div class="home-pub-thumb">
-                                    <img src="assets/img/fig-pepspec.png" alt="PepSpecBench" class="home-pub-thumb-img">
+                                    <img loading="lazy" decoding="async" src="assets/img/fig-pepspec.png" alt="PepSpecBench" class="home-pub-thumb-img">
                                 </div>
                                 <div class="home-pub-body">
                                 <a class="home-pub-title" href="https://neurips.cc/virtual/2026/loc/sydney/poster/139229" target="_blank" rel="noopener">PepSpecBench: A Unified Evaluation Benchmark for Peptide Tandem Mass Spectrometry Prediction</a>
@@ -171,7 +172,7 @@
                             </li>
                             <li class="home-pub-item">
                                 <div class="home-pub-thumb">
-                                    <img src="assets/img/fig-vitagrn.png" alt="VitaGRN" class="home-pub-thumb-img">
+                                    <img loading="lazy" decoding="async" src="assets/img/fig-vitagrn.png" alt="VitaGRN" class="home-pub-thumb-img">
                                 </div>
                                 <div class="home-pub-body">
                                 <a class="home-pub-title" href="https://www.biorxiv.org/content/10.64898/2026.06.05.729520v1.abstract" target="_blank" rel="noopener">Multimodal Physical Evidence Uncovers Interpretable Gene Regulatory Networks for Perturbation Prediction</a>
@@ -184,7 +185,7 @@
                             </li>
                             <li class="home-pub-item">
                                 <div class="home-pub-thumb">
-                                    <img src="assets/img/fig-ambimod.png" alt="AmbiModBench" class="home-pub-thumb-img">
+                                    <img loading="lazy" decoding="async" src="assets/img/fig-ambimod.png" alt="AmbiModBench" class="home-pub-thumb-img">
                                 </div>
                                 <div class="home-pub-body">
                                 <a class="home-pub-title" href="https://arxiv.org/abs/2609.32527" target="_blank" rel="noopener">AmbiModBench: Benchmarking Gene Perturbation Prediction Beyond Shared Responses</a>
@@ -197,7 +198,7 @@
                             </li>
                             <li class="home-pub-item">
                                 <div class="home-pub-thumb">
-                                    <img src="assets/img/fig-microplastic.jpg" alt="Microplastic Transport" class="home-pub-thumb-img">
+                                    <img loading="lazy" decoding="async" src="assets/img/fig-microplastic.jpg" alt="Microplastic Transport" class="home-pub-thumb-img">
                                 </div>
                                 <div class="home-pub-body">
                                 <a class="home-pub-title" href="https://doi.org/10.1016/j.ecolmodel.2026.111686" target="_blank" rel="noopener">Microplastic Transport Reshapes Estuarine Population Dynamics in the Yangtze River Estuary</a>
@@ -488,7 +489,7 @@
                                     </div>
                                 </div>
                                 <div class="research-article-visual">
-                                    <img src="assets/img/fig-vitagrn.png" alt="VitaGRN Model Architecture" class="research-article-img">
+                                    <img loading="lazy" decoding="async" src="assets/img/fig-vitagrn.png" alt="VitaGRN Model Architecture" class="research-article-img">
                                 </div>
                             </div>
                         </article>
@@ -514,7 +515,7 @@
                                     </div>
                                 </div>
                                 <div class="research-article-visual">
-                                    <img src="assets/img/fig-pepspec.png" alt="PepSpecBench Benchmark Overview" class="research-article-img">
+                                    <img loading="lazy" decoding="async" src="assets/img/fig-pepspec.png" alt="PepSpecBench Benchmark Overview" class="research-article-img">
                                 </div>
                             </div>
                         </article>
@@ -538,7 +539,7 @@
                                     </div>
                                 </div>
                                 <div class="research-article-visual">
-                                    <img src="assets/img/fig-microplastic.jpg" alt="Estuarine Microplastics Modeling" class="research-article-img">
+                                    <img loading="lazy" decoding="async" src="assets/img/fig-microplastic.jpg" alt="Estuarine Microplastics Modeling" class="research-article-img">
                                 </div>
                             </div>
                         </article>
@@ -626,7 +627,7 @@
                                     </div>
                                 </div>
                                 <div class="research-article-visual">
-                                    <img src="assets/img/fig-vitagrn.png" alt="VitaGRN 模型架构" class="research-article-img">
+                                    <img loading="lazy" decoding="async" src="assets/img/fig-vitagrn.png" alt="VitaGRN 模型架构" class="research-article-img">
                                 </div>
                             </div>
                         </article>
@@ -652,7 +653,7 @@
                                     </div>
                                 </div>
                                 <div class="research-article-visual">
-                                    <img src="assets/img/fig-pepspec.png" alt="PepSpecBench 基准总览" class="research-article-img">
+                                    <img loading="lazy" decoding="async" src="assets/img/fig-pepspec.png" alt="PepSpecBench 基准总览" class="research-article-img">
                                 </div>
                             </div>
                         </article>
@@ -676,7 +677,7 @@
                                     </div>
                                 </div>
                                 <div class="research-article-visual">
-                                    <img src="assets/img/fig-microplastic.jpg" alt="长江口微塑料耦合模拟" class="research-article-img">
+                                    <img loading="lazy" decoding="async" src="assets/img/fig-microplastic.jpg" alt="长江口微塑料耦合模拟" class="research-article-img">
                                 </div>
                             </div>
                         </article>
@@ -1252,7 +1253,7 @@
                         <!-- Patent -->
                         <div class="gallery-item animate-on-scroll">
                             <div class="gallery-image-box credential-box">
-                                <img src="assets/img/gallery/专利证书.jpg" alt="China National Invention Patent" class="gallery-img">
+                                <img loading="lazy" decoding="async" src="assets/img/gallery/专利证书.jpg" alt="China National Invention Patent" class="gallery-img">
                                 <div class="gallery-caption">
                                     <h4>Invention Patent (CN 119558222 B)</h4>
                                     <p>First Inventor. Coupled hydrodynamic-ecological modeling algorithm on unstructured grids.</p>
@@ -1262,7 +1263,7 @@
                         <!-- CUMCM -->
                         <div class="gallery-item animate-on-scroll">
                             <div class="gallery-image-box credential-box">
-                                <img src="assets/img/gallery/2023_CUMCM_National_Second_Prize.jpg" alt="CUMCM National Second Prize Certificate" class="gallery-img">
+                                <img loading="lazy" decoding="async" src="assets/img/gallery/2023_CUMCM_National_Second_Prize.jpg" alt="CUMCM National Second Prize Certificate" class="gallery-img">
                                 <div class="gallery-caption">
                                     <h4>CUMCM National 2nd Prize</h4>
                                     <p>Contemporary Undergraduate Mathematical Contest in Modeling (Top 1.5% nationally).</p>
@@ -1272,7 +1273,7 @@
                         <!-- MCM -->
                         <div class="gallery-item animate-on-scroll">
                             <div class="gallery-image-box credential-box">
-                                <img src="assets/img/gallery/MCM_Honerable_Mentioned.jpg" alt="COMAP MCM Honorable Mention Certificate" class="gallery-img">
+                                <img loading="lazy" decoding="async" src="assets/img/gallery/MCM_Honerable_Mentioned.jpg" alt="COMAP MCM Honorable Mention Certificate" class="gallery-img">
                                 <div class="gallery-caption">
                                     <h4>MCM Honorable Mention</h4>
                                     <p>COMAP's Mathematical Contest in Modeling (International).</p>
@@ -1282,7 +1283,7 @@
                         <!-- National Innovation -->
                         <div class="gallery-item animate-on-scroll">
                             <div class="gallery-image-box credential-box">
-                                <img src="assets/img/gallery/National_College_Student_Innovation_and_Entrepreneurship_Training_Excellent_Completion_Certificate.jpg" alt="National Innovation Project Excellent Completion Certificate" class="gallery-img">
+                                <img loading="lazy" decoding="async" src="assets/img/gallery/National_College_Student_Innovation_and_Entrepreneurship_Training_Excellent_Completion_Certificate.jpg" alt="National Innovation Project Excellent Completion Certificate" class="gallery-img">
                                 <div class="gallery-caption">
                                     <h4>National Innovation Project — Excellent</h4>
                                     <p>Awarded "Excellent" final completion grade for the undergraduate research project.</p>
@@ -1292,7 +1293,7 @@
                         <!-- ZJU SDG -->
                         <div class="gallery-item animate-on-scroll">
                             <div class="gallery-image-box credential-box">
-                                <img src="assets/img/gallery/Zhejiang_University_Summer_School_Completion_Certificate.jpg" alt="Zhejiang University SDG Summer School Completion Certificate" class="gallery-img">
+                                <img loading="lazy" decoding="async" src="assets/img/gallery/Zhejiang_University_Summer_School_Completion_Certificate.jpg" alt="Zhejiang University SDG Summer School Completion Certificate" class="gallery-img">
                                 <div class="gallery-caption">
                                     <h4>ZJU SDG Global Summer School</h4>
                                     <p>Awarded Full Scholarship for completion of ZJU SDG Global Summer School.</p>
@@ -1302,7 +1303,7 @@
                         <!-- Westlake Guomics -->
                         <div class="gallery-item animate-on-scroll">
                             <div class="gallery-image-box credential-box">
-                                <img src="assets/img/gallery/西湖 Internship_at_Guomics_Westlake_Univesity.jpg" alt="Westlake Guomics Internship Certificate" class="gallery-img">
+                                <img loading="lazy" decoding="async" src="assets/img/gallery/西湖 Internship_at_Guomics_Westlake_Univesity.jpg" alt="Westlake Guomics Internship Certificate" class="gallery-img">
                                 <div class="gallery-caption">
                                     <h4>Westlake Guomics Internship</h4>
                                     <p>Research Assistant internship certificate at Prof. Tiannan Guo's Lab, Westlake University.</p>
@@ -1312,7 +1313,7 @@
                         <!-- Westlake Stan Z Li -->
                         <div class="gallery-item animate-on-scroll">
                             <div class="gallery-image-box credential-box">
-                                <img src="assets/img/gallery/西湖大学李子青实习证明.jpg" alt="Westlake Chair Prof. Stan Z. Li Lab Internship Certificate" class="gallery-img">
+                                <img loading="lazy" decoding="async" src="assets/img/gallery/西湖大学李子青实习证明.jpg" alt="Westlake Chair Prof. Stan Z. Li Lab Internship Certificate" class="gallery-img">
                                 <div class="gallery-caption">
                                     <h4>Westlake Stan Z. Li Lab Internship</h4>
                                     <p>Research Assistant internship certificate at Chair Prof. Stan Z. Li's Lab, Westlake University.</p>
@@ -1326,7 +1327,7 @@
                         <!-- Lai Zhang graduation photo -->
                         <div class="gallery-item animate-on-scroll">
                             <div class="gallery-image-box">
-                                <img src="assets/img/gallery/杨志文与张来合照.jpg" alt="Zhiwen Yang with undergraduate advisor Prof. Lai Zhang" class="gallery-img">
+                                <img loading="lazy" decoding="async" src="assets/img/gallery/杨志文与张来合照.jpg" alt="Zhiwen Yang with undergraduate advisor Prof. Lai Zhang" class="gallery-img">
                                 <div class="gallery-caption">
                                     <h4>With Prof. Lai Zhang</h4>
                                     <p>Graduation day with my undergraduate advisor Prof. Lai Zhang at Yangzhou University, June 2026.</p>
@@ -1336,7 +1337,7 @@
                         <!-- Lai Zhang team group photo -->
                         <div class="gallery-item animate-on-scroll">
                             <div class="gallery-image-box">
-                                <img src="assets/img/gallery/张来团队合照.jpg" alt="Zhiwen Yang with Prof. Lai Zhang's research team" class="gallery-img">
+                                <img loading="lazy" decoding="async" src="assets/img/gallery/张来团队合照.jpg" alt="Zhiwen Yang with Prof. Lai Zhang's research team" class="gallery-img">
                                 <div class="gallery-caption">
                                     <h4>Biomathematics Research Group</h4>
                                     <p>Group photo with Prof. Lai Zhang's research team at the School of Mathematics, YZU.</p>
@@ -1346,7 +1347,7 @@
                         <!-- Degree conferral -->
                         <div class="gallery-item animate-on-scroll">
                             <div class="gallery-image-box">
-                                <img src="assets/img/gallery/学位授予.jpg" alt="Zhiwen Yang's degree conferral ceremony" class="gallery-img">
+                                <img loading="lazy" decoding="async" src="assets/img/gallery/学位授予.jpg" alt="Zhiwen Yang's degree conferral ceremony" class="gallery-img">
                                 <div class="gallery-caption">
                                     <h4>Degree Conferral Ceremony</h4>
                                     <p>Official graduation degree conferral ceremony at Yangzhou University, June 2026.</p>
@@ -1356,7 +1357,7 @@
                         <!-- With YZU President -->
                         <div class="gallery-item animate-on-scroll">
                             <div class="gallery-image-box">
-                                <img src="assets/img/gallery/与扬州大学校长集体合影.jpg" alt="Group photo of Zhiwen Yang with YZU President and students" class="gallery-img">
+                                <img loading="lazy" decoding="async" src="assets/img/gallery/与扬州大学校长集体合影.jpg" alt="Group photo of Zhiwen Yang with YZU President and students" class="gallery-img">
                                 <div class="gallery-caption">
                                     <h4>With the President of YZU</h4>
                                     <p>Group photo with the President of Yangzhou University at the 2026 graduation ceremony.</p>
@@ -1366,7 +1367,7 @@
                         <!-- HKJC international friends -->
                         <div class="gallery-item animate-on-scroll">
                             <div class="gallery-image-box">
-                                <img src="assets/img/gallery/香港赛马会和国际友人交流.jpg" alt="Zhiwen Yang with international friends at Hong Kong Jockey Club" class="gallery-img">
+                                <img loading="lazy" decoding="async" src="assets/img/gallery/香港赛马会和国际友人交流.jpg" alt="Zhiwen Yang with international friends at Hong Kong Jockey Club" class="gallery-img">
                                 <div class="gallery-caption">
                                     <h4>Life in Hong Kong</h4>
                                     <p>An evening out with international friends at the Hong Kong Jockey Club racecourse, early 2026.</p>
@@ -1376,7 +1377,7 @@
                         <!-- Westlake Concert -->
                         <div class="gallery-item animate-on-scroll">
                             <div class="gallery-image-box">
-                                <img src="assets/img/gallery/西湖大学音乐会 维也纳金音.jpg" alt="Vienna Golden Sound Concert at Westlake University" class="gallery-img">
+                                <img loading="lazy" decoding="async" src="assets/img/gallery/西湖大学音乐会 维也纳金音.jpg" alt="Vienna Golden Sound Concert at Westlake University" class="gallery-img">
                                 <div class="gallery-caption">
                                     <h4>Westlake Concert</h4>
                                     <p>"Vienna Golden Sound" concert at Westlake University Yungu Campus, attended during my research internship.</p>
@@ -1677,7 +1678,7 @@
     <!-- Image Modal for Lightbox Viewer -->
     <div id="image-modal" class="modal">
         <span class="modal-close">&times;</span>
-        <img class="modal-content" id="modal-img">
+        <img loading="lazy" decoding="async" class="modal-content" id="modal-img">
         <div id="modal-caption"></div>
     </div>
 
