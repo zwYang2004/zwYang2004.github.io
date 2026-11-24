@@ -4170,3 +4170,6 @@ a.home-pub-title:hover {
 #about .homepage-news-section {
     margin-top: 3.2rem;
 }
+
+/* Remove default blue focus ring on mouse click */
+.nav-link:focus:not(:focus-visible), a:focus:not(:focus-visible), button:focus:not(:focus-visible) { outline: none; }
