@@ -4689,15 +4689,15 @@ button:focus:not(:focus-visible),
 #tab-publications .pub-year-section { margin-top: 2rem !important; }
 #tab-publications .pub-year-header { margin-bottom: 1rem !important; }
 #tab-publications .pub-row { padding: 1.35rem 0 !important; }
-/* Highlight paper titles in academic crimson */
+/* Keep paper titles crisp dark ink; reserve crimson for subtle accents/hover */
 .home-pub-title,
 #tab-publications .pub-row-title a {
-    color: #9e3a33 !important;
+    color: var(--text-primary) !important;
     font-weight: 600 !important;
 }
 a.home-pub-title:hover,
 #tab-publications .pub-row-title a:hover {
-    color: #752822 !important;
+    color: var(--accent-cyan) !important;
 }
 
 /* ===== v1.5.5: editorial date font, right-aligned experience dates, compact news, short red rule ===== */
@@ -4758,3 +4758,22 @@ a.home-pub-title:hover,
 /* ===== v1.5.6: balance body text & bold contrast ===== */
 .bio-text { color: #27272a !important; }
 .bio-text strong { color: #111827 !important; font-weight: 600 !important; }
+
+/* ===== v1.5.7: neutral ink paper titles + clean boxed resource tags ===== */
+.home-pub-links .pub-res-link,
+#tab-publications .pub-res-link {
+    border: 1px solid #d1d5db !important;
+    border-radius: 3px !important;
+    padding: 0.15rem 0.5rem !important;
+    color: #374151 !important;
+    text-decoration: none !important;
+    font-size: 0.75rem !important;
+    font-weight: 500 !important;
+    transition: border-color 0.15s ease, color 0.15s ease;
+}
+.home-pub-links .pub-res-link:hover,
+#tab-publications .pub-res-link:hover {
+    border-color: var(--accent-cyan) !important;
+    color: var(--accent-cyan) !important;
+    text-decoration: none !important;
+}
