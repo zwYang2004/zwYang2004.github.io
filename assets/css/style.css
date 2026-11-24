@@ -5273,3 +5273,9 @@ b, strong, h1, h2, h3, h4, h5 { font-weight: 600 !important; }
         margin-top: -2.2rem !important;
     }
 }
+
+/* v1.9.5: Uppercase top-left navbar brand */
+.nav-brand,
+.navbar-brand {
+    text-transform: uppercase !important;
+}
