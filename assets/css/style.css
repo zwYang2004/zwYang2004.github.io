@@ -5337,3 +5337,14 @@ b, strong, h1, h2, h3, h4, h5 { font-weight: 600 !important; }
         grid-template-columns: 1fr !important;
     }
 }
+
+/* v2.0.3: Clear fixed navbar for #about after removing #hero, and align .profile-card */
+#about.section-padding {
+    padding-top: 5.5rem !important;
+}
+
+@media (min-width: 820px) {
+    .profile-card {
+        margin-top: -0.5rem !important;
+    }
+}
