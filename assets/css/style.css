@@ -5589,3 +5589,80 @@ ul.home-pub-list.open-science-grid > li:last-child {
     border-bottom: 1px solid #d1d5db !important;
     padding: 1.25rem 1.35rem 1.35rem !important;
 }
+
+/* ==========================================
+   Dark Mode Overrides for Centered Sheet & Cards
+   ========================================== */
+html.dark-mode body {
+    background-color: #111318 !important;
+    color: #e5e7eb !important;
+}
+
+html.dark-mode main {
+    background: #1a1d24 !important;
+    border-color: #2d323e !important;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35) !important;
+}
+
+html.dark-mode .section-title,
+html.dark-mode .subsection-title,
+html.dark-mode .bio-text strong,
+html.dark-mode .home-pub-title,
+html.dark-mode .selected-exp-role strong {
+    color: #f3f4f6 !important;
+}
+
+html.dark-mode .bio-text,
+html.dark-mode .bio-text p,
+html.dark-mode .news-text,
+html.dark-mode .selected-exp-role,
+html.dark-mode .selected-exp-org,
+html.dark-mode .home-pub-meta {
+    color: #d1d5db !important;
+}
+
+html.dark-mode .profile-card {
+    background: #222630 !important;
+    border-color: #2f3542 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3) !important;
+}
+
+html.dark-mode .profile-card .profile-name,
+html.dark-mode .profile-card h3 {
+    color: #f3f4f6 !important;
+}
+
+html.dark-mode .profile-card .profile-role,
+html.dark-mode .profile-card .profile-affil,
+html.dark-mode .profile-card .profile-meta,
+html.dark-mode .profile-card li {
+    color: #cbd5e1 !important;
+}
+
+html.dark-mode .callout-box {
+    background: rgba(192, 75, 65, 0.12) !important;
+    border-color: rgba(192, 75, 65, 0.35) !important;
+    color: #e5e7eb !important;
+}
+
+html.dark-mode .callout-box h4,
+html.dark-mode .callout-box .callout-title {
+    color: #fca5a5 !important;
+}
+
+html.dark-mode .home-pub-list.open-science-grid li {
+    background: #222630 !important;
+    border-color: #2f3542 !important;
+}
+
+html.dark-mode .home-pub-link {
+    background: #2a2f3a !important;
+    border-color: #3a4150 !important;
+    color: #e5e7eb !important;
+}
+
+html.dark-mode #back-to-top {
+    background: #222630 !important;
+    border-color: #3a4150 !important;
+    color: #f3f4f6 !important;
+}

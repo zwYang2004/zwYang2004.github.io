@@ -8,8 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggleBtn = document.getElementById('theme-toggle');
     const toggleIcon = themeToggleBtn.querySelector('i');
     
-    // Check local storage or defaults (Default to Light Mode)
-    const currentTheme = localStorage.getItem('theme') || 'light';
+    // Check local storage or system preference
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const currentTheme = localStorage.getItem('theme') || (prefersDark ? 'dark' : 'light');
     if (currentTheme === 'dark') {
         document.documentElement.classList.remove('light-mode');
         document.documentElement.classList.add('dark-mode');
