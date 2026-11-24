@@ -5148,3 +5148,14 @@ b, strong, h1, h2, h3, h4, h5 { font-weight: 600 !important; }
         margin-top: -3.5rem !important;
     }
 }
+
+/* v1.8.5: Remove all faint grey divider lines under hero and section headings (keep short red ::after underline) */
+.hero-banner,
+.hero,
+.hero-section,
+.section-title,
+.section-header,
+.bio-header-container,
+.pub-group-title {
+    border-bottom: none !important;
+}
