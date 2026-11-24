@@ -5551,3 +5551,10 @@ header#header i {
     padding-top: 1.8rem !important;
     margin-top: 0 !important;
 }
+
+/* v2.2.0: Ensure Open-Science cards span full container width cleanly */
+ul.home-pub-list.open-science-grid,
+ul.home-pub-list.open-science-grid > li {
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
