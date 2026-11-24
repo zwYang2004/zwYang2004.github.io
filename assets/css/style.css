@@ -5678,11 +5678,14 @@ html.dark-mode .home-callout-title {
 }
 
 html.dark-mode .pub-row-title,
-html.dark-mode .pub-row-title a {
+html.dark-mode .pub-row-title a,
+html.dark-mode #tab-publications .pub-row-title,
+html.dark-mode #tab-publications .pub-row-title a {
     color: #f3f4f6 !important;
 }
 
-html.dark-mode .pub-row-title a:hover {
+html.dark-mode .pub-row-title a:hover,
+html.dark-mode #tab-publications .pub-row-title a:hover {
     color: #fca5a5 !important;
 }
 
