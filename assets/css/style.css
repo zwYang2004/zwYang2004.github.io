@@ -5200,3 +5200,12 @@ b, strong, h1, h2, h3, h4, h5 { font-weight: 600 !important; }
 .social-links a:hover i {
     color: var(--accent, #c04b41) !important;
 }
+
+/* v1.8.8: Remove uppercase transform on Contact labels and card headings */
+.contact-card *,
+.contact-label,
+.contact-item-label,
+.contact-info-label {
+    text-transform: none !important;
+    letter-spacing: normal !important;
+}
