@@ -5260,7 +5260,7 @@ b, strong, h1, h2, h3, h4, h5 { font-weight: 600 !important; }
 
 /* v1.9.3: Tighten vertical spacing between #hero and #about */
 #hero {
-    padding-top: 1.8rem !important;
+    padding-top: 5.5rem !important;
     padding-bottom: 0.2rem !important;
 }
 
