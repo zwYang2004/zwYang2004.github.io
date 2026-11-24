@@ -4930,3 +4930,17 @@ a.home-pub-title:hover,
 #tab-publications .pub-year-header {
     margin-bottom: 0.5rem !important;
 }
+
+/* ===== v1.6.4: natural casing on resource tags + tighter Preprints/Patents top gap ===== */
+.home-pub-links .pub-res-link,
+#tab-publications .pub-res-link {
+    text-transform: none !important;
+    letter-spacing: 0.01em !important;
+    font-size: 0.75rem !important;
+}
+#tab-publications .pub-row:last-child {
+    padding-bottom: 0.75rem !important;
+}
+#tab-publications .pub-year-section + .pub-year-section {
+    margin-top: 1.25rem !important;
+}
