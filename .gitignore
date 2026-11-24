@@ -17,8 +17,12 @@ vendor/
 .bundle/
 
 # macOS
+_archive_*.html
+cv/
 .DS_Store
-**/.DS_Store
+**/_archive_*.html
+cv/
+.DS_Store
 
 # Local snapshot folders — restore points, not part of the published site
 _backup_*/
