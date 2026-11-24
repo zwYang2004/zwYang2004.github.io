@@ -29,7 +29,7 @@
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Main Style -->
-    <link rel="stylesheet" href="assets/css/style.css?v=1.7.0">
+    <link rel="stylesheet" href="assets/css/style.css?v=1.8.0">
     <!-- CDNs: Three.js for 3D Background and GSAP for scroll animations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -96,31 +96,11 @@
         <div class="page-tab" id="tab-home">
             <!-- Hero / Landing Banner -->
             <section id="hero">
-                <div class="container hero-grid">
+                <div class="container hero-grid hero-compact">
                     <div class="hero-text-col">
                         <h1 class="hero-name">Zhiwen Yang <span class="chinese-name">杨志文</span></h1>
-                        <p class="hero-tagline">AI for Science & Data Science</p>
-                        <p class="hero-seeking"><i class="fa-solid fa-graduation-cap"></i> Seeking Ph.D. opportunities · Fall 2028</p>
-                        <p class="hero-location"><i class="fa-solid fa-map-pin"></i> Hong Kong, China</p>
-                        <p class="hero-cv-slot"><a class="hero-cv-link" href="files/Zhiwen_Yang_CV.pdf" id="hero-cv-link" hidden>CV (PDF)</a></p>
-
-                        <div class="hero-links">
-                            <a href="files/Zhiwen_Yang_CV.pdf" target="_blank" rel="noopener" class="btn btn-pill btn-primary-pill"><i class="fa-solid fa-file-pdf"></i> CV (PDF)</a>
-                            <a href="mailto:zhiwen.yang@connect.polyu.hk" class="btn btn-pill"><i class="fa-solid fa-envelope"></i> Email</a>
-                            <a href="https://scholar.google.com/citations?hl=en&user=lIjJiH0AAAAJ" target="_blank" rel="noopener" class="btn btn-pill"><i class="fa-brands fa-google-scholar"></i> Scholar</a>
-                            <span class="hero-icons">
-                                <a href="https://github.com/zwyang2004" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
-                                <a href="https://huggingface.co/Chris-young-2004" target="_blank" rel="noopener" class="icon-link" aria-label="Hugging Face" title="Hugging Face"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><path d="M8.2 14.2c.9 1.5 2.1 2.2 3.8 2.2s2.9-.7 3.8-2.2"/><circle cx="9" cy="10" r="1" fill="currentColor" stroke="none"/><circle cx="15" cy="10" r="1" fill="currentColor" stroke="none"/></svg></a>
-                                <a href="https://orcid.org/0009-0009-1608-7554" target="_blank" rel="noopener" class="icon-link" aria-label="ORCID" title="ORCID"><i class="fa-brands fa-orcid"></i></a>
-                                <a href="https://www.linkedin.com/in/zhiwen-yang-946751332/" target="_blank" rel="noopener" class="icon-link" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="hero-photo-col">
-                        <div class="hero-photo-wrapper">
-                            <img src="assets/img/profile.jpg" alt="Zhiwen Yang" class="hero-photo">
-                            <div class="luminous-ring"></div>
-                        </div>
+                        <p class="hero-tagline">AI for Science &amp; Data Science</p>
+                        <a class="hero-cv-link" href="files/Zhiwen_Yang_CV.pdf" id="hero-cv-link" hidden>CV (PDF)</a>
                     </div>
                 </div>
             </section>
@@ -137,6 +117,21 @@
                             </div>
                         </div>
 
+                        <aside class="profile-card">
+                            <img src="assets/img/profile.jpg" alt="Zhiwen Yang" class="profile-card-photo">
+                            <div class="profile-card-name">Zhiwen Yang</div>
+                            <ul class="profile-card-list">
+                                <li><i class="fa-solid fa-graduation-cap"></i><span class="pc-dark">M.Sc. Student, Medical Data Science</span></li>
+                                <li><i class="fa-solid fa-building-columns"></i><span class="pc-grey">The Hong Kong Polytechnic University</span></li>
+                                <li><i class="fa-regular fa-envelope"></i><a href="mailto:zhiwen.yang@connect.polyu.hk">zhiwen.yang@connect.polyu.hk</a></li>
+                                <li><i class="fa-solid fa-file-pdf"></i><a href="files/Zhiwen_Yang_CV.pdf" target="_blank" rel="noopener">CV (PDF)</a></li>
+                                <li><i class="fa-brands fa-google-scholar"></i><a href="https://scholar.google.com/citations?hl=en&user=lIjJiH0AAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>
+                                <li><i class="fa-brands fa-github"></i><a href="https://github.com/zwyang2004" target="_blank" rel="noopener">GitHub</a></li>
+                                <li><i class="fa-regular fa-face-smile"></i><a href="https://huggingface.co/Chris-young-2004" target="_blank" rel="noopener">Hugging Face</a></li>
+                                <li><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/zhiwen-yang-946751332/" target="_blank" rel="noopener">LinkedIn</a></li>
+                                <li><i class="fa-brands fa-orcid"></i><a href="https://orcid.org/0009-0009-1608-7554" target="_blank" rel="noopener">ORCID</a></li>
+                            </ul>
+                        </aside>
                         <!-- English Biography -->
                         <div class="bio-content bio-active" id="bio-en">
                             <p class="bio-text">
