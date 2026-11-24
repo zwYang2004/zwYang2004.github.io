@@ -73,13 +73,13 @@
     --text-secondary: #4b5563;            /* Warm/neutral slate */
     --text-subtle: #6b7280;               /* Muted meta grey */
     
-    /* Single accent hue: Prussian deep blue */
-    --accent-cyan: #1e3a5f;               /* Prussian deep blue */
-    --accent-cyan-hover: #0f2942;         /* Darker navy hover */
-    --accent-cyan-glow: rgba(30, 58, 95, 0.08);
-    --accent-purple: #1e3a5f;
-    --accent-purple-glow: rgba(30, 58, 95, 0.07);
-    --accent-gold: #1e3a5f;
+    /* Single accent hue: classic academic blue (Jon Barron / Stanford style) */
+    --accent-cyan: #1772d0;               /* Classic academic blue */
+    --accent-cyan-hover: #125aa3;         /* Darker academic blue hover */
+    --accent-cyan-glow: rgba(23, 114, 208, 0.08);
+    --accent-purple: #1772d0;
+    --accent-purple-glow: rgba(23, 114, 208, 0.07);
+    --accent-gold: #1772d0;
     
     --glass-bg: #ffffff;                  /* Card background is solid white in light mode */
     --glass-border: #e5e7eb;
@@ -4689,13 +4689,13 @@ button:focus:not(:focus-visible),
 #tab-publications .pub-year-section { margin-top: 2rem !important; }
 #tab-publications .pub-year-header { margin-bottom: 1rem !important; }
 #tab-publications .pub-row { padding: 1.35rem 0 !important; }
-/* Highlight paper titles in restrained Prussian academic blue */
+/* Highlight paper titles in classic academic blue */
 .home-pub-title,
 #tab-publications .pub-row-title a {
-    color: #1e3a5f !important;
+    color: #1772d0 !important;
     font-weight: 600 !important;
 }
 a.home-pub-title:hover,
 #tab-publications .pub-row-title a:hover {
-    color: #0f2942 !important;
+    color: #125aa3 !important;
 }
