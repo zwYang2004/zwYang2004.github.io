@@ -5544,3 +5544,10 @@ header#header i {
 #back-to-top:hover {
     background: #a83d34;
 }
+
+/* v2.1.8: Tighten top gap across all page tabs and their first section */
+.page-tab,
+.page-tab > section.section-padding:first-child {
+    padding-top: 1.8rem !important;
+    margin-top: 0 !important;
+}
