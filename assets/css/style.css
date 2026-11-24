@@ -4662,3 +4662,40 @@ button:focus:not(:focus-visible),
     color: var(--text-primary) !important;
     border: 1px solid #e5e7eb !important;
 }
+
+/* ===== v1.5.1: button sizing, unified section titles, pub spacing, blue paper titles ===== */
+.hero-links .btn-pill {
+    white-space: nowrap !important;
+    padding: 0.45rem 1.05rem !important;
+    font-size: 0.85rem !important;
+    line-height: 1.25 !important;
+}
+/* Unified, high-contrast section titles across the entire site */
+#tab-home .section-title,
+#tab-home .home-selected .section-title,
+.section-title {
+    font-size: 1.55rem !important;
+    font-weight: 600 !important;
+    color: var(--text-primary) !important;
+}
+/* Tighten News -> Selected Publications gap on Home */
+.homepage-news-section { margin-bottom: 0 !important; }
+#tab-home .home-selected {
+    margin-top: 3rem !important;
+    padding-top: 2.5rem;
+    border-top: 1px solid var(--border-color);
+}
+/* Tighten Publications page vertical gaps */
+#tab-publications .pub-year-section { margin-top: 2rem !important; }
+#tab-publications .pub-year-header { margin-bottom: 1rem !important; }
+#tab-publications .pub-row { padding: 1.35rem 0 !important; }
+/* Highlight paper titles in crisp academic blue */
+.home-pub-title,
+#tab-publications .pub-row-title a {
+    color: #1e40af !important;
+    font-weight: 600 !important;
+}
+a.home-pub-title:hover,
+#tab-publications .pub-row-title a:hover {
+    color: #1e3a8a !important;
+}
