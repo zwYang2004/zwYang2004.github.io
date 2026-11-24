@@ -5578,3 +5578,12 @@ main {
 .page-tab > section:first-child .section-header:first-child {
     margin-top: 0 !important;
 }
+
+/* v2.2.3: Fix :not(:last-child) bottom border and add comfortable bottom padding on Open-Science cards */
+ul.home-pub-list.open-science-grid > li,
+ul.home-pub-list.open-science-grid > li:not(:last-child),
+ul.home-pub-list.open-science-grid > li:last-child {
+    border: 1px solid #d1d5db !important;
+    border-bottom: 1px solid #d1d5db !important;
+    padding: 1.25rem 1.35rem 1.35rem !important;
+}
