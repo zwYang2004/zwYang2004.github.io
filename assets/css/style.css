@@ -5706,6 +5706,8 @@ html.dark-mode .ri-desc {
     color: #d1d5db !important;
 }
 
-html.dark-mode .me-highlight {
+html.dark-mode .me-highlight,
+html.dark-mode .home-pub-authors strong,
+html.dark-mode #tab-publications .pub-row-authors .me-highlight {
     color: #f3f4f6 !important;
 }
