@@ -5279,3 +5279,12 @@ b, strong, h1, h2, h3, h4, h5 { font-weight: 600 !important; }
 .navbar-brand {
     text-transform: uppercase !important;
 }
+
+/* v1.9.6: Reduce top gap on sub-tab sections (Publications, Research, Experience, Blog, Contact) */
+#publications.section-padding,
+#research.section-padding,
+#experience.section-padding,
+#blog.section-padding,
+#contact.section-padding {
+    padding-top: 4.8rem !important;
+}
