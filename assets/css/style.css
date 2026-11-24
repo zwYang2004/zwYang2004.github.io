@@ -5558,3 +5558,23 @@ ul.home-pub-list.open-science-grid > li {
     width: 100% !important;
     box-sizing: border-box !important;
 }
+
+/* v2.2.1: Force zero top padding on main and .page-tab, tight 1.5rem on first section */
+main {
+    padding-top: 0 !important;
+}
+
+.page-tab {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+.page-tab > section:first-child {
+    padding-top: 1.5rem !important;
+    margin-top: 0 !important;
+}
+
+.page-tab > section:first-child .section-title:first-child,
+.page-tab > section:first-child .section-header:first-child {
+    margin-top: 0 !important;
+}
