@@ -4546,7 +4546,7 @@ button:focus:not(:focus-visible),
     #tab-blog .section-padding:first-of-type,
     #tab-blog-post .section-padding:first-of-type,
     #tab-contact .section-padding:first-of-type {
-        padding-top: 7.5rem !important;
+        padding-top: 1.5rem !important;
     }
 
     #tab-publications .section-title { margin-bottom: 1.25rem !important; }
@@ -4844,7 +4844,7 @@ a.home-pub-title:hover,
 
 /* ===== v1.6.0: compact Publications header, inline Scholar link, right-aligned legend ===== */
 #tab-publications .section-padding:first-child {
-    padding-top: 6rem !important;
+    padding-top: 1.5rem !important;
 }
 #tab-publications .section-title {
     margin-bottom: 0.75rem !important;
