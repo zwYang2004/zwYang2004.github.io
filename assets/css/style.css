@@ -5291,9 +5291,9 @@ b, strong, h1, h2, h3, h4, h5 { font-weight: 600 !important; }
 
 /* v2.0.0: Warmer cream background and slightly higher position for .profile-card */
 .profile-card {
-    background: #fdf8ee !important;
-    border: 1px solid #e2d5be !important;
-    box-shadow: 0 6px 20px rgba(17, 24, 39, 0.08) !important;
+    background: #fffdf9 !important;
+    border: 1px solid #f0ebe1 !important;
+    box-shadow: 0 4px 18px rgba(17, 24, 39, 0.06) !important;
 }
 
 @media (min-width: 820px) {
