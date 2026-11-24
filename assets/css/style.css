@@ -5249,3 +5249,11 @@ b, strong, h1, h2, h3, h4, h5 { font-weight: 600 !important; }
     border-bottom: none !important;
     padding-bottom: 0.5rem !important;
 }
+
+/* v1.9.2: Remove .section-alt / #about top border line */
+.section-alt,
+#about,
+.section-padding {
+    border-top: none !important;
+    border-bottom: none !important;
+}
