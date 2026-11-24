@@ -4841,3 +4841,31 @@ a.home-pub-title:hover,
     color: #9ca3af !important;
     font-size: 0.8rem !important;
 }
+
+/* ===== v1.6.0: compact Publications header, inline Scholar link, right-aligned legend ===== */
+#tab-publications .section-padding:first-child {
+    padding-top: 6rem !important;
+}
+#tab-publications .section-title {
+    margin-bottom: 0.75rem !important;
+}
+#tab-publications .btn-pill {
+    border: none !important;
+    background: none !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    color: var(--accent-cyan) !important;
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+    margin-bottom: 0.5rem;
+}
+#tab-publications .pub-legend {
+    text-align: right !important;
+    margin: 0 0 0.5rem 0 !important;
+}
+#tab-publications .pub-year-section {
+    margin-top: 1.25rem !important;
+}
