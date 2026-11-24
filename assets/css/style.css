@@ -24,10 +24,24 @@
     --glass-border: rgba(255, 255, 255, 0.05);
     --glass-shadow: rgba(0, 0, 0, 0.3);
     
-    /* Fonts */
+    /* ==========================================================================
+       UNIFIED TYPOGRAPHY SYSTEM (Single Source of Truth)
+       Change any value below to update the entire website's fonts & sizes.
+       ========================================================================== */
     --font-heading: 'Source Serif 4', 'Noto Serif SC', Georgia, serif;
     --font-body: 'Source Serif 4', 'Noto Serif SC', Georgia, serif;
     --font-mono: 'IBM Plex Mono', monospace;
+
+    --text-hero: 2.5rem;
+    --text-h1: 1.85rem;
+    --text-h2: 1.45rem;
+    --text-h3: 1.08rem;
+    --text-body: 1.0rem;
+    --text-sm: 0.92rem;
+    --text-xs: 0.82rem;
+
+    --lh-heading: 1.32;
+    --lh-body: 1.75;
     
     /* Transitions */
     --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
@@ -60,7 +74,35 @@
     --glass-shadow: rgba(0, 0, 0, 0.03);
 }
 
-/* Reset & Global Styles */
+/* Unified Global Typography Enforcement */
+body {
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    line-height: var(--lh-body);
+}
+h1, h2, h3, h4, .section-title, .hero-name, .pub-year-header {
+    font-family: var(--font-heading) !important;
+    line-height: var(--lh-heading);
+}
+.hero-name { font-size: var(--text-hero) !important; }
+.section-title { font-size: var(--text-h2) !important; font-weight: 600 !important; }
+.home-pub-title, .pub-row-title {
+    font-family: var(--font-body) !important;
+    font-size: var(--text-h3) !important;
+    line-height: 1.4 !important;
+}
+.bio-text, .section-lead, .ri-desc {
+    font-size: var(--text-body) !important;
+    line-height: var(--lh-body) !important;
+}
+.home-pub-authors, .pub-row-authors, .news-text {
+    font-size: var(--text-sm) !important;
+    line-height: 1.65 !important;
+}
+.home-pub-venue, .pub-row-meta, .news-date, .pub-res-link {
+    font-size: var(--text-xs) !important;
+}
+.news-date { font-family: var(--font-mono) !important; }
 * {
     box-sizing: border-box;
     margin: 0;
