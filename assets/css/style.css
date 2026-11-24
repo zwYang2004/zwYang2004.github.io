@@ -5311,12 +5311,13 @@ b, strong, h1, h2, h3, h4, h5 { font-weight: 600 !important; }
     margin: 0 !important;
 }
 
-.open-science-grid > li {
+ul.home-pub-list.open-science-grid > li,
+ul.home-pub-list.open-science-grid > li:last-child {
     list-style: none !important;
-    background: #ffffff;
+    background: #ffffff !important;
     border: 1px solid #d1d5db !important;
     border-bottom: 1px solid #d1d5db !important;
-    border-radius: 10px;
+    border-radius: 10px !important;
     padding: 1.1rem 1.25rem;
     display: flex;
     flex-direction: column;
