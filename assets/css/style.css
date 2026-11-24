@@ -5702,3 +5702,7 @@ html.dark-mode .ri-card p,
 html.dark-mode .ri-desc {
     color: #d1d5db !important;
 }
+
+html.dark-mode .me-highlight {
+    color: #f3f4f6 !important;
+}
