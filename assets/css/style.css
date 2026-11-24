@@ -5488,6 +5488,9 @@ header#header .nav-container {
 header#header .logo a,
 header#header .nav-link {
     color: #e5e7eb !important;
+    padding: 0.35rem 0.75rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
 }
 
 header#header .logo a:hover,
@@ -5499,10 +5502,11 @@ header#header .nav-link.active {
     background: rgba(192, 75, 65, 0.35) !important;
     color: #ffffff !important;
     border-radius: 6px !important;
-    padding: 0.35rem 0.75rem !important;
 }
 
 header#header button,
 header#header i {
     color: #e5e7eb !important;
+    border: none !important;
+    background: transparent !important;
 }
