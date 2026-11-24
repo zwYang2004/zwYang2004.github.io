@@ -4646,3 +4646,10 @@ button:focus:not(:focus-visible),
 .timeline-inst-modern strong { color: var(--text-subtle) !important; font-weight: 500 !important; }
 .timeline-item-modern { margin-bottom: 2.25rem; }
 #tab-experience .section-padding + .section-padding, #tab-experience section + section { padding-top: 4.5rem; }
+
+/* v1.4.1 hotfix: keep icon fonts intact, keep social icons on the button row */
+.hero-links .btn-pill i, .hero-links .btn-pill i::before { font-family: inherit; }
+.hero-links .btn-pill .fa-solid, .hero-links .btn-pill .fa-solid::before { font-family: "Font Awesome 6 Free" !important; font-weight: 900 !important; }
+.hero-links .btn-pill .fa-brands, .hero-links .btn-pill .fa-brands::before { font-family: "Font Awesome 6 Brands" !important; font-weight: 400 !important; }
+.hero-links { flex-wrap: nowrap; }
+@media (max-width: 640px) { .hero-links { flex-wrap: wrap; } .hero-icons { border-left: none; margin-left: 0; padding-left: 0; } }
