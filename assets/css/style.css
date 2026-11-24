@@ -39,8 +39,8 @@
     /* ==========================================================================
        UNIFIED TYPOGRAPHY SYSTEM (Plan A: Serif Headings + Sans Body)
        ========================================================================== */
-    --font-heading: 'Source Serif 4', 'Noto Serif SC', Georgia, serif;
-    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', 'Noto Sans SC', sans-serif;
+    --font-heading: 'Newsreader', 'Noto Serif SC', Georgia, serif;
+    --font-body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', 'Noto Sans SC', sans-serif;
     --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace;
 
     --text-hero: clamp(1.95rem, 3.2vw, 2.4rem);
@@ -64,24 +64,22 @@
 .light-mode {
     --bg-main: #ffffff;                   /* Clean pure white canvas */
     --bg-card: #ffffff;                   /* Pure white card panels */
-    --bg-subtle: #f8fafc;                 /* Subtle alternate band */
-    --bg-header: rgba(255, 255, 255, 0.92); /* Crisp sticky header */
+    --bg-subtle: #ffffff;                 /* Pure white — no grey band alternation */
+    --bg-header: rgba(255, 255, 255, 0.94); /* Crisp sticky header */
     --border-color: #e5e7eb;              /* Clean hairline dividers */
     
     /* High-legibility text colors (WCAG AA/AAA verified) */
-    --text-primary: #1f2933;              /* 14.76:1 on #ffffff */
-    --text-secondary: #52606d;            /* 6.46:1 on #ffffff */
-    --text-subtle: #5a6572;               /* 5.93:1 on #ffffff, 5.67:1 on #f8fafc */
+    --text-primary: #111827;              /* Deep ink charcoal */
+    --text-secondary: #4b5563;            /* Warm/neutral slate */
+    --text-subtle: #6b7280;               /* Muted meta grey */
     
-    /* Single accent hue (deep teal), tuned for contrast on white.
-       --accent-purple retained as a darker secondary of the same hue so the
-       ~44 existing call sites need no edits. */
-    --accent-cyan: #0f6b73;               /* Deep teal — 6.23:1 on #ffffff */
-    --accent-cyan-hover: #0b5258;         /* Hover teal — 8.89:1 on #ffffff */
-    --accent-cyan-glow: rgba(15, 107, 115, 0.08);
-    --accent-purple: #12545c;             /* Darker teal — 8.58:1 on #ffffff */
-    --accent-purple-glow: rgba(18, 84, 92, 0.07);
-    --accent-gold: #0f6b73;
+    /* Single accent hue: Prussian deep blue */
+    --accent-cyan: #1e3a5f;               /* Prussian deep blue */
+    --accent-cyan-hover: #0f2942;         /* Darker navy hover */
+    --accent-cyan-glow: rgba(30, 58, 95, 0.08);
+    --accent-purple: #1e3a5f;
+    --accent-purple-glow: rgba(30, 58, 95, 0.07);
+    --accent-gold: #1e3a5f;
     
     --glass-bg: #ffffff;                  /* Card background is solid white in light mode */
     --glass-border: #e5e7eb;
@@ -101,13 +99,13 @@ h1, h2, h3, h4, .section-title, .hero-name, .pub-year-header {
 }
 .hero-name {
     font-size: var(--text-hero);
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1.25;
     letter-spacing: -0.02em;
 }
 .section-title {
     font-size: var(--text-h2);
-    font-weight: 600;
+    font-weight: 500;
 }
 .subsection-title {
     font-family: var(--font-heading);
@@ -4653,3 +4651,14 @@ button:focus:not(:focus-visible),
 .hero-links .btn-pill .fa-brands, .hero-links .btn-pill .fa-brands::before { font-family: "Font Awesome 6 Brands" !important; font-weight: 400 !important; }
 .hero-links { flex-wrap: nowrap; }
 @media (max-width: 640px) { .hero-links { flex-wrap: wrap; } .hero-icons { border-left: none; margin-left: 0; padding-left: 0; } }
+
+/* ===== v1.5.0: Prussian Deep Blue + Newsreader & IBM Plex Sans ===== */
+.hero-name { font-weight: 500 !important; }
+#tab-home .section-title, .section-title { font-weight: 500 !important; }
+.home-pub-title, #tab-publications .pub-row-title { font-weight: 500 !important; }
+#tab-publications .pub-pill-accepted,
+#tab-publications .pub-pill-published {
+    background: #f3f4f6 !important;
+    color: var(--text-primary) !important;
+    border: 1px solid #e5e7eb !important;
+}
