@@ -5288,3 +5288,15 @@ b, strong, h1, h2, h3, h4, h5 { font-weight: 600 !important; }
 #contact.section-padding {
     padding-top: 4.8rem !important;
 }
+
+/* v2.0.0: Warmer cream background and slightly higher position for .profile-card */
+.profile-card {
+    background: #fdf8ee !important;
+    border-color: #efe6d5 !important;
+}
+
+@media (min-width: 820px) {
+    .profile-card {
+        margin-top: -3.8rem !important;
+    }
+}
