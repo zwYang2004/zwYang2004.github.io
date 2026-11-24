@@ -5400,3 +5400,67 @@ b, strong, h1, h2, h3, h4, h5 { font-weight: 600 !important; }
         gap: 0.1rem;
     }
 }
+
+/* v2.0.8: Centered white sheet on light-grey canvas + dark rounded navbar bar */
+body.light-mode {
+    background: #f1f3f5 !important;
+}
+
+main {
+    max-width: 1080px;
+    margin: 1.25rem auto 2.5rem;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 24px rgba(17, 24, 39, 0.06);
+    overflow: hidden;
+}
+
+#navbar,
+header#navbar,
+.navbar {
+    position: sticky !important;
+    top: 0.75rem !important;
+    z-index: 100 !important;
+    max-width: 1080px !important;
+    margin: 1rem auto 0 !important;
+    background: #333333 !important;
+    border-radius: 8px !important;
+    border-bottom: none !important;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.14) !important;
+    padding: 0.45rem 1.25rem !important;
+}
+
+#navbar a,
+.navbar a,
+.nav-links a {
+    color: #e5e7eb !important;
+}
+
+#navbar a:hover,
+.navbar a:hover,
+.nav-links a:hover {
+    color: #ffffff !important;
+}
+
+#navbar .nav-links a.active,
+.navbar .nav-links a.active {
+    background: rgba(192, 75, 65, 0.35) !important;
+    color: #ffffff !important;
+    border-radius: 6px !important;
+    padding: 0.35rem 0.75rem !important;
+}
+
+#navbar .theme-toggle,
+.navbar .theme-toggle,
+#navbar button {
+    color: #e5e7eb !important;
+}
+
+#about.section-padding,
+#publications.section-padding,
+#research.section-padding,
+#experience.section-padding,
+#blog.section-padding,
+#contact.section-padding {
+    padding-top: 2.2rem !important;
+}
