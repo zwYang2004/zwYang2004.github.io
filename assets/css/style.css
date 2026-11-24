@@ -5166,3 +5166,37 @@ b, strong, h1, h2, h3, h4, h5 { font-weight: 600 !important; }
         width: 315px !important;
     }
 }
+
+/* v1.8.7: Tone down red elements on Contact page (neutral icons & social buttons, red only on hover & email link) */
+.contact-icon,
+.contact-item-icon,
+.contact-card .fa-solid,
+.contact-card .fa-regular {
+    color: var(--text-secondary, #4b5563) !important;
+}
+
+.social-link-btn,
+.contact-social-btn,
+.social-links a {
+    color: var(--text-primary, #374151) !important;
+}
+
+.social-link-btn i,
+.contact-social-btn i,
+.social-links a i {
+    color: var(--text-secondary, #4b5563) !important;
+}
+
+.social-link-btn:hover,
+.contact-social-btn:hover,
+.social-links a:hover {
+    color: var(--accent, #c04b41) !important;
+    border-color: var(--accent, #c04b41) !important;
+    text-decoration: none !important;
+}
+
+.social-link-btn:hover i,
+.contact-social-btn:hover i,
+.social-links a:hover i {
+    color: var(--accent, #c04b41) !important;
+}
