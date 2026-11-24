@@ -25,8 +25,8 @@
     --glass-shadow: rgba(0, 0, 0, 0.3);
     
     /* Fonts */
-    --font-heading: 'Source Serif 4', 'Noto Sans SC', Georgia, serif;
-    --font-body: 'Inter', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-heading: 'Source Serif 4', 'Noto Serif SC', Georgia, serif;
+    --font-body: 'Source Serif 4', 'Noto Serif SC', Georgia, serif;
     --font-mono: 'IBM Plex Mono', monospace;
     
     /* Transitions */
