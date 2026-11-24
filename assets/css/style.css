@@ -4468,3 +4468,10 @@ a.home-pub-title:hover {
     outline: 2px solid var(--accent-cyan);
     outline-offset: 2px;
 }
+
+/* Spacing & Breathing Room Fixes (Publications & Research) */
+.section-padding { padding-top: 4.5rem !important; }
+#tab-publications .section-title { margin-bottom: 1.25rem !important; }
+#tab-publications .scholar-btn, #tab-publications .btn-outline { margin-top: 0.5rem; margin-bottom: 1.5rem; }
+.research-article-block { margin-bottom: 4rem !important; }
+.research-article-links, .article-links { margin-top: 1.2rem; margin-bottom: 2.5rem; }
