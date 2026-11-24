@@ -4804,3 +4804,40 @@ a.home-pub-title:hover,
     border-color: #d6c5ae !important;
     color: #5c4938 !important;
 }
+
+/* ===== v1.5.9: IBM Plex Sans paper titles + 4-tier greyscale hierarchy ===== */
+.home-pub-title,
+#tab-publications .pub-row-title,
+#tab-publications .pub-row-title a {
+    font-family: var(--font-body) !important;
+    font-size: 1.03rem !important;
+    font-weight: 600 !important;
+    line-height: 1.35 !important;
+    color: #1a1a1a !important;
+}
+.home-pub-authors,
+#tab-publications .pub-row-authors {
+    font-size: 0.875rem !important;
+    color: #737373 !important;
+}
+.home-pub-authors strong,
+#tab-publications .pub-row-authors .me-highlight {
+    color: #1a1a1a !important;
+    font-weight: 600 !important;
+}
+.home-pub-venue,
+#tab-publications .pub-row-meta {
+    font-size: 0.85rem !important;
+    color: #737373 !important;
+    font-style: italic !important;
+    font-weight: 400 !important;
+}
+#tab-publications .pub-row-meta em {
+    font-style: italic !important;
+    font-weight: 400 !important;
+    color: #737373 !important;
+}
+#tab-publications .pub-legend {
+    color: #9ca3af !important;
+    font-size: 0.8rem !important;
+}
