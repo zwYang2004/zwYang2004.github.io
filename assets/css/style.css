@@ -4905,3 +4905,28 @@ a.home-pub-title:hover,
 .pub-filter-pill.active span {
     color: var(--accent-cyan);
 }
+
+/* ===== v1.6.3: same-row filter + legend, unified section spacing ===== */
+.pub-controls-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 0.75rem 0 0.75rem 0;
+}
+.pub-controls-row .pub-filter-bar {
+    margin: 0 !important;
+}
+.pub-controls-row .pub-legend {
+    margin: 0 !important;
+}
+#tab-publications .pub-year-section {
+    margin-top: 0.5rem !important;
+}
+#tab-publications .pub-year-section + .pub-year-section {
+    margin-top: 2rem !important;
+}
+#tab-publications .pub-year-header {
+    margin-bottom: 0.5rem !important;
+}
